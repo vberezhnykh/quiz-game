@@ -2,6 +2,117 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/gamesData.js":
+/*!**************************!*\
+  !*** ./src/gamesData.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _assets_images_gta2_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/images/gta2.jpg */ "./src/assets/images/gta2.jpg");
+/* harmony import */ var _assets_images_gta_london_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/images/gta-london.jpg */ "./src/assets/images/gta-london.jpg");
+/* harmony import */ var _assets_images_gta3_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/images/gta3.jpg */ "./src/assets/images/gta3.jpg");
+/* harmony import */ var _assets_images_gta_vc_webp__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/images/gta-vc.webp */ "./src/assets/images/gta-vc.webp");
+/* harmony import */ var _assets_images_gta_sa_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/images/gta-sa.jpg */ "./src/assets/images/gta-sa.jpg");
+/* harmony import */ var _assets_images_gta4_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./assets/images/gta4.jpg */ "./src/assets/images/gta4.jpg");
+/* harmony import */ var _assets_images_nfs1_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./assets/images/nfs1.jpg */ "./src/assets/images/nfs1.jpg");
+/* harmony import */ var _assets_images_nfs2_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./assets/images/nfs2.jpg */ "./src/assets/images/nfs2.jpg");
+/* harmony import */ var _assets_images_forza_jpg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./assets/images/forza.jpg */ "./src/assets/images/forza.jpg");
+/* harmony import */ var _assets_images_burnout_jpg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./assets/images/burnout.jpg */ "./src/assets/images/burnout.jpg");
+/* harmony import */ var _assets_images_crash_team_racing_jpg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./assets/images/crash-team-racing.jpg */ "./src/assets/images/crash-team-racing.jpg");
+/* harmony import */ var _assets_images_project_cars_jpg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./assets/images/project-cars.jpg */ "./src/assets/images/project-cars.jpg");
+
+
+
+
+
+
+
+
+
+
+
+
+const gameData = [{
+  name: 'Grand Theft Auto 2',
+  category: 'warm-up',
+  image: _assets_images_gta2_jpg__WEBPACK_IMPORTED_MODULE_0__,
+  audio: '',
+  description: ''
+}, {
+  name: 'Grand Theft Auto: London',
+  category: 'warm-up',
+  image: _assets_images_gta_london_jpg__WEBPACK_IMPORTED_MODULE_1__,
+  audio: '',
+  description: ''
+}, {
+  name: 'Grand Theft Auto III',
+  category: 'warm-up',
+  image: _assets_images_gta3_jpg__WEBPACK_IMPORTED_MODULE_2__,
+  audio: '',
+  description: ''
+}, {
+  name: 'Grand Theft Auto: Vice City',
+  category: 'warm-up',
+  image: _assets_images_gta_vc_webp__WEBPACK_IMPORTED_MODULE_3__,
+  audio: '',
+  description: ''
+}, {
+  name: 'Grand Theft Auto: San Andreas',
+  category: 'warm-up',
+  image: _assets_images_gta_sa_jpg__WEBPACK_IMPORTED_MODULE_4__,
+  audio: '',
+  description: ''
+}, {
+  name: 'Grand Theft Auto IV',
+  category: 'warm-up',
+  image: _assets_images_gta4_jpg__WEBPACK_IMPORTED_MODULE_5__,
+  audio: '',
+  description: ''
+}, {
+  name: 'Need for Speed: Underground',
+  category: 'racing',
+  image: _assets_images_nfs1_jpg__WEBPACK_IMPORTED_MODULE_6__,
+  audio: '',
+  description: ''
+}, {
+  name: 'Need for Speed: Underground 2',
+  category: 'racing',
+  image: _assets_images_nfs2_jpg__WEBPACK_IMPORTED_MODULE_7__,
+  audio: '',
+  description: ''
+}, {
+  name: 'Forza Horizon 5',
+  category: 'racing',
+  image: _assets_images_forza_jpg__WEBPACK_IMPORTED_MODULE_8__,
+  audio: '',
+  description: ''
+}, {
+  name: 'Burnout Paradise',
+  category: 'racing',
+  image: _assets_images_burnout_jpg__WEBPACK_IMPORTED_MODULE_9__,
+  audio: '',
+  description: ''
+}, {
+  name: 'Crash Team Racing',
+  category: 'racing',
+  image: _assets_images_crash_team_racing_jpg__WEBPACK_IMPORTED_MODULE_10__,
+  audio: '',
+  description: ''
+}, {
+  name: 'Project Cars',
+  category: 'racing',
+  image: _assets_images_project_cars_jpg__WEBPACK_IMPORTED_MODULE_11__,
+  audio: '',
+  description: ''
+}];
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (gameData);
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/styles.scss":
 /*!*************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/styles.scss ***!
@@ -24,7 +135,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_normalize_css__WEBPACK_IMPORTED_MODULE_2__["default"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "body {\n  position: relative;\n  min-height: 100vh;\n  /* overflow-y: hidden; */\n}\n\n.header {\n  display: flex;\n  justify-content: space-around;\n  border: 5px solid black;\n  border-top: none;\n  border-radius: 0 0 10px 10px;\n  align-items: center;\n  max-width: 1000px;\n  max-height: 80px;\n  margin: 0 auto;\n  background-color: rgba(255, 255, 255, 0.94);\n}\n.header img {\n  max-height: 80px;\n}\n\nnav {\n  height: 80px;\n}\n\n.navigation {\n  display: flex;\n  align-items: center;\n  list-style: none;\n  font-size: 20px;\n  text-transform: uppercase;\n  height: 100%;\n  gap: 30px;\n  padding: 0;\n  margin: 0;\n}\n.navigation .navigation__item {\n  cursor: pointer;\n}\n.navigation .navigation__item:hover {\n  transform: scale(1.1);\n}\n.navigation .navigation__item--active {\n  font-weight: bold;\n  color: red;\n}\n\n.main {\n  max-width: 1000px;\n  max-height: 499px;\n  height: 100vh;\n  border: 5px solid black;\n  border-radius: 10px;\n  margin: 20px auto;\n  background-color: rgba(255, 255, 255, 0.94);\n}\n\n.footer {\n  /* position: absolute;\n  bottom: 0; */\n  border: 5px solid black;\n  border-bottom: none;\n  border-radius: 10px 10px 0 0;\n  background-color: rgba(255, 255, 255, 0.94);\n  max-width: 1000px;\n  width: 100%;\n  max-height: 80px;\n  left: 50%;\n  /*  margin-left: -500px; */\n  margin: 0 auto;\n  margin-bottom: -5px;\n  display: flex;\n  justify-content: space-evenly;\n  align-items: center;\n}\n.footer img {\n  height: 80px;\n}", "",{"version":3,"sources":["webpack://./src/styles/styles.scss"],"names":[],"mappings":"AAEA;EACE,kBAAA;EACA,iBAAA;EACA,wBAAA;AAAF;;AAGA;EACE,aAAA;EACA,6BAAA;EACA,uBAAA;EACA,gBAAA;EACA,4BAAA;EACA,mBAAA;EACA,iBAAA;EACA,gBAAA;EACA,cAAA;EACA,2CAAA;AAAF;AAEE;EACE,gBAAA;AAAJ;;AAKA;EACE,YAAA;AAFF;;AAKA;EACE,aAAA;EACA,mBAAA;EACA,gBAAA;EACA,eAAA;EACA,yBAAA;EACA,YAAA;EACA,SAAA;EACA,UAAA;EACA,SAAA;AAFF;AAIE;EACE,eAAA;AAFJ;AAII;EACE,qBAAA;AAFN;AAOE;EACE,iBAAA;EACA,UAAA;AALJ;;AAUA;EACE,iBAAA;EACA,iBAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,iBAAA;EACA,2CAAA;AAPF;;AAUA;EACE;cAAA;EAEA,uBAAA;EACA,mBAAA;EACA,4BAAA;EACA,2CAAA;EACA,iBAAA;EACA,WAAA;EACA,gBAAA;EACA,SAAA;EACD,0BAAA;EACC,cAAA;EACA,mBAAA;EACA,aAAA;EACA,6BAAA;EACA,mBAAA;AAPF;AASE;EACE,YAAA;AAPJ","sourcesContent":["@import './normalize.css';\r\n\r\nbody {\r\n  position: relative;\r\n  min-height: 100vh;\r\n  /* overflow-y: hidden; */\r\n}\r\n\r\n.header {\r\n  display: flex;\r\n  justify-content: space-around;\r\n  border: 5px solid black;\r\n  border-top: none;\r\n  border-radius: 0 0 10px 10px;\r\n  align-items: center;\r\n  max-width: 1000px;\r\n  max-height: 80px;\r\n  margin: 0 auto;\r\n  background-color: rgba(255, 255, 255, .94);\r\n  \r\n  img {\r\n    max-height: 80px;\r\n  }\r\n\r\n}\r\n\r\nnav {\r\n  height: 80px;\r\n}\r\n\r\n.navigation {\r\n  display: flex;\r\n  align-items: center;\r\n  list-style: none;\r\n  font-size: 20px;\r\n  text-transform: uppercase;\r\n  height: 100%;\r\n  gap: 30px;\r\n  padding: 0;\r\n  margin: 0;\r\n  \r\n  .navigation__item {\r\n    cursor: pointer;\r\n\r\n    &:hover {\r\n      transform: scale(1.1);\r\n    }\r\n\r\n  }\r\n\r\n  .navigation__item--active {\r\n    font-weight: bold;\r\n    color: red;\r\n  }\r\n\r\n}\r\n\r\n.main {\r\n  max-width: 1000px;\r\n  max-height: 499px;\r\n  height: 100vh;\r\n  border: 5px solid black;\r\n  border-radius: 10px;\r\n  margin: 20px auto;\r\n  background-color: rgba(255, 255, 255, .94);\r\n}\r\n\r\n.footer {\r\n  /* position: absolute;\r\n  bottom: 0; */\r\n  border: 5px solid black;\r\n  border-bottom: none;\r\n  border-radius: 10px 10px 0 0;\r\n  background-color: rgba(255, 255, 255, .94);\r\n  max-width: 1000px;\r\n  width: 100%;\r\n  max-height: 80px;\r\n  left: 50%;\r\n /*  margin-left: -500px; */\r\n  margin: 0 auto;\r\n  margin-bottom: -5px;\r\n  display: flex;\r\n  justify-content: space-evenly;\r\n  align-items: center;\r\n\r\n  img {\r\n    height: 80px;\r\n  }\r\n\r\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "body {\n  position: relative;\n  min-height: 100vh;\n  /* overflow-y: hidden; */\n}\n\n.header {\n  display: flex;\n  justify-content: space-around;\n  border: 5px solid black;\n  border-top: none;\n  border-radius: 0 0 10px 10px;\n  align-items: center;\n  max-width: 1000px;\n  max-height: 80px;\n  margin: 0 auto;\n  background-color: rgba(255, 255, 255, 0.94);\n}\n.header img {\n  max-height: 80px;\n}\n\nnav {\n  height: 80px;\n}\n\n.navigation {\n  display: flex;\n  align-items: center;\n  list-style: none;\n  font-size: 20px;\n  text-transform: uppercase;\n  height: 100%;\n  gap: 30px;\n  padding: 0;\n  margin: 0;\n}\n.navigation .navigation__item {\n  cursor: pointer;\n}\n.navigation .navigation__item:hover {\n  transform: scale(1.1);\n}\n.navigation .navigation__item--active {\n  font-weight: bold;\n  color: red;\n}\n\n.main {\n  max-width: 1000px;\n  max-height: 499px;\n  height: 100vh;\n  border: 5px solid black;\n  border-radius: 10px;\n  margin: 20px auto;\n  background-color: rgba(255, 255, 255, 0.94);\n}\n\n.board {\n  font-size: 20px;\n  padding: 1%;\n}\n\n.categories {\n  display: flex;\n  justify-content: space-evenly;\n  margin-top: 20px;\n}\n.categories .categories__item {\n  cursor: pointer;\n  text-transform: uppercase;\n}\n.categories .categories__item:hover {\n  transform: scale(1.1);\n}\n.categories .categories__item--active {\n  color: red;\n  font-weight: bold;\n}\n\n.footer {\n  /* position: absolute;\n  bottom: 0; */\n  border: 5px solid black;\n  border-bottom: none;\n  border-radius: 10px 10px 0 0;\n  background-color: rgba(255, 255, 255, 0.94);\n  max-width: 1000px;\n  width: 100%;\n  max-height: 80px;\n  left: 50%;\n  /*  margin-left: -500px; */\n  margin: 0 auto;\n  margin-bottom: -5px;\n  display: flex;\n  justify-content: space-evenly;\n  align-items: center;\n}\n.footer img {\n  height: 80px;\n}", "",{"version":3,"sources":["webpack://./src/styles/styles.scss"],"names":[],"mappings":"AAEA;EACE,kBAAA;EACA,iBAAA;EACA,wBAAA;AAAF;;AAGA;EACE,aAAA;EACA,6BAAA;EACA,uBAAA;EACA,gBAAA;EACA,4BAAA;EACA,mBAAA;EACA,iBAAA;EACA,gBAAA;EACA,cAAA;EACA,2CAAA;AAAF;AAEE;EACE,gBAAA;AAAJ;;AAKA;EACE,YAAA;AAFF;;AAKA;EACE,aAAA;EACA,mBAAA;EACA,gBAAA;EACA,eAAA;EACA,yBAAA;EACA,YAAA;EACA,SAAA;EACA,UAAA;EACA,SAAA;AAFF;AAIE;EACE,eAAA;AAFJ;AAII;EACE,qBAAA;AAFN;AAOE;EACE,iBAAA;EACA,UAAA;AALJ;;AAUA;EACE,iBAAA;EACA,iBAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,iBAAA;EACA,2CAAA;AAPF;;AAUA;EACE,eAAA;EACA,WAAA;AAPF;;AAUA;EACE,aAAA;EACA,6BAAA;EACA,gBAAA;AAPF;AASE;EACE,eAAA;EACA,yBAAA;AAPJ;AASI;EACE,qBAAA;AAPN;AAWE;EACE,UAAA;EACA,iBAAA;AATJ;;AAcA;EACE;cAAA;EAEA,uBAAA;EACA,mBAAA;EACA,4BAAA;EACA,2CAAA;EACA,iBAAA;EACA,WAAA;EACA,gBAAA;EACA,SAAA;EACD,0BAAA;EACC,cAAA;EACA,mBAAA;EACA,aAAA;EACA,6BAAA;EACA,mBAAA;AAXF;AAaE;EACE,YAAA;AAXJ","sourcesContent":["@import './normalize.css';\r\n\r\nbody {\r\n  position: relative;\r\n  min-height: 100vh;\r\n  /* overflow-y: hidden; */\r\n}\r\n\r\n.header {\r\n  display: flex;\r\n  justify-content: space-around;\r\n  border: 5px solid black;\r\n  border-top: none;\r\n  border-radius: 0 0 10px 10px;\r\n  align-items: center;\r\n  max-width: 1000px;\r\n  max-height: 80px;\r\n  margin: 0 auto;\r\n  background-color: rgba(255, 255, 255, .94);\r\n  \r\n  img {\r\n    max-height: 80px;\r\n  }\r\n\r\n}\r\n\r\nnav {\r\n  height: 80px;\r\n}\r\n\r\n.navigation {\r\n  display: flex;\r\n  align-items: center;\r\n  list-style: none;\r\n  font-size: 20px;\r\n  text-transform: uppercase;\r\n  height: 100%;\r\n  gap: 30px;\r\n  padding: 0;\r\n  margin: 0;\r\n  \r\n  .navigation__item {\r\n    cursor: pointer;\r\n\r\n    &:hover {\r\n      transform: scale(1.1);\r\n    }\r\n\r\n  }\r\n\r\n  .navigation__item--active {\r\n    font-weight: bold;\r\n    color: red;\r\n  }\r\n\r\n}\r\n\r\n.main {\r\n  max-width: 1000px;\r\n  max-height: 499px;\r\n  height: 100vh;\r\n  border: 5px solid black;\r\n  border-radius: 10px;\r\n  margin: 20px auto;\r\n  background-color: rgba(255, 255, 255, .94);\r\n}\r\n\r\n.board {\r\n  font-size: 20px;\r\n  padding: 1%;\r\n}\r\n\r\n.categories {\r\n  display: flex;\r\n  justify-content: space-evenly;\r\n  margin-top: 20px;\r\n\r\n  .categories__item {\r\n    cursor: pointer;\r\n    text-transform: uppercase;\r\n\r\n    &:hover {\r\n      transform: scale(1.1);\r\n    }\r\n  }\r\n\r\n  .categories__item--active {\r\n    color: red;\r\n    font-weight: bold;\r\n  }\r\n\r\n}\r\n\r\n.footer {\r\n  /* position: absolute;\r\n  bottom: 0; */\r\n  border: 5px solid black;\r\n  border-bottom: none;\r\n  border-radius: 10px 10px 0 0;\r\n  background-color: rgba(255, 255, 255, .94);\r\n  max-width: 1000px;\r\n  width: 100%;\r\n  max-height: 80px;\r\n  left: 50%;\r\n /*  margin-left: -500px; */\r\n  margin: 0 auto;\r\n  margin-bottom: -5px;\r\n  display: flex;\r\n  justify-content: space-evenly;\r\n  align-items: center;\r\n\r\n  img {\r\n    height: 80px;\r\n  }\r\n\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -586,6 +697,36 @@ module.exports = __webpack_require__.p + "assets/background.jpg";
 
 /***/ }),
 
+/***/ "./src/assets/images/burnout.jpg":
+/*!***************************************!*\
+  !*** ./src/assets/images/burnout.jpg ***!
+  \***************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/burnout.jpg";
+
+/***/ }),
+
+/***/ "./src/assets/images/crash-team-racing.jpg":
+/*!*************************************************!*\
+  !*** ./src/assets/images/crash-team-racing.jpg ***!
+  \*************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/crash-team-racing.jpg";
+
+/***/ }),
+
+/***/ "./src/assets/images/forza.jpg":
+/*!*************************************!*\
+  !*** ./src/assets/images/forza.jpg ***!
+  \*************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/forza.jpg";
+
+/***/ }),
+
 /***/ "./src/assets/images/github.png":
 /*!**************************************!*\
   !*** ./src/assets/images/github.png ***!
@@ -596,6 +737,66 @@ module.exports = __webpack_require__.p + "assets/github.png";
 
 /***/ }),
 
+/***/ "./src/assets/images/gta-london.jpg":
+/*!******************************************!*\
+  !*** ./src/assets/images/gta-london.jpg ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/gta-london.jpg";
+
+/***/ }),
+
+/***/ "./src/assets/images/gta-sa.jpg":
+/*!**************************************!*\
+  !*** ./src/assets/images/gta-sa.jpg ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/gta-sa.jpg";
+
+/***/ }),
+
+/***/ "./src/assets/images/gta-vc.webp":
+/*!***************************************!*\
+  !*** ./src/assets/images/gta-vc.webp ***!
+  \***************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/gta-vc.webp";
+
+/***/ }),
+
+/***/ "./src/assets/images/gta2.jpg":
+/*!************************************!*\
+  !*** ./src/assets/images/gta2.jpg ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/gta2.jpg";
+
+/***/ }),
+
+/***/ "./src/assets/images/gta3.jpg":
+/*!************************************!*\
+  !*** ./src/assets/images/gta3.jpg ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/gta3.jpg";
+
+/***/ }),
+
+/***/ "./src/assets/images/gta4.jpg":
+/*!************************************!*\
+  !*** ./src/assets/images/gta4.jpg ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/gta4.jpg";
+
+/***/ }),
+
 /***/ "./src/assets/images/logo.png":
 /*!************************************!*\
   !*** ./src/assets/images/logo.png ***!
@@ -603,6 +804,36 @@ module.exports = __webpack_require__.p + "assets/github.png";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "assets/logo.png";
+
+/***/ }),
+
+/***/ "./src/assets/images/nfs1.jpg":
+/*!************************************!*\
+  !*** ./src/assets/images/nfs1.jpg ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/nfs1.jpg";
+
+/***/ }),
+
+/***/ "./src/assets/images/nfs2.jpg":
+/*!************************************!*\
+  !*** ./src/assets/images/nfs2.jpg ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/nfs2.jpg";
+
+/***/ }),
+
+/***/ "./src/assets/images/project-cars.jpg":
+/*!********************************************!*\
+  !*** ./src/assets/images/project-cars.jpg ***!
+  \********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/project-cars.jpg";
 
 /***/ }),
 
@@ -734,6 +965,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_images_logo_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/images/logo.png */ "./src/assets/images/logo.png");
 /* harmony import */ var _assets_images_github_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/images/github.png */ "./src/assets/images/github.png");
 /* harmony import */ var _assets_images_rs_school_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./assets/images/rs-school.svg */ "./src/assets/images/rs-school.svg");
+/* harmony import */ var _gamesData__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./gamesData */ "./src/gamesData.js");
+
 
 
 
@@ -741,6 +974,26 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let currentPage = 'home';
+function createBoard() {
+  const board = document.createElement('div');
+  board.className = 'board';
+  const score = document.createElement('div');
+  score.className = 'score';
+  score.innerHTML = 'Score: 0';
+  board.appendChild(score);
+  const categoriesContainer = document.createElement('div');
+  categoriesContainer.className = 'categories';
+  const categories = ['warm-up', 'racing', 'shooter', 'cyberpunk', 'rpg', 'platformer'];
+  for (let i = 0; i < 6; i += 1) {
+    const category = document.createElement('div');
+    category.className = 'categories__item';
+    if (i === 0) category.classList.add('categories__item--active');
+    category.innerHTML = categories[i];
+    categoriesContainer.appendChild(category);
+  }
+  board.appendChild(categoriesContainer);
+  return board;
+}
 function createHeader() {
   const header = document.createElement('header');
   header.className = 'header';
@@ -760,6 +1013,7 @@ function createHeader() {
       list.childNodes.forEach(elem => elem.classList.remove('navigation__item--active'));
       event.target.classList.add('navigation__item--active');
       currentPage = event.target.innerHTML;
+      if (event.target.innerHTML === 'quiz') document.querySelector('.main').appendChild(createBoard());
     });
     list.appendChild(item);
   }
