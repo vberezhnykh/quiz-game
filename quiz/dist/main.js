@@ -12,18 +12,42 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _assets_images_gta2_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/images/gta2.jpg */ "./src/assets/images/gta2.jpg");
-/* harmony import */ var _assets_images_gta_london_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/images/gta-london.jpg */ "./src/assets/images/gta-london.jpg");
-/* harmony import */ var _assets_images_gta3_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/images/gta3.jpg */ "./src/assets/images/gta3.jpg");
-/* harmony import */ var _assets_images_gta_vc_webp__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/images/gta-vc.webp */ "./src/assets/images/gta-vc.webp");
-/* harmony import */ var _assets_images_gta_sa_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/images/gta-sa.jpg */ "./src/assets/images/gta-sa.jpg");
-/* harmony import */ var _assets_images_gta4_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./assets/images/gta4.jpg */ "./src/assets/images/gta4.jpg");
-/* harmony import */ var _assets_images_nfs1_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./assets/images/nfs1.jpg */ "./src/assets/images/nfs1.jpg");
-/* harmony import */ var _assets_images_nfs2_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./assets/images/nfs2.jpg */ "./src/assets/images/nfs2.jpg");
-/* harmony import */ var _assets_images_forza_jpg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./assets/images/forza.jpg */ "./src/assets/images/forza.jpg");
-/* harmony import */ var _assets_images_burnout_jpg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./assets/images/burnout.jpg */ "./src/assets/images/burnout.jpg");
-/* harmony import */ var _assets_images_crash_team_racing_jpg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./assets/images/crash-team-racing.jpg */ "./src/assets/images/crash-team-racing.jpg");
-/* harmony import */ var _assets_images_project_cars_jpg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./assets/images/project-cars.jpg */ "./src/assets/images/project-cars.jpg");
+/* harmony import */ var _assets_images_gta2_cover_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/images/gta2-cover.jpg */ "./src/assets/images/gta2-cover.jpg");
+/* harmony import */ var _assets_images_gta2_landscape_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/images/gta2-landscape.jpg */ "./src/assets/images/gta2-landscape.jpg");
+/* harmony import */ var _assets_audio_gta2_mp3__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/audio/gta2.mp3 */ "./src/assets/audio/gta2.mp3");
+/* harmony import */ var _assets_images_gta_london_cover_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/images/gta-london-cover.jpg */ "./src/assets/images/gta-london-cover.jpg");
+/* harmony import */ var _assets_images_gta_london_landscape_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/images/gta-london-landscape.jpg */ "./src/assets/images/gta-london-landscape.jpg");
+/* harmony import */ var _assets_audio_gta_london_mp3__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./assets/audio/gta-london.mp3 */ "./src/assets/audio/gta-london.mp3");
+/* harmony import */ var _assets_images_gta3_cover_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./assets/images/gta3-cover.jpg */ "./src/assets/images/gta3-cover.jpg");
+/* harmony import */ var _assets_images_gta3_landscape_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./assets/images/gta3-landscape.jpg */ "./src/assets/images/gta3-landscape.jpg");
+/* harmony import */ var _assets_audio_gta3_mp3__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./assets/audio/gta3.mp3 */ "./src/assets/audio/gta3.mp3");
+/* harmony import */ var _assets_images_gta_vc_cover_webp__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./assets/images/gta-vc-cover.webp */ "./src/assets/images/gta-vc-cover.webp");
+/* harmony import */ var _assets_images_gta_vc_landscape_jpeg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./assets/images/gta-vc-landscape.jpeg */ "./src/assets/images/gta-vc-landscape.jpeg");
+/* harmony import */ var _assets_audio_gta_vc_mp3__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./assets/audio/gta-vc.mp3 */ "./src/assets/audio/gta-vc.mp3");
+/* harmony import */ var _assets_images_gta_sa_cover_jpg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./assets/images/gta-sa-cover.jpg */ "./src/assets/images/gta-sa-cover.jpg");
+/* harmony import */ var _assets_images_gta_sa_landscape_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./assets/images/gta-sa-landscape.png */ "./src/assets/images/gta-sa-landscape.png");
+/* harmony import */ var _assets_audio_gta_sa_mp3__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./assets/audio/gta-sa.mp3 */ "./src/assets/audio/gta-sa.mp3");
+/* harmony import */ var _assets_images_gta4_cover_jpg__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./assets/images/gta4-cover.jpg */ "./src/assets/images/gta4-cover.jpg");
+/* harmony import */ var _assets_images_gta4_landscape_jpg__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./assets/images/gta4-landscape.jpg */ "./src/assets/images/gta4-landscape.jpg");
+/* harmony import */ var _assets_audio_gta4_mp3__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./assets/audio/gta4.mp3 */ "./src/assets/audio/gta4.mp3");
+/* harmony import */ var _assets_images_nfs1_cover_jpg__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./assets/images/nfs1-cover.jpg */ "./src/assets/images/nfs1-cover.jpg");
+/* harmony import */ var _assets_images_nfs2_cover_jpg__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./assets/images/nfs2-cover.jpg */ "./src/assets/images/nfs2-cover.jpg");
+/* harmony import */ var _assets_images_forza_cover_jpg__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./assets/images/forza-cover.jpg */ "./src/assets/images/forza-cover.jpg");
+/* harmony import */ var _assets_images_burnout_cover_jpg__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./assets/images/burnout-cover.jpg */ "./src/assets/images/burnout-cover.jpg");
+/* harmony import */ var _assets_images_crash_team_racing_cover_jpg__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./assets/images/crash-team-racing-cover.jpg */ "./src/assets/images/crash-team-racing-cover.jpg");
+/* harmony import */ var _assets_images_project_cars_cover_jpg__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./assets/images/project-cars-cover.jpg */ "./src/assets/images/project-cars-cover.jpg");
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -39,73 +63,79 @@ __webpack_require__.r(__webpack_exports__);
 const gameData = [{
   name: 'Grand Theft Auto 2',
   category: 'warm-up',
-  image: _assets_images_gta2_jpg__WEBPACK_IMPORTED_MODULE_0__,
-  audio: '',
-  description: ''
+  cover: _assets_images_gta2_cover_jpg__WEBPACK_IMPORTED_MODULE_0__,
+  image: _assets_images_gta2_landscape_jpg__WEBPACK_IMPORTED_MODULE_1__,
+  audio: _assets_audio_gta2_mp3__WEBPACK_IMPORTED_MODULE_2__["default"],
+  description: 'Developed by DMA Design in October 1999. Set within a retrofuturistic metropolis known as "Anywhere City", the game focuses on players taking the role of a criminal as they roam an open world, conducting jobs for various crime syndicates and having free rein to do whatever they wish to achieve their goal.'
 }, {
   name: 'Grand Theft Auto: London',
   category: 'warm-up',
-  image: _assets_images_gta_london_jpg__WEBPACK_IMPORTED_MODULE_1__,
-  audio: '',
-  description: ''
+  cover: _assets_images_gta_london_cover_jpg__WEBPACK_IMPORTED_MODULE_3__,
+  image: _assets_images_gta_london_landscape_jpg__WEBPACK_IMPORTED_MODULE_4__,
+  audio: _assets_audio_gta_london_mp3__WEBPACK_IMPORTED_MODULE_5__["default"],
+  description: 'An expansion pack for the 1997 game Grand Theft Auto. The expansion takes place in a fictionalised version of London during the 1960s. Players assume the role of a criminal who works for several London-based criminal syndicates, and complete levels by achieving a set score, within an open-world environment.'
 }, {
   name: 'Grand Theft Auto III',
   category: 'warm-up',
-  image: _assets_images_gta3_jpg__WEBPACK_IMPORTED_MODULE_2__,
-  audio: '',
-  description: ''
+  cover: _assets_images_gta3_cover_jpg__WEBPACK_IMPORTED_MODULE_6__,
+  image: _assets_images_gta3_landscape_jpg__WEBPACK_IMPORTED_MODULE_7__,
+  audio: _assets_audio_gta3_mp3__WEBPACK_IMPORTED_MODULE_8__["default"],
+  description: 'Is a 2001 action-adventure game set within the fictional Liberty City (loosely based on New York City), the story follows Claude, a silent protagonist who, after being betrayed and left for dead by his girlfriend during a robbery, embarks on a quest for revenge that leads him to become entangled in a world of crime, drugs, gang warfare, and corruption.'
 }, {
   name: 'Grand Theft Auto: Vice City',
   category: 'warm-up',
-  image: _assets_images_gta_vc_webp__WEBPACK_IMPORTED_MODULE_3__,
-  audio: '',
-  description: ''
+  cover: _assets_images_gta_vc_cover_webp__WEBPACK_IMPORTED_MODULE_9__,
+  image: _assets_images_gta_vc_landscape_jpeg__WEBPACK_IMPORTED_MODULE_10__,
+  audio: _assets_audio_gta_vc_mp3__WEBPACK_IMPORTED_MODULE_11__["default"],
+  description: 'Is a 2002 action-adventure game set in 1986 within the fictional Vice City (based on Miami and Miami Beach), the story follows mobster Tommy Vercetti\'s rise to power after being released from prison and becoming caught up in an ambushed drug deal. He slowly builds a criminal empire by seizing power from other criminal organisations in the city.'
 }, {
   name: 'Grand Theft Auto: San Andreas',
   category: 'warm-up',
-  image: _assets_images_gta_sa_jpg__WEBPACK_IMPORTED_MODULE_4__,
-  audio: '',
-  description: ''
+  cover: _assets_images_gta_sa_cover_jpg__WEBPACK_IMPORTED_MODULE_12__,
+  image: _assets_images_gta_sa_landscape_png__WEBPACK_IMPORTED_MODULE_13__,
+  audio: _assets_audio_gta_sa_mp3__WEBPACK_IMPORTED_MODULE_14__["default"],
+  description: 'Is a 2004 action-adventure game. The story follows former gangster Carl "CJ" Johnson, who returns home following his mother\'s murder and is drawn back into his former gang and a life of crime while clashing with corrupt authorities and powerful criminals. Carl\'s journey takes him across the fictional U.S. state of San Andreas, which is heavily based on California and Nevada and encompasses three major cities: Los Santos (inspired by Los Angeles), San Fierro (San Francisco) and Las Venturas (Las Vegas).'
 }, {
   name: 'Grand Theft Auto IV',
   category: 'warm-up',
-  image: _assets_images_gta4_jpg__WEBPACK_IMPORTED_MODULE_5__,
-  audio: '',
-  description: ''
+  cover: _assets_images_gta4_cover_jpg__WEBPACK_IMPORTED_MODULE_15__,
+  image: _assets_images_gta4_landscape_jpg__WEBPACK_IMPORTED_MODULE_16__,
+  audio: _assets_audio_gta4_mp3__WEBPACK_IMPORTED_MODULE_17__["default"],
+  description: 'Is a 2008 action-adventure game set within the fictional Liberty City, based on New York City, the story follows Eastern European war veteran Niko Bellic and his attempts to escape his past while under pressure from high-profile criminals. The open world design lets players freely roam Liberty City, consisting of three main islands, and the neighbouring state of Alderney, which is based on New Jersey.'
 }, {
   name: 'Need for Speed: Underground',
   category: 'racing',
-  image: _assets_images_nfs1_jpg__WEBPACK_IMPORTED_MODULE_6__,
+  cover: _assets_images_nfs1_cover_jpg__WEBPACK_IMPORTED_MODULE_18__,
   audio: '',
   description: ''
 }, {
   name: 'Need for Speed: Underground 2',
   category: 'racing',
-  image: _assets_images_nfs2_jpg__WEBPACK_IMPORTED_MODULE_7__,
+  cover: _assets_images_nfs2_cover_jpg__WEBPACK_IMPORTED_MODULE_19__,
   audio: '',
   description: ''
 }, {
   name: 'Forza Horizon 5',
   category: 'racing',
-  image: _assets_images_forza_jpg__WEBPACK_IMPORTED_MODULE_8__,
+  cover: _assets_images_forza_cover_jpg__WEBPACK_IMPORTED_MODULE_20__,
   audio: '',
   description: ''
 }, {
   name: 'Burnout Paradise',
   category: 'racing',
-  image: _assets_images_burnout_jpg__WEBPACK_IMPORTED_MODULE_9__,
+  cover: _assets_images_burnout_cover_jpg__WEBPACK_IMPORTED_MODULE_21__,
   audio: '',
   description: ''
 }, {
   name: 'Crash Team Racing',
   category: 'racing',
-  image: _assets_images_crash_team_racing_jpg__WEBPACK_IMPORTED_MODULE_10__,
+  cover: _assets_images_crash_team_racing_cover_jpg__WEBPACK_IMPORTED_MODULE_22__,
   audio: '',
   description: ''
 }, {
   name: 'Project Cars',
   category: 'racing',
-  image: _assets_images_project_cars_jpg__WEBPACK_IMPORTED_MODULE_11__,
+  cover: _assets_images_project_cars_cover_jpg__WEBPACK_IMPORTED_MODULE_23__,
   audio: '',
   description: ''
 }];
@@ -135,7 +165,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_normalize_css__WEBPACK_IMPORTED_MODULE_2__["default"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "body {\n  position: relative;\n  min-height: 100vh;\n  /* overflow-y: hidden; */\n}\n\n.header {\n  display: flex;\n  justify-content: space-around;\n  border: 5px solid black;\n  border-top: none;\n  border-radius: 0 0 10px 10px;\n  align-items: center;\n  max-width: 1000px;\n  max-height: 80px;\n  margin: 0 auto;\n  background-color: rgba(255, 255, 255, 0.94);\n}\n.header img {\n  max-height: 80px;\n}\n\nnav {\n  height: 80px;\n}\n\n.navigation {\n  display: flex;\n  align-items: center;\n  list-style: none;\n  font-size: 20px;\n  text-transform: uppercase;\n  height: 100%;\n  gap: 30px;\n  padding: 0;\n  margin: 0;\n}\n.navigation .navigation__item {\n  cursor: pointer;\n}\n.navigation .navigation__item:hover {\n  transform: scale(1.1);\n}\n.navigation .navigation__item--active {\n  font-weight: bold;\n  color: red;\n}\n\n.main {\n  max-width: 1000px;\n  max-height: 499px;\n  height: 100vh;\n  border: 5px solid black;\n  border-radius: 10px;\n  margin: 20px auto;\n  background-color: rgba(255, 255, 255, 0.94);\n}\n\n.board {\n  font-size: 20px;\n  padding: 1%;\n}\n\n.categories {\n  display: flex;\n  justify-content: space-evenly;\n  margin-top: 20px;\n}\n.categories .categories__item {\n  cursor: pointer;\n  text-transform: uppercase;\n}\n.categories .categories__item:hover {\n  transform: scale(1.1);\n}\n.categories .categories__item--active {\n  color: red;\n  font-weight: bold;\n}\n\n.footer {\n  /* position: absolute;\n  bottom: 0; */\n  border: 5px solid black;\n  border-bottom: none;\n  border-radius: 10px 10px 0 0;\n  background-color: rgba(255, 255, 255, 0.94);\n  max-width: 1000px;\n  width: 100%;\n  max-height: 80px;\n  left: 50%;\n  /*  margin-left: -500px; */\n  margin: 0 auto;\n  margin-bottom: -5px;\n  display: flex;\n  justify-content: space-evenly;\n  align-items: center;\n}\n.footer img {\n  height: 80px;\n}", "",{"version":3,"sources":["webpack://./src/styles/styles.scss"],"names":[],"mappings":"AAEA;EACE,kBAAA;EACA,iBAAA;EACA,wBAAA;AAAF;;AAGA;EACE,aAAA;EACA,6BAAA;EACA,uBAAA;EACA,gBAAA;EACA,4BAAA;EACA,mBAAA;EACA,iBAAA;EACA,gBAAA;EACA,cAAA;EACA,2CAAA;AAAF;AAEE;EACE,gBAAA;AAAJ;;AAKA;EACE,YAAA;AAFF;;AAKA;EACE,aAAA;EACA,mBAAA;EACA,gBAAA;EACA,eAAA;EACA,yBAAA;EACA,YAAA;EACA,SAAA;EACA,UAAA;EACA,SAAA;AAFF;AAIE;EACE,eAAA;AAFJ;AAII;EACE,qBAAA;AAFN;AAOE;EACE,iBAAA;EACA,UAAA;AALJ;;AAUA;EACE,iBAAA;EACA,iBAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,iBAAA;EACA,2CAAA;AAPF;;AAUA;EACE,eAAA;EACA,WAAA;AAPF;;AAUA;EACE,aAAA;EACA,6BAAA;EACA,gBAAA;AAPF;AASE;EACE,eAAA;EACA,yBAAA;AAPJ;AASI;EACE,qBAAA;AAPN;AAWE;EACE,UAAA;EACA,iBAAA;AATJ;;AAcA;EACE;cAAA;EAEA,uBAAA;EACA,mBAAA;EACA,4BAAA;EACA,2CAAA;EACA,iBAAA;EACA,WAAA;EACA,gBAAA;EACA,SAAA;EACD,0BAAA;EACC,cAAA;EACA,mBAAA;EACA,aAAA;EACA,6BAAA;EACA,mBAAA;AAXF;AAaE;EACE,YAAA;AAXJ","sourcesContent":["@import './normalize.css';\r\n\r\nbody {\r\n  position: relative;\r\n  min-height: 100vh;\r\n  /* overflow-y: hidden; */\r\n}\r\n\r\n.header {\r\n  display: flex;\r\n  justify-content: space-around;\r\n  border: 5px solid black;\r\n  border-top: none;\r\n  border-radius: 0 0 10px 10px;\r\n  align-items: center;\r\n  max-width: 1000px;\r\n  max-height: 80px;\r\n  margin: 0 auto;\r\n  background-color: rgba(255, 255, 255, .94);\r\n  \r\n  img {\r\n    max-height: 80px;\r\n  }\r\n\r\n}\r\n\r\nnav {\r\n  height: 80px;\r\n}\r\n\r\n.navigation {\r\n  display: flex;\r\n  align-items: center;\r\n  list-style: none;\r\n  font-size: 20px;\r\n  text-transform: uppercase;\r\n  height: 100%;\r\n  gap: 30px;\r\n  padding: 0;\r\n  margin: 0;\r\n  \r\n  .navigation__item {\r\n    cursor: pointer;\r\n\r\n    &:hover {\r\n      transform: scale(1.1);\r\n    }\r\n\r\n  }\r\n\r\n  .navigation__item--active {\r\n    font-weight: bold;\r\n    color: red;\r\n  }\r\n\r\n}\r\n\r\n.main {\r\n  max-width: 1000px;\r\n  max-height: 499px;\r\n  height: 100vh;\r\n  border: 5px solid black;\r\n  border-radius: 10px;\r\n  margin: 20px auto;\r\n  background-color: rgba(255, 255, 255, .94);\r\n}\r\n\r\n.board {\r\n  font-size: 20px;\r\n  padding: 1%;\r\n}\r\n\r\n.categories {\r\n  display: flex;\r\n  justify-content: space-evenly;\r\n  margin-top: 20px;\r\n\r\n  .categories__item {\r\n    cursor: pointer;\r\n    text-transform: uppercase;\r\n\r\n    &:hover {\r\n      transform: scale(1.1);\r\n    }\r\n  }\r\n\r\n  .categories__item--active {\r\n    color: red;\r\n    font-weight: bold;\r\n  }\r\n\r\n}\r\n\r\n.footer {\r\n  /* position: absolute;\r\n  bottom: 0; */\r\n  border: 5px solid black;\r\n  border-bottom: none;\r\n  border-radius: 10px 10px 0 0;\r\n  background-color: rgba(255, 255, 255, .94);\r\n  max-width: 1000px;\r\n  width: 100%;\r\n  max-height: 80px;\r\n  left: 50%;\r\n /*  margin-left: -500px; */\r\n  margin: 0 auto;\r\n  margin-bottom: -5px;\r\n  display: flex;\r\n  justify-content: space-evenly;\r\n  align-items: center;\r\n\r\n  img {\r\n    height: 80px;\r\n  }\r\n\r\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  box-sizing: border-box;\n}\n\nbody {\n  min-height: 100vh;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  /* overflow-y: hidden; */\n}\n\n.header {\n  display: flex;\n  justify-content: space-around;\n  border: 2px solid black;\n  /* border-top: none; */\n  border-radius: 0 0 10px 10px;\n  align-items: center;\n  max-width: 1440px;\n  width: 100%;\n  max-height: 80px;\n  margin: 0 auto;\n  background-color: rgba(255, 255, 255, 0.94);\n}\n.header img {\n  max-height: 80px;\n}\n\nnav {\n  height: 80px;\n}\n\n.navigation {\n  display: flex;\n  align-items: center;\n  list-style: none;\n  font-size: 20px;\n  text-transform: uppercase;\n  height: 100%;\n  gap: 30px;\n  padding: 0;\n  margin: 0;\n}\n.navigation .navigation__item {\n  cursor: pointer;\n}\n.navigation .navigation__item:hover {\n  transform: scale(1.1);\n}\n.navigation .navigation__item--active {\n  font-weight: bold;\n  color: red;\n}\n\n.main {\n  max-width: 1440px;\n  border: 2px solid black;\n  border-radius: 10px;\n  margin: 20px auto;\n  background-color: rgba(255, 255, 255, 0.94);\n}\n.main .main__button {\n  border-radius: 5px;\n  display: block;\n  margin: 0 auto 20px;\n  font-size: 30px;\n}\n.main .main__button[disabled=false] {\n  cursor: pointer;\n}\n\n.board {\n  font-size: 20px;\n  padding: 1%;\n  max-width: 1440px;\n  width: 100vw;\n}\n\n.score {\n  border-bottom: 1px solid black;\n}\n\n.categories {\n  display: flex;\n  justify-content: space-evenly;\n  align-items: center;\n  gap: 3%;\n  margin-top: 20px;\n  border-bottom: 1px solid black;\n}\n.categories .categories__item {\n  cursor: pointer;\n  text-transform: uppercase;\n}\n.categories .categories__item:hover {\n  transform: scale(1.1);\n}\n.categories .categories__item--active {\n  color: red;\n  font-weight: bold;\n}\n\n.question {\n  margin-top: 20px;\n  padding-bottom: 20px;\n  display: flex;\n  border-bottom: 1px solid black;\n  gap: 5%;\n}\n.question .question__img {\n  width: 45%;\n  border: 1px solid black;\n  object-fit: cover;\n}\n.question .question__heading {\n  border-bottom: 1px solid black;\n}\n\n.answers {\n  border-bottom: 1px solid black;\n  margin-top: 20px;\n  padding-bottom: 20px;\n  display: flex;\n  gap: 5%;\n}\n\n.answers-list {\n  margin: 0;\n  width: 40%;\n  border-top: 1px solid black;\n  border-bottom: 1px solid black;\n}\n.answers-list .answers-list__item {\n  border-bottom: 1px solid black;\n  cursor: pointer;\n}\n.answers-list .answers-list__item::marker {\n  color: grey;\n  font-size: 30px;\n}\n.answers-list .answers-list__item:hover {\n  font-weight: bold;\n}\n.answers-list .answers-list__item:last-child {\n  border-bottom: none;\n}\n.answers-list .answers-list__item--correct {\n  border-bottom: 1px solid black;\n  cursor: pointer;\n  color: green;\n  font-weight: bold;\n}\n.answers-list .answers-list__item--correct::marker {\n  color: green;\n  font-size: 30px;\n}\n.answers-list .answers-list__item--correct:hover {\n  font-weight: bold;\n}\n.answers-list .answers-list__item--correct:last-child {\n  border-bottom: none;\n}\n.answers-list .answers-list__item--wrong {\n  border-bottom: 1px solid black;\n  cursor: pointer;\n  color: red;\n}\n.answers-list .answers-list__item--wrong::marker {\n  color: red;\n  font-size: 30px;\n}\n.answers-list .answers-list__item--wrong:hover {\n  font-weight: bold;\n}\n.answers-list .answers-list__item--wrong:last-child {\n  border-bottom: none;\n}\n\n.description {\n  width: 55%;\n  display: flex;\n  gap: 2%;\n}\n.description .description__cover {\n  max-width: 150px;\n  object-fit: contain;\n  cursor: pointer;\n}\n.description .description__cover:hover {\n  transform: scale(2);\n}\n.description .description__heading {\n  margin: 0;\n}\n\n.footer {\n  /* position: absolute;\n  bottom: 0; */\n  border: 2px solid black;\n  /* border-bottom: none; */\n  border-radius: 10px 10px 0 0;\n  background-color: rgba(255, 255, 255, 0.94);\n  max-width: 1440px;\n  width: 100%;\n  max-height: 80px;\n  left: 50%;\n  /*  margin-left: -500px; */\n  margin: 0 auto;\n  display: flex;\n  justify-content: space-evenly;\n  align-items: center;\n}\n.footer img {\n  height: 80px;\n}", "",{"version":3,"sources":["webpack://./src/styles/styles.scss"],"names":[],"mappings":"AAEA;EACE,sBAAA;AAAF;;AAGA;EACE,iBAAA;EACA,aAAA;EACA,sBAAA;EACA,8BAAA;EACA,wBAAA;AAAF;;AAGA;EACE,aAAA;EACA,6BAAA;EACA,uBAAA;EACA,sBAAA;EACA,4BAAA;EACA,mBAAA;EACA,iBAAA;EACA,WAAA;EACA,gBAAA;EACA,cAAA;EACA,2CAAA;AAAF;AAEE;EACE,gBAAA;AAAJ;;AAKA;EACE,YAAA;AAFF;;AAKA;EACE,aAAA;EACA,mBAAA;EACA,gBAAA;EACA,eAAA;EACA,yBAAA;EACA,YAAA;EACA,SAAA;EACA,UAAA;EACA,SAAA;AAFF;AAIE;EACE,eAAA;AAFJ;AAII;EACE,qBAAA;AAFN;AAOE;EACE,iBAAA;EACA,UAAA;AALJ;;AAUA;EACE,iBAAA;EACA,uBAAA;EACA,mBAAA;EACA,iBAAA;EACA,2CAAA;AAPF;AASE;EACE,kBAAA;EACA,cAAA;EACA,mBAAA;EACA,eAAA;AAPJ;AAUE;EACE,eAAA;AARJ;;AAaA;EACE,eAAA;EACA,WAAA;EACA,iBAAA;EACA,YAAA;AAVF;;AAaA;EACE,8BAAA;AAVF;;AAaA;EACE,aAAA;EACA,6BAAA;EACA,mBAAA;EACA,OAAA;EACA,gBAAA;EACA,8BAAA;AAVF;AAYE;EACE,eAAA;EACA,yBAAA;AAVJ;AAYI;EACE,qBAAA;AAVN;AAcE;EACE,UAAA;EACA,iBAAA;AAZJ;;AAiBA;EACE,gBAAA;EACA,oBAAA;EACA,aAAA;EACA,8BAAA;EACA,OAAA;AAdF;AAgBE;EACE,UAAA;EACA,uBAAA;EACA,iBAAA;AAdJ;AAiBE;EACE,8BAAA;AAfJ;;AAoBA;EACE,8BAAA;EACA,gBAAA;EACA,oBAAA;EACA,aAAA;EACA,OAAA;AAjBF;;AAoBA;EACE,SAAA;EACA,UAAA;EACA,2BAAA;EACA,8BAAA;AAjBF;AAmBE;EACE,8BAAA;EACA,eAAA;AAjBJ;AAmBI;EACE,WAAA;EACA,eAAA;AAjBN;AAoBI;EACE,iBAAA;AAlBN;AAqBI;EACE,mBAAA;AAnBN;AAwBE;EACE,8BAAA;EACA,eAAA;EACA,YAAA;EACA,iBAAA;AAtBJ;AAwBI;EACE,YAAA;EACA,eAAA;AAtBN;AAyBI;EACE,iBAAA;AAvBN;AA0BI;EACE,mBAAA;AAxBN;AA6BE;EACE,8BAAA;EACA,eAAA;EACA,UAAA;AA3BJ;AA6BI;EACE,UAAA;EACA,eAAA;AA3BN;AA8BI;EACE,iBAAA;AA5BN;AA+BI;EACE,mBAAA;AA7BN;;AAoCA;EACE,UAAA;EACA,aAAA;EACA,OAAA;AAjCF;AAmCE;EACE,gBAAA;EACA,mBAAA;EACA,eAAA;AAjCJ;AAmCI;EACE,mBAAA;AAjCN;AAqCE;EACE,SAAA;AAnCJ;;AAwCA;EACE;cAAA;EAEA,uBAAA;EACA,yBAAA;EACA,4BAAA;EACA,2CAAA;EACA,iBAAA;EACA,WAAA;EACA,gBAAA;EACA,SAAA;EACD,0BAAA;EACC,cAAA;EACA,aAAA;EACA,6BAAA;EACA,mBAAA;AArCF;AAuCE;EACE,YAAA;AArCJ","sourcesContent":["@import './normalize.css';\r\n\r\n* {\r\n  box-sizing: border-box;\r\n}\r\n\r\nbody {\r\n  min-height: 100vh;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: space-between;\r\n  /* overflow-y: hidden; */\r\n}\r\n\r\n.header {\r\n  display: flex;\r\n  justify-content: space-around;\r\n  border: 2px solid black;\r\n  /* border-top: none; */\r\n  border-radius: 0 0 10px 10px;\r\n  align-items: center;\r\n  max-width: 1440px;\r\n  width: 100%;\r\n  max-height: 80px;\r\n  margin: 0 auto;\r\n  background-color: rgba(255, 255, 255, .94);\r\n  \r\n  img {\r\n    max-height: 80px;\r\n  }\r\n\r\n}\r\n\r\nnav {\r\n  height: 80px;\r\n}\r\n\r\n.navigation {\r\n  display: flex;\r\n  align-items: center;\r\n  list-style: none;\r\n  font-size: 20px;\r\n  text-transform: uppercase;\r\n  height: 100%;\r\n  gap: 30px;\r\n  padding: 0;\r\n  margin: 0;\r\n  \r\n  .navigation__item {\r\n    cursor: pointer;\r\n\r\n    &:hover {\r\n      transform: scale(1.1);\r\n    }\r\n\r\n  }\r\n\r\n  .navigation__item--active {\r\n    font-weight: bold;\r\n    color: red;\r\n  }\r\n\r\n}\r\n\r\n.main {\r\n  max-width: 1440px;\r\n  border: 2px solid black;\r\n  border-radius: 10px;\r\n  margin: 20px auto;\r\n  background-color: rgba(255, 255, 255, .94);\r\n\r\n  .main__button {\r\n    border-radius: 5px;\r\n    display: block;\r\n    margin: 0 auto 20px;\r\n    font-size: 30px;\r\n  }\r\n\r\n  .main__button[disabled = 'false'] {\r\n    cursor: pointer;\r\n  }\r\n\r\n}\r\n\r\n.board {\r\n  font-size: 20px;\r\n  padding: 1%;\r\n  max-width: 1440px;\r\n  width: 100vw;\r\n}\r\n\r\n.score {\r\n  border-bottom: 1px solid black;\r\n}\r\n\r\n.categories {\r\n  display: flex;\r\n  justify-content: space-evenly;\r\n  align-items: center;\r\n  gap: 3%;\r\n  margin-top: 20px;\r\n  border-bottom: 1px solid black;\r\n\r\n  .categories__item {\r\n    cursor: pointer;\r\n    text-transform: uppercase;\r\n\r\n    &:hover {\r\n      transform: scale(1.1);\r\n    }\r\n  }\r\n\r\n  .categories__item--active {\r\n    color: red;\r\n    font-weight: bold;\r\n  }\r\n\r\n}\r\n\r\n.question {\r\n  margin-top: 20px;\r\n  padding-bottom: 20px;\r\n  display: flex;\r\n  border-bottom: 1px solid black;\r\n  gap: 5%;\r\n\r\n  .question__img {\r\n    width: 45%;\r\n    border: 1px solid black;\r\n    object-fit: cover;\r\n  }\r\n\r\n  .question__heading {\r\n    border-bottom: 1px solid black;\r\n  }\r\n\r\n}\r\n\r\n.answers {\r\n  border-bottom: 1px solid black;\r\n  margin-top: 20px;\r\n  padding-bottom: 20px;\r\n  display: flex;\r\n  gap: 5%;\r\n}\r\n\r\n.answers-list {\r\n  margin: 0;\r\n  width: 40%;\r\n  border-top: 1px solid black;\r\n  border-bottom: 1px solid black;\r\n\r\n  .answers-list__item {\r\n    border-bottom: 1px solid black;\r\n    cursor: pointer;\r\n\r\n    &::marker {\r\n      color: grey;\r\n      font-size: 30px;\r\n    }\r\n\r\n    &:hover {\r\n      font-weight: bold;\r\n    }\r\n\r\n    &:last-child {\r\n      border-bottom: none;\r\n    }\r\n\r\n  }\r\n\r\n  .answers-list__item--correct {\r\n    border-bottom: 1px solid black;\r\n    cursor: pointer;\r\n    color: green;\r\n    font-weight: bold;\r\n  \r\n    &::marker {\r\n      color: green;\r\n      font-size: 30px;\r\n    }\r\n  \r\n    &:hover {\r\n      font-weight: bold;\r\n    }\r\n  \r\n    &:last-child {\r\n      border-bottom: none;\r\n    }\r\n    \r\n  }\r\n  \r\n  .answers-list__item--wrong {\r\n    border-bottom: 1px solid black;\r\n    cursor: pointer;\r\n    color: red;\r\n  \r\n    &::marker {\r\n      color: red;\r\n      font-size: 30px;\r\n    }\r\n  \r\n    &:hover {\r\n      font-weight: bold;\r\n    }\r\n  \r\n    &:last-child {\r\n      border-bottom: none;\r\n    }\r\n  \r\n  }\r\n\r\n}\r\n\r\n.description {\r\n  width: 55%;\r\n  display: flex;\r\n  gap: 2%;\r\n\r\n  .description__cover {\r\n    max-width: 150px;\r\n    object-fit: contain;\r\n    cursor: pointer;\r\n\r\n    &:hover {\r\n      transform: scale(2);\r\n    }\r\n  }\r\n\r\n  .description__heading {\r\n    margin: 0;\r\n  }\r\n\r\n}\r\n\r\n.footer {\r\n  /* position: absolute;\r\n  bottom: 0; */\r\n  border: 2px solid black;\r\n  /* border-bottom: none; */\r\n  border-radius: 10px 10px 0 0;\r\n  background-color: rgba(255, 255, 255, .94);\r\n  max-width: 1440px;\r\n  width: 100%;\r\n  max-height: 80px;\r\n  left: 50%;\r\n /*  margin-left: -500px; */\r\n  margin: 0 auto;\r\n  display: flex;\r\n  justify-content: space-evenly;\r\n  align-items: center;\r\n\r\n  img {\r\n    height: 80px;\r\n  }  \r\n\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -307,6 +337,118 @@ module.exports = function (item) {
 
   return [content].join("\n");
 };
+
+/***/ }),
+
+/***/ "./src/assets/audio/correct.mp3":
+/*!**************************************!*\
+  !*** ./src/assets/audio/correct.mp3 ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "1150d2c331b085200e053a1e7df373f7.mp3");
+
+/***/ }),
+
+/***/ "./src/assets/audio/gta-london.mp3":
+/*!*****************************************!*\
+  !*** ./src/assets/audio/gta-london.mp3 ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "3c783d25bd343dd30aa5691ea0a43dad.mp3");
+
+/***/ }),
+
+/***/ "./src/assets/audio/gta-sa.mp3":
+/*!*************************************!*\
+  !*** ./src/assets/audio/gta-sa.mp3 ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "ffe117d86848a5a4628732059c0b5eb8.mp3");
+
+/***/ }),
+
+/***/ "./src/assets/audio/gta-vc.mp3":
+/*!*************************************!*\
+  !*** ./src/assets/audio/gta-vc.mp3 ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "2cf8c935cef4edaff338f28e82d943d5.mp3");
+
+/***/ }),
+
+/***/ "./src/assets/audio/gta2.mp3":
+/*!***********************************!*\
+  !*** ./src/assets/audio/gta2.mp3 ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "53c1809bfa07b2b142661a2e20f8dc1f.mp3");
+
+/***/ }),
+
+/***/ "./src/assets/audio/gta3.mp3":
+/*!***********************************!*\
+  !*** ./src/assets/audio/gta3.mp3 ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "7f0781a5199a61c2dadece01728a36b0.mp3");
+
+/***/ }),
+
+/***/ "./src/assets/audio/gta4.mp3":
+/*!***********************************!*\
+  !*** ./src/assets/audio/gta4.mp3 ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "4ce33c7853dcf0e0ee8912c537f45b19.mp3");
+
+/***/ }),
+
+/***/ "./src/assets/audio/wrong.mp3":
+/*!************************************!*\
+  !*** ./src/assets/audio/wrong.mp3 ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "34b9518d84b306b5cdb361e83560b599.mp3");
 
 /***/ }),
 
@@ -697,33 +839,43 @@ module.exports = __webpack_require__.p + "assets/background.jpg";
 
 /***/ }),
 
-/***/ "./src/assets/images/burnout.jpg":
-/*!***************************************!*\
-  !*** ./src/assets/images/burnout.jpg ***!
-  \***************************************/
+/***/ "./src/assets/images/burnout-cover.jpg":
+/*!*********************************************!*\
+  !*** ./src/assets/images/burnout-cover.jpg ***!
+  \*********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/burnout.jpg";
+module.exports = __webpack_require__.p + "assets/burnout-cover.jpg";
 
 /***/ }),
 
-/***/ "./src/assets/images/crash-team-racing.jpg":
-/*!*************************************************!*\
-  !*** ./src/assets/images/crash-team-racing.jpg ***!
-  \*************************************************/
+/***/ "./src/assets/images/crash-team-racing-cover.jpg":
+/*!*******************************************************!*\
+  !*** ./src/assets/images/crash-team-racing-cover.jpg ***!
+  \*******************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/crash-team-racing.jpg";
+module.exports = __webpack_require__.p + "assets/crash-team-racing-cover.jpg";
 
 /***/ }),
 
-/***/ "./src/assets/images/forza.jpg":
-/*!*************************************!*\
-  !*** ./src/assets/images/forza.jpg ***!
-  \*************************************/
+/***/ "./src/assets/images/default-img.png":
+/*!*******************************************!*\
+  !*** ./src/assets/images/default-img.png ***!
+  \*******************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/forza.jpg";
+module.exports = __webpack_require__.p + "assets/default-img.png";
+
+/***/ }),
+
+/***/ "./src/assets/images/forza-cover.jpg":
+/*!*******************************************!*\
+  !*** ./src/assets/images/forza-cover.jpg ***!
+  \*******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/forza-cover.jpg";
 
 /***/ }),
 
@@ -737,63 +889,123 @@ module.exports = __webpack_require__.p + "assets/github.png";
 
 /***/ }),
 
-/***/ "./src/assets/images/gta-london.jpg":
+/***/ "./src/assets/images/gta-london-cover.jpg":
+/*!************************************************!*\
+  !*** ./src/assets/images/gta-london-cover.jpg ***!
+  \************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/gta-london-cover.jpg";
+
+/***/ }),
+
+/***/ "./src/assets/images/gta-london-landscape.jpg":
+/*!****************************************************!*\
+  !*** ./src/assets/images/gta-london-landscape.jpg ***!
+  \****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/gta-london-landscape.jpg";
+
+/***/ }),
+
+/***/ "./src/assets/images/gta-sa-cover.jpg":
+/*!********************************************!*\
+  !*** ./src/assets/images/gta-sa-cover.jpg ***!
+  \********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/gta-sa-cover.jpg";
+
+/***/ }),
+
+/***/ "./src/assets/images/gta-sa-landscape.png":
+/*!************************************************!*\
+  !*** ./src/assets/images/gta-sa-landscape.png ***!
+  \************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/gta-sa-landscape.png";
+
+/***/ }),
+
+/***/ "./src/assets/images/gta-vc-cover.webp":
+/*!*********************************************!*\
+  !*** ./src/assets/images/gta-vc-cover.webp ***!
+  \*********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/gta-vc-cover.webp";
+
+/***/ }),
+
+/***/ "./src/assets/images/gta-vc-landscape.jpeg":
+/*!*************************************************!*\
+  !*** ./src/assets/images/gta-vc-landscape.jpeg ***!
+  \*************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/gta-vc-landscape.jpeg";
+
+/***/ }),
+
+/***/ "./src/assets/images/gta2-cover.jpg":
 /*!******************************************!*\
-  !*** ./src/assets/images/gta-london.jpg ***!
+  !*** ./src/assets/images/gta2-cover.jpg ***!
   \******************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/gta-london.jpg";
+module.exports = __webpack_require__.p + "assets/gta2-cover.jpg";
 
 /***/ }),
 
-/***/ "./src/assets/images/gta-sa.jpg":
-/*!**************************************!*\
-  !*** ./src/assets/images/gta-sa.jpg ***!
-  \**************************************/
+/***/ "./src/assets/images/gta2-landscape.jpg":
+/*!**********************************************!*\
+  !*** ./src/assets/images/gta2-landscape.jpg ***!
+  \**********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/gta-sa.jpg";
+module.exports = __webpack_require__.p + "assets/gta2-landscape.jpg";
 
 /***/ }),
 
-/***/ "./src/assets/images/gta-vc.webp":
-/*!***************************************!*\
-  !*** ./src/assets/images/gta-vc.webp ***!
-  \***************************************/
+/***/ "./src/assets/images/gta3-cover.jpg":
+/*!******************************************!*\
+  !*** ./src/assets/images/gta3-cover.jpg ***!
+  \******************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/gta-vc.webp";
+module.exports = __webpack_require__.p + "assets/gta3-cover.jpg";
 
 /***/ }),
 
-/***/ "./src/assets/images/gta2.jpg":
-/*!************************************!*\
-  !*** ./src/assets/images/gta2.jpg ***!
-  \************************************/
+/***/ "./src/assets/images/gta3-landscape.jpg":
+/*!**********************************************!*\
+  !*** ./src/assets/images/gta3-landscape.jpg ***!
+  \**********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/gta2.jpg";
+module.exports = __webpack_require__.p + "assets/gta3-landscape.jpg";
 
 /***/ }),
 
-/***/ "./src/assets/images/gta3.jpg":
-/*!************************************!*\
-  !*** ./src/assets/images/gta3.jpg ***!
-  \************************************/
+/***/ "./src/assets/images/gta4-cover.jpg":
+/*!******************************************!*\
+  !*** ./src/assets/images/gta4-cover.jpg ***!
+  \******************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/gta3.jpg";
+module.exports = __webpack_require__.p + "assets/gta4-cover.jpg";
 
 /***/ }),
 
-/***/ "./src/assets/images/gta4.jpg":
-/*!************************************!*\
-  !*** ./src/assets/images/gta4.jpg ***!
-  \************************************/
+/***/ "./src/assets/images/gta4-landscape.jpg":
+/*!**********************************************!*\
+  !*** ./src/assets/images/gta4-landscape.jpg ***!
+  \**********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/gta4.jpg";
+module.exports = __webpack_require__.p + "assets/gta4-landscape.jpg";
 
 /***/ }),
 
@@ -807,33 +1019,33 @@ module.exports = __webpack_require__.p + "assets/logo.png";
 
 /***/ }),
 
-/***/ "./src/assets/images/nfs1.jpg":
-/*!************************************!*\
-  !*** ./src/assets/images/nfs1.jpg ***!
-  \************************************/
+/***/ "./src/assets/images/nfs1-cover.jpg":
+/*!******************************************!*\
+  !*** ./src/assets/images/nfs1-cover.jpg ***!
+  \******************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/nfs1.jpg";
+module.exports = __webpack_require__.p + "assets/nfs1-cover.jpg";
 
 /***/ }),
 
-/***/ "./src/assets/images/nfs2.jpg":
-/*!************************************!*\
-  !*** ./src/assets/images/nfs2.jpg ***!
-  \************************************/
+/***/ "./src/assets/images/nfs2-cover.jpg":
+/*!******************************************!*\
+  !*** ./src/assets/images/nfs2-cover.jpg ***!
+  \******************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/nfs2.jpg";
+module.exports = __webpack_require__.p + "assets/nfs2-cover.jpg";
 
 /***/ }),
 
-/***/ "./src/assets/images/project-cars.jpg":
-/*!********************************************!*\
-  !*** ./src/assets/images/project-cars.jpg ***!
-  \********************************************/
+/***/ "./src/assets/images/project-cars-cover.jpg":
+/*!**************************************************!*\
+  !*** ./src/assets/images/project-cars-cover.jpg ***!
+  \**************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/project-cars.jpg";
+module.exports = __webpack_require__.p + "assets/project-cars-cover.jpg";
 
 /***/ }),
 
@@ -965,7 +1177,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_images_logo_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/images/logo.png */ "./src/assets/images/logo.png");
 /* harmony import */ var _assets_images_github_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/images/github.png */ "./src/assets/images/github.png");
 /* harmony import */ var _assets_images_rs_school_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./assets/images/rs-school.svg */ "./src/assets/images/rs-school.svg");
-/* harmony import */ var _gamesData__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./gamesData */ "./src/gamesData.js");
+/* harmony import */ var _assets_images_default_img_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./assets/images/default-img.png */ "./src/assets/images/default-img.png");
+/* harmony import */ var _gamesData__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./gamesData */ "./src/gamesData.js");
+/* harmony import */ var _assets_audio_wrong_mp3__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./assets/audio/wrong.mp3 */ "./src/assets/audio/wrong.mp3");
+/* harmony import */ var _assets_audio_correct_mp3__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./assets/audio/correct.mp3 */ "./src/assets/audio/correct.mp3");
+
+
+
 
 
 
@@ -974,13 +1192,111 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let currentPage = 'home';
+let currentCategory = 'warm-up';
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(Math.random() * (i + 1));
+    const temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+  }
+}
+let currentAnswers = [];
+_gamesData__WEBPACK_IMPORTED_MODULE_7__["default"].forEach(elem => {
+  if (elem.category === currentCategory) currentAnswers.push(elem);
+});
+shuffleArray(currentAnswers);
+let currentQuestion = currentAnswers[Math.floor(currentAnswers.length * Math.random())];
+let isAnswered = false;
+let scores = 5;
+let isPaused = false;
+function createQuestion() {
+  const questionSection = document.createElement('section');
+  questionSection.className = 'question';
+  const defaultImg = new Image();
+  defaultImg.className = 'question__img';
+  defaultImg.src = _assets_images_default_img_png__WEBPACK_IMPORTED_MODULE_6__;
+  questionSection.append(defaultImg);
+  const question = document.createElement('article');
+  const heading = document.createElement('h3');
+  heading.className = 'question__heading';
+  heading.textContent = '****';
+  question.append(heading);
+  const audio = new Audio();
+  audio.src = currentQuestion.audio;
+  audio.controls = true;
+  question.append(audio);
+  questionSection.append(question);
+  return questionSection;
+}
+function createAnswers() {
+  const answersSection = document.createElement('section');
+  answersSection.className = 'answers';
+  const description = document.createElement('article');
+  description.className = 'description';
+  description.innerHTML = 'Listen to the main theme from the video game. Name it.';
+  const answersList = document.createElement('ul');
+  answersList.className = 'answers-list';
+  for (let i = 0; i < 6; i += 1) {
+    const answer = document.createElement('li');
+    answer.className = 'answers-list__item';
+    answer.innerHTML = currentAnswers[i].name;
+    answer.addEventListener('click', () => {
+      if (!isAnswered) {
+        if (currentAnswers[i] === currentQuestion) {
+          answer.className = 'answers-list__item--correct';
+          const correct = new Audio();
+          correct.src = _assets_audio_correct_mp3__WEBPACK_IMPORTED_MODULE_9__["default"];
+          correct.play();
+          isAnswered = true;
+          const questionImg = document.querySelector('.question__img');
+          questionImg.src = currentQuestion.image;
+          const questionHeading = document.querySelector('.question__heading');
+          questionHeading.innerHTML = currentQuestion.name;
+        } else {
+          answer.className = 'answers-list__item--wrong';
+          const wrong = new Audio();
+          wrong.src = _assets_audio_wrong_mp3__WEBPACK_IMPORTED_MODULE_8__["default"];
+          wrong.play();
+          scores -= 1;
+        }
+      }
+      description.innerHTML = '';
+      const cover = new Image();
+      cover.className = 'description__cover';
+      cover.src = currentAnswers[i].cover;
+      description.append(cover);
+      const container = document.createElement('div');
+      const heading = document.createElement('h4');
+      heading.className = 'description__heading';
+      heading.innerHTML = currentAnswers[i].name;
+      container.append(heading);
+      const text = document.createElement('p');
+      text.innerHTML = currentAnswers[i].description;
+      container.append(text);
+      const audio = new Audio();
+      audio.src = currentAnswers[i].audio;
+      audio.controls = true;
+      container.append(audio);
+      description.append(container);
+    });
+    answersList.append(answer);
+  }
+  answersSection.append(answersList);
+  answersSection.append(description);
+  return answersSection;
+}
 function createBoard() {
   const board = document.createElement('div');
   board.className = 'board';
   const score = document.createElement('div');
   score.className = 'score';
-  score.innerHTML = 'Score: 0';
-  board.appendChild(score);
+  score.innerHTML = 'Score: ';
+  const scoreNum = document.createElement('span');
+  scoreNum.innerHTML = '0';
+  scoreNum.className = 'scoreNum';
+  score.append(scoreNum);
+  board.append(score);
   const categoriesContainer = document.createElement('div');
   categoriesContainer.className = 'categories';
   const categories = ['warm-up', 'racing', 'shooter', 'cyberpunk', 'rpg', 'platformer'];
@@ -989,9 +1305,13 @@ function createBoard() {
     category.className = 'categories__item';
     if (i === 0) category.classList.add('categories__item--active');
     category.innerHTML = categories[i];
-    categoriesContainer.appendChild(category);
+    categoriesContainer.append(category);
   }
-  board.appendChild(categoriesContainer);
+  board.append(categoriesContainer);
+  const question = createQuestion();
+  board.append(question);
+  const answers = createAnswers();
+  board.append(answers);
   return board;
 }
 function createHeader() {
@@ -999,7 +1319,7 @@ function createHeader() {
   header.className = 'header';
   const logo = new Image();
   logo.src = _assets_images_logo_png__WEBPACK_IMPORTED_MODULE_3__;
-  header.appendChild(logo);
+  header.append(logo);
   const nav = document.createElement('nav');
   const list = document.createElement('ul');
   list.className = 'navigation';
@@ -1013,12 +1333,20 @@ function createHeader() {
       list.childNodes.forEach(elem => elem.classList.remove('navigation__item--active'));
       event.target.classList.add('navigation__item--active');
       currentPage = event.target.innerHTML;
-      if (event.target.innerHTML === 'quiz') document.querySelector('.main').appendChild(createBoard());
+      if (event.target.innerHTML === 'quiz') {
+        document.querySelector('.main').append(createBoard());
+        const button = document.createElement('button');
+        button.innerHTML = 'Next Level';
+        button.className = 'main__button';
+        button.disabled = true;
+        document.querySelector('.main').append(button);
+      }
+      ;
     });
-    list.appendChild(item);
+    list.append(item);
   }
-  nav.appendChild(list);
-  header.appendChild(nav);
+  nav.append(list);
+  header.append(nav);
   return header;
 }
 function createMain() {
@@ -1034,30 +1362,44 @@ function createFooter() {
   rsLink.target = '_blank';
   const rsschool = new Image();
   rsschool.src = _assets_images_rs_school_svg__WEBPACK_IMPORTED_MODULE_5__;
-  rsLink.appendChild(rsschool);
-  footer.appendChild(rsLink);
+  rsLink.append(rsschool);
+  footer.append(rsLink);
   const span = document.createElement('span');
   span.innerHTML = 'Valentin Berezhnykh, 2022';
-  footer.appendChild(span);
+  footer.append(span);
   const githubLink = document.createElement('a');
   githubLink.href = 'https://github.com/vberezhnykh';
   githubLink.target = '_blank';
   const github = new Image();
   github.src = _assets_images_github_png__WEBPACK_IMPORTED_MODULE_4__;
-  githubLink.appendChild(github);
-  footer.appendChild(githubLink);
+  githubLink.append(github);
+  footer.append(githubLink);
   return footer;
 }
 function createStartingPage() {
   document.body.style.backgroundImage = `url(${_assets_images_background_jpg__WEBPACK_IMPORTED_MODULE_2__})`;
   const header = createHeader();
-  document.body.appendChild(header);
+  document.body.append(header);
   const main = createMain();
-  document.body.appendChild(main);
+  document.body.append(main);
   const footer = createFooter();
-  document.body.appendChild(footer);
+  document.body.append(footer);
 }
 window.onload = createStartingPage;
+window.addEventListener('load', () => {
+  setInterval(() => {
+    const button = document.querySelector('.main__button');
+    if (!isPaused) {
+      if (isAnswered) {
+        const scoreNum = document.querySelector('.scoreNum');
+        scoreNum.innerHTML = parseInt(scoreNum.innerHTML, 10) + scores;
+        scores = 5;
+        isPaused = true;
+        button.disabled = false;
+      } else button.disabled = true;
+    }
+  }, 1000);
+});
 })();
 
 /******/ })()
