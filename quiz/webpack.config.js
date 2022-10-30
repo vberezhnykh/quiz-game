@@ -22,7 +22,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     clean: true,
     filename: '[name].js',
-    assetModuleFilename: 'assets/[name][ext]'
+    /* assetModuleFilename: 'assets/[name][ext]' */
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -80,6 +80,9 @@ module.exports = {
           }
         ],
         type: 'asset/resource',
+        generator: {
+          filename: 'assets/images/[name][ext]'
+        }
       },
       {
         test: /\.m?js$/i,
@@ -93,7 +96,10 @@ module.exports = {
       },
       {
         test: /\.mp3$/,
-        loader: 'file-loader',
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/audio/[name][ext]'
+        }
       }
     ],
   },

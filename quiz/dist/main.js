@@ -89,84 +89,84 @@ const gameData = [{
   category: 'warm-up',
   cover: _assets_images_gta2_cover_jpg__WEBPACK_IMPORTED_MODULE_0__,
   image: _assets_images_gta2_landscape_jpg__WEBPACK_IMPORTED_MODULE_1__,
-  audio: _assets_audio_gta2_mp3__WEBPACK_IMPORTED_MODULE_2__["default"],
+  audio: _assets_audio_gta2_mp3__WEBPACK_IMPORTED_MODULE_2__,
   description: 'Developed by DMA Design in October 1999. Set within a retrofuturistic metropolis known as "Anywhere City", the game focuses on players taking the role of a criminal as they roam an open world, conducting jobs for various crime syndicates and having free rein to do whatever they wish to achieve their goal.'
 }, {
   name: 'Grand Theft Auto: London',
   category: 'warm-up',
   cover: _assets_images_gta_london_cover_jpg__WEBPACK_IMPORTED_MODULE_3__,
   image: _assets_images_gta_london_landscape_jpg__WEBPACK_IMPORTED_MODULE_4__,
-  audio: _assets_audio_gta_london_mp3__WEBPACK_IMPORTED_MODULE_5__["default"],
+  audio: _assets_audio_gta_london_mp3__WEBPACK_IMPORTED_MODULE_5__,
   description: 'An expansion pack for the 1997 game Grand Theft Auto. The expansion takes place in a fictionalised version of London during the 1960s. Players assume the role of a criminal who works for several London-based criminal syndicates, and complete levels by achieving a set score, within an open-world environment.'
 }, {
   name: 'Grand Theft Auto III',
   category: 'warm-up',
   cover: _assets_images_gta3_cover_jpg__WEBPACK_IMPORTED_MODULE_6__,
   image: _assets_images_gta3_landscape_jpg__WEBPACK_IMPORTED_MODULE_7__,
-  audio: _assets_audio_gta3_mp3__WEBPACK_IMPORTED_MODULE_8__["default"],
+  audio: _assets_audio_gta3_mp3__WEBPACK_IMPORTED_MODULE_8__,
   description: 'Is a 2001 action-adventure game set within the fictional Liberty City (loosely based on New York City), the story follows Claude, a silent protagonist who, after being betrayed and left for dead by his girlfriend during a robbery, embarks on a quest for revenge that leads him to become entangled in a world of crime, drugs, gang warfare, and corruption.'
 }, {
   name: 'Grand Theft Auto: Vice City',
   category: 'warm-up',
   cover: _assets_images_gta_vc_cover_webp__WEBPACK_IMPORTED_MODULE_9__,
   image: _assets_images_gta_vc_landscape_jpeg__WEBPACK_IMPORTED_MODULE_10__,
-  audio: _assets_audio_gta_vc_mp3__WEBPACK_IMPORTED_MODULE_11__["default"],
+  audio: _assets_audio_gta_vc_mp3__WEBPACK_IMPORTED_MODULE_11__,
   description: 'Is a 2002 action-adventure game set in 1986 within the fictional Vice City (based on Miami and Miami Beach), the story follows mobster Tommy Vercetti\'s rise to power after being released from prison and becoming caught up in an ambushed drug deal. He slowly builds a criminal empire by seizing power from other criminal organisations in the city.'
 }, {
   name: 'Grand Theft Auto: San Andreas',
   category: 'warm-up',
   cover: _assets_images_gta_sa_cover_jpg__WEBPACK_IMPORTED_MODULE_12__,
   image: _assets_images_gta_sa_landscape_png__WEBPACK_IMPORTED_MODULE_13__,
-  audio: _assets_audio_gta_sa_mp3__WEBPACK_IMPORTED_MODULE_14__["default"],
+  audio: _assets_audio_gta_sa_mp3__WEBPACK_IMPORTED_MODULE_14__,
   description: 'Is a 2004 action-adventure game. The story follows former gangster Carl "CJ" Johnson, who returns home following his mother\'s murder and is drawn back into his former gang and a life of crime while clashing with corrupt authorities and powerful criminals. Carl\'s journey takes him across the fictional U.S. state of San Andreas, which is heavily based on California and Nevada and encompasses three major cities: Los Santos (inspired by Los Angeles), San Fierro (San Francisco) and Las Venturas (Las Vegas).'
 }, {
   name: 'Grand Theft Auto IV',
   category: 'warm-up',
   cover: _assets_images_gta4_cover_jpg__WEBPACK_IMPORTED_MODULE_15__,
   image: _assets_images_gta4_landscape_jpg__WEBPACK_IMPORTED_MODULE_16__,
-  audio: _assets_audio_gta4_mp3__WEBPACK_IMPORTED_MODULE_17__["default"],
+  audio: _assets_audio_gta4_mp3__WEBPACK_IMPORTED_MODULE_17__,
   description: 'Is a 2008 action-adventure game set within the fictional Liberty City, based on New York City, the story follows Eastern European war veteran Niko Bellic and his attempts to escape his past while under pressure from high-profile criminals. The open world design lets players freely roam Liberty City, consisting of three main islands, and the neighbouring state of Alderney, which is based on New Jersey.'
 }, {
   name: 'Need for Speed: Underground',
   category: 'racing',
   cover: _assets_images_nfs1_cover_jpg__WEBPACK_IMPORTED_MODULE_18__,
   image: _assets_images_nfs1_landscape_jpg__WEBPACK_IMPORTED_MODULE_19__,
-  audio: _assets_audio_nfs1_mp3__WEBPACK_IMPORTED_MODULE_20__["default"],
+  audio: _assets_audio_nfs1_mp3__WEBPACK_IMPORTED_MODULE_20__,
   description: 'Is a 2003 racing video game. It was the first game in the series to offer a career mode featuring a storyline, and a garage mode that allowed players to fully customize their cars with a large variety of brand-name performance and visual upgrades. All races take place in the fictional Olympic City.'
 }, {
   name: 'Need for Speed: Underground 2',
   category: 'racing',
   cover: _assets_images_nfs2_cover_jpg__WEBPACK_IMPORTED_MODULE_21__,
   image: _assets_images_nfs2_landscape_jpg__WEBPACK_IMPORTED_MODULE_22__,
-  audio: _assets_audio_nfs2_mp3__WEBPACK_IMPORTED_MODULE_23__["default"],
+  audio: _assets_audio_nfs2_mp3__WEBPACK_IMPORTED_MODULE_23__,
   description: 'Is a 2004 racing video game. The game entails tuning cars for street races, resuming the Need for Speed: Underground storyline. Need for Speed: Underground 2 provides several new features, such as broader customization, new methods of selecting races, set in a city known as Bayview. Brooke Burke is the voice of Rachel Teller, the person who guides the player throughout the game.'
 }, {
   name: 'Forza Horizon 5',
   category: 'racing',
   cover: _assets_images_forza_cover_webp__WEBPACK_IMPORTED_MODULE_24__,
   image: _assets_images_forza_landscape_jpg__WEBPACK_IMPORTED_MODULE_25__,
-  audio: _assets_audio_forza_mp3__WEBPACK_IMPORTED_MODULE_26__["default"],
+  audio: _assets_audio_forza_mp3__WEBPACK_IMPORTED_MODULE_26__,
   description: 'Is a 2021 racing video game developed by Playground Games and published by Xbox Game Studios. It is the fifth Forza Horizon title and twelfth main instalment in the Forza series. The game is set in a fictionalised representation of Mexico. The game received critical acclaim and became a commercial success upon release.'
 }, {
   name: 'Burnout Paradise',
   category: 'racing',
   cover: _assets_images_burnout_cover_jpg__WEBPACK_IMPORTED_MODULE_27__,
   image: _assets_images_burnout_landscape_jpg__WEBPACK_IMPORTED_MODULE_28__,
-  audio: _assets_audio_burnout_mp3__WEBPACK_IMPORTED_MODULE_29__["default"],
+  audio: _assets_audio_burnout_mp3__WEBPACK_IMPORTED_MODULE_29__,
   description: 'Is a 2008 racing video game set in the fictional "Paradise City", an open world in which players can compete in several types of races. Players can also compete online, which includes additional game modes, such as "Cops and Robbers". Several free game updates introduce new features such as a time-of-day cycle and motorcycles.'
 }, {
   name: 'Crash Team Racing',
   category: 'racing',
   cover: _assets_images_crash_team_racing_cover_jpg__WEBPACK_IMPORTED_MODULE_30__,
   image: _assets_images_crash_landscape_jpg__WEBPACK_IMPORTED_MODULE_31__,
-  audio: _assets_audio_crash_mp3__WEBPACK_IMPORTED_MODULE_32__["default"],
+  audio: _assets_audio_crash_mp3__WEBPACK_IMPORTED_MODULE_32__,
   description: 'Is a 1999 kart racing video game. The game\'s story focuses on the efforts of Crash Bandicoot, Doctor Neo Cortex, and other ragtag team of characters in the Crash Bandicoot series, who must race against the egomaniacal Nitros Oxide to save the Earth from destruction.'
 }, {
   name: 'Project Cars',
   category: 'racing',
   cover: _assets_images_project_cars_cover_jpeg__WEBPACK_IMPORTED_MODULE_33__,
   image: _assets_images_project_cars_landscape_webp__WEBPACK_IMPORTED_MODULE_34__,
-  audio: _assets_audio_project_cars_mp3__WEBPACK_IMPORTED_MODULE_35__["default"],
+  audio: _assets_audio_project_cars_mp3__WEBPACK_IMPORTED_MODULE_35__,
   description: 'Is a motorsport racing simulator released in 2015. There are 74 drivable cars, over 30 unique locations with at least 110 different courses, of which 23 are real, with the remainder being fictional. For licensing reasons, some tracks are codenamed using their geographic location.'
 }];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (gameData);
@@ -367,202 +367,6 @@ module.exports = function (item) {
 
   return [content].join("\n");
 };
-
-/***/ }),
-
-/***/ "./src/assets/audio/burnout.mp3":
-/*!**************************************!*\
-  !*** ./src/assets/audio/burnout.mp3 ***!
-  \**************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "11147ee846d9833f5984b950905f0bf7.mp3");
-
-/***/ }),
-
-/***/ "./src/assets/audio/correct.mp3":
-/*!**************************************!*\
-  !*** ./src/assets/audio/correct.mp3 ***!
-  \**************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "1150d2c331b085200e053a1e7df373f7.mp3");
-
-/***/ }),
-
-/***/ "./src/assets/audio/crash.mp3":
-/*!************************************!*\
-  !*** ./src/assets/audio/crash.mp3 ***!
-  \************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "40ed6d0f9bc73881d2444cbb065a862a.mp3");
-
-/***/ }),
-
-/***/ "./src/assets/audio/forza.mp3":
-/*!************************************!*\
-  !*** ./src/assets/audio/forza.mp3 ***!
-  \************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "4bc12bee1e224749a99b158f03549013.mp3");
-
-/***/ }),
-
-/***/ "./src/assets/audio/gta-london.mp3":
-/*!*****************************************!*\
-  !*** ./src/assets/audio/gta-london.mp3 ***!
-  \*****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "3c783d25bd343dd30aa5691ea0a43dad.mp3");
-
-/***/ }),
-
-/***/ "./src/assets/audio/gta-sa.mp3":
-/*!*************************************!*\
-  !*** ./src/assets/audio/gta-sa.mp3 ***!
-  \*************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "ffe117d86848a5a4628732059c0b5eb8.mp3");
-
-/***/ }),
-
-/***/ "./src/assets/audio/gta-vc.mp3":
-/*!*************************************!*\
-  !*** ./src/assets/audio/gta-vc.mp3 ***!
-  \*************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "2cf8c935cef4edaff338f28e82d943d5.mp3");
-
-/***/ }),
-
-/***/ "./src/assets/audio/gta2.mp3":
-/*!***********************************!*\
-  !*** ./src/assets/audio/gta2.mp3 ***!
-  \***********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "53c1809bfa07b2b142661a2e20f8dc1f.mp3");
-
-/***/ }),
-
-/***/ "./src/assets/audio/gta3.mp3":
-/*!***********************************!*\
-  !*** ./src/assets/audio/gta3.mp3 ***!
-  \***********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "7f0781a5199a61c2dadece01728a36b0.mp3");
-
-/***/ }),
-
-/***/ "./src/assets/audio/gta4.mp3":
-/*!***********************************!*\
-  !*** ./src/assets/audio/gta4.mp3 ***!
-  \***********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "4ce33c7853dcf0e0ee8912c537f45b19.mp3");
-
-/***/ }),
-
-/***/ "./src/assets/audio/nfs1.mp3":
-/*!***********************************!*\
-  !*** ./src/assets/audio/nfs1.mp3 ***!
-  \***********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "af8c3b84ccbe99270163a85ee156030f.mp3");
-
-/***/ }),
-
-/***/ "./src/assets/audio/nfs2.mp3":
-/*!***********************************!*\
-  !*** ./src/assets/audio/nfs2.mp3 ***!
-  \***********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "ef66403386f11e6608233ae2650b8743.mp3");
-
-/***/ }),
-
-/***/ "./src/assets/audio/project-cars.mp3":
-/*!*******************************************!*\
-  !*** ./src/assets/audio/project-cars.mp3 ***!
-  \*******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "d614e545559cb0f9f205159c780beb95.mp3");
-
-/***/ }),
-
-/***/ "./src/assets/audio/wrong.mp3":
-/*!************************************!*\
-  !*** ./src/assets/audio/wrong.mp3 ***!
-  \************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "34b9518d84b306b5cdb361e83560b599.mp3");
 
 /***/ }),
 
@@ -949,7 +753,7 @@ module.exports = styleTagTransform;
   \******************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/background.jpg";
+module.exports = __webpack_require__.p + "assets/images/background.jpg";
 
 /***/ }),
 
@@ -959,7 +763,7 @@ module.exports = __webpack_require__.p + "assets/background.jpg";
   \*********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/burnout-cover.jpg";
+module.exports = __webpack_require__.p + "assets/images/burnout-cover.jpg";
 
 /***/ }),
 
@@ -969,7 +773,7 @@ module.exports = __webpack_require__.p + "assets/burnout-cover.jpg";
   \*************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/burnout-landscape.jpg";
+module.exports = __webpack_require__.p + "assets/images/burnout-landscape.jpg";
 
 /***/ }),
 
@@ -979,7 +783,7 @@ module.exports = __webpack_require__.p + "assets/burnout-landscape.jpg";
   \***********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/crash-landscape.jpg";
+module.exports = __webpack_require__.p + "assets/images/crash-landscape.jpg";
 
 /***/ }),
 
@@ -989,7 +793,7 @@ module.exports = __webpack_require__.p + "assets/crash-landscape.jpg";
   \*******************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/crash-team-racing-cover.jpg";
+module.exports = __webpack_require__.p + "assets/images/crash-team-racing-cover.jpg";
 
 /***/ }),
 
@@ -999,7 +803,7 @@ module.exports = __webpack_require__.p + "assets/crash-team-racing-cover.jpg";
   \*******************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/default-img.png";
+module.exports = __webpack_require__.p + "assets/images/default-img.png";
 
 /***/ }),
 
@@ -1009,7 +813,7 @@ module.exports = __webpack_require__.p + "assets/default-img.png";
   \********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/forza-cover.webp";
+module.exports = __webpack_require__.p + "assets/images/forza-cover.webp";
 
 /***/ }),
 
@@ -1019,7 +823,7 @@ module.exports = __webpack_require__.p + "assets/forza-cover.webp";
   \***********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/forza-landscape.jpg";
+module.exports = __webpack_require__.p + "assets/images/forza-landscape.jpg";
 
 /***/ }),
 
@@ -1029,7 +833,7 @@ module.exports = __webpack_require__.p + "assets/forza-landscape.jpg";
   \**************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/github.png";
+module.exports = __webpack_require__.p + "assets/images/github.png";
 
 /***/ }),
 
@@ -1039,7 +843,7 @@ module.exports = __webpack_require__.p + "assets/github.png";
   \************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/gta-london-cover.jpg";
+module.exports = __webpack_require__.p + "assets/images/gta-london-cover.jpg";
 
 /***/ }),
 
@@ -1049,7 +853,7 @@ module.exports = __webpack_require__.p + "assets/gta-london-cover.jpg";
   \****************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/gta-london-landscape.jpg";
+module.exports = __webpack_require__.p + "assets/images/gta-london-landscape.jpg";
 
 /***/ }),
 
@@ -1059,7 +863,7 @@ module.exports = __webpack_require__.p + "assets/gta-london-landscape.jpg";
   \********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/gta-sa-cover.jpg";
+module.exports = __webpack_require__.p + "assets/images/gta-sa-cover.jpg";
 
 /***/ }),
 
@@ -1069,7 +873,7 @@ module.exports = __webpack_require__.p + "assets/gta-sa-cover.jpg";
   \************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/gta-sa-landscape.png";
+module.exports = __webpack_require__.p + "assets/images/gta-sa-landscape.png";
 
 /***/ }),
 
@@ -1079,7 +883,7 @@ module.exports = __webpack_require__.p + "assets/gta-sa-landscape.png";
   \*********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/gta-vc-cover.webp";
+module.exports = __webpack_require__.p + "assets/images/gta-vc-cover.webp";
 
 /***/ }),
 
@@ -1089,7 +893,7 @@ module.exports = __webpack_require__.p + "assets/gta-vc-cover.webp";
   \*************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/gta-vc-landscape.jpeg";
+module.exports = __webpack_require__.p + "assets/images/gta-vc-landscape.jpeg";
 
 /***/ }),
 
@@ -1099,7 +903,7 @@ module.exports = __webpack_require__.p + "assets/gta-vc-landscape.jpeg";
   \******************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/gta2-cover.jpg";
+module.exports = __webpack_require__.p + "assets/images/gta2-cover.jpg";
 
 /***/ }),
 
@@ -1109,7 +913,7 @@ module.exports = __webpack_require__.p + "assets/gta2-cover.jpg";
   \**********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/gta2-landscape.jpg";
+module.exports = __webpack_require__.p + "assets/images/gta2-landscape.jpg";
 
 /***/ }),
 
@@ -1119,7 +923,7 @@ module.exports = __webpack_require__.p + "assets/gta2-landscape.jpg";
   \******************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/gta3-cover.jpg";
+module.exports = __webpack_require__.p + "assets/images/gta3-cover.jpg";
 
 /***/ }),
 
@@ -1129,7 +933,7 @@ module.exports = __webpack_require__.p + "assets/gta3-cover.jpg";
   \**********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/gta3-landscape.jpg";
+module.exports = __webpack_require__.p + "assets/images/gta3-landscape.jpg";
 
 /***/ }),
 
@@ -1139,7 +943,7 @@ module.exports = __webpack_require__.p + "assets/gta3-landscape.jpg";
   \******************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/gta4-cover.jpg";
+module.exports = __webpack_require__.p + "assets/images/gta4-cover.jpg";
 
 /***/ }),
 
@@ -1149,7 +953,7 @@ module.exports = __webpack_require__.p + "assets/gta4-cover.jpg";
   \**********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/gta4-landscape.jpg";
+module.exports = __webpack_require__.p + "assets/images/gta4-landscape.jpg";
 
 /***/ }),
 
@@ -1159,7 +963,7 @@ module.exports = __webpack_require__.p + "assets/gta4-landscape.jpg";
   \************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/logo.png";
+module.exports = __webpack_require__.p + "assets/images/logo.png";
 
 /***/ }),
 
@@ -1169,7 +973,7 @@ module.exports = __webpack_require__.p + "assets/logo.png";
   \******************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/nfs1-cover.jpg";
+module.exports = __webpack_require__.p + "assets/images/nfs1-cover.jpg";
 
 /***/ }),
 
@@ -1179,7 +983,7 @@ module.exports = __webpack_require__.p + "assets/nfs1-cover.jpg";
   \**********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/nfs1-landscape.jpg";
+module.exports = __webpack_require__.p + "assets/images/nfs1-landscape.jpg";
 
 /***/ }),
 
@@ -1189,7 +993,7 @@ module.exports = __webpack_require__.p + "assets/nfs1-landscape.jpg";
   \******************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/nfs2-cover.jpg";
+module.exports = __webpack_require__.p + "assets/images/nfs2-cover.jpg";
 
 /***/ }),
 
@@ -1199,7 +1003,7 @@ module.exports = __webpack_require__.p + "assets/nfs2-cover.jpg";
   \**********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/nfs2-landscape.jpg";
+module.exports = __webpack_require__.p + "assets/images/nfs2-landscape.jpg";
 
 /***/ }),
 
@@ -1209,7 +1013,7 @@ module.exports = __webpack_require__.p + "assets/nfs2-landscape.jpg";
   \***************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/project-cars-cover.jpeg";
+module.exports = __webpack_require__.p + "assets/images/project-cars-cover.jpeg";
 
 /***/ }),
 
@@ -1219,7 +1023,7 @@ module.exports = __webpack_require__.p + "assets/project-cars-cover.jpeg";
   \*******************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/project-cars-landscape.webp";
+module.exports = __webpack_require__.p + "assets/images/project-cars-landscape.webp";
 
 /***/ }),
 
@@ -1229,7 +1033,147 @@ module.exports = __webpack_require__.p + "assets/project-cars-landscape.webp";
   \*****************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/rs-school.svg";
+module.exports = __webpack_require__.p + "assets/images/rs-school.svg";
+
+/***/ }),
+
+/***/ "./src/assets/audio/burnout.mp3":
+/*!**************************************!*\
+  !*** ./src/assets/audio/burnout.mp3 ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/audio/burnout.mp3";
+
+/***/ }),
+
+/***/ "./src/assets/audio/correct.mp3":
+/*!**************************************!*\
+  !*** ./src/assets/audio/correct.mp3 ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/audio/correct.mp3";
+
+/***/ }),
+
+/***/ "./src/assets/audio/crash.mp3":
+/*!************************************!*\
+  !*** ./src/assets/audio/crash.mp3 ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/audio/crash.mp3";
+
+/***/ }),
+
+/***/ "./src/assets/audio/forza.mp3":
+/*!************************************!*\
+  !*** ./src/assets/audio/forza.mp3 ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/audio/forza.mp3";
+
+/***/ }),
+
+/***/ "./src/assets/audio/gta-london.mp3":
+/*!*****************************************!*\
+  !*** ./src/assets/audio/gta-london.mp3 ***!
+  \*****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/audio/gta-london.mp3";
+
+/***/ }),
+
+/***/ "./src/assets/audio/gta-sa.mp3":
+/*!*************************************!*\
+  !*** ./src/assets/audio/gta-sa.mp3 ***!
+  \*************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/audio/gta-sa.mp3";
+
+/***/ }),
+
+/***/ "./src/assets/audio/gta-vc.mp3":
+/*!*************************************!*\
+  !*** ./src/assets/audio/gta-vc.mp3 ***!
+  \*************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/audio/gta-vc.mp3";
+
+/***/ }),
+
+/***/ "./src/assets/audio/gta2.mp3":
+/*!***********************************!*\
+  !*** ./src/assets/audio/gta2.mp3 ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/audio/gta2.mp3";
+
+/***/ }),
+
+/***/ "./src/assets/audio/gta3.mp3":
+/*!***********************************!*\
+  !*** ./src/assets/audio/gta3.mp3 ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/audio/gta3.mp3";
+
+/***/ }),
+
+/***/ "./src/assets/audio/gta4.mp3":
+/*!***********************************!*\
+  !*** ./src/assets/audio/gta4.mp3 ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/audio/gta4.mp3";
+
+/***/ }),
+
+/***/ "./src/assets/audio/nfs1.mp3":
+/*!***********************************!*\
+  !*** ./src/assets/audio/nfs1.mp3 ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/audio/nfs1.mp3";
+
+/***/ }),
+
+/***/ "./src/assets/audio/nfs2.mp3":
+/*!***********************************!*\
+  !*** ./src/assets/audio/nfs2.mp3 ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/audio/nfs2.mp3";
+
+/***/ }),
+
+/***/ "./src/assets/audio/project-cars.mp3":
+/*!*******************************************!*\
+  !*** ./src/assets/audio/project-cars.mp3 ***!
+  \*******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/audio/project-cars.mp3";
+
+/***/ }),
+
+/***/ "./src/assets/audio/wrong.mp3":
+/*!************************************!*\
+  !*** ./src/assets/audio/wrong.mp3 ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/audio/wrong.mp3";
 
 /***/ })
 
@@ -1437,7 +1381,7 @@ function createAnswers() {
         if (currentAnswers[i] === currentQuestion) {
           answer.className = 'answers-list__item--correct';
           const correct = new Audio();
-          correct.src = _assets_audio_correct_mp3__WEBPACK_IMPORTED_MODULE_9__["default"];
+          correct.src = _assets_audio_correct_mp3__WEBPACK_IMPORTED_MODULE_9__;
           correct.play();
           isAnswered = true;
           const questionImg = document.querySelector('.question__img');
@@ -1447,7 +1391,7 @@ function createAnswers() {
         } else {
           answer.className = 'answers-list__item--wrong';
           const wrong = new Audio();
-          wrong.src = _assets_audio_wrong_mp3__WEBPACK_IMPORTED_MODULE_8__["default"];
+          wrong.src = _assets_audio_wrong_mp3__WEBPACK_IMPORTED_MODULE_8__;
           wrong.play();
           scoresPerRound -= 1;
         }
