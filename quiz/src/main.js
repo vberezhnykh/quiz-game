@@ -1,11 +1,11 @@
 import './index.html';
 import './styles/styles.scss';
 
-import backgroundImage from './assets/images/background.jpg';
+import backgroundImage from './assets/images/background.webp';
 import logoImage from './assets/images/logo.png';
 import githubImage from './assets/images/github.png';
 import rsschoolImage from './assets/images/rs-school.svg';
-import defaultImage from './assets/images/default-img.png';
+import defaultImage from './assets/images/default-img.webp';
 import gameData from './gamesData';
 import wrongSound from './assets/audio/wrong.mp3';
 import correctSound from './assets/audio/correct.mp3';
