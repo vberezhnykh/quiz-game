@@ -19,7 +19,9 @@ function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i -= 1) {
     const j = Math.floor(Math.random() * (i + 1));
     const temp = array[i];
+    // eslint-disable-next-line no-param-reassign
     array[i] = array[j];
+    // eslint-disable-next-line no-param-reassign
     array[j] = temp;
   }
 }
@@ -33,15 +35,19 @@ function createCurrentAnswers() {
   return array;
 }
 let currentAnswers = createCurrentAnswers();
+
 function randomizeIndex(array) {
-  return Math.floor(array.length * Math.random())
+  return Math.floor(array.length * Math.random());
 }
 let randomIndex = randomizeIndex(currentAnswers);
+
 function createCurrentQuestion(array, index) {
   return array[index];
 }
 let currentQuestion = createCurrentQuestion(currentAnswers, randomIndex);
+
 let isAnswered = false;
+const maxScores = 30;
 let scoresPerRound = 5; // очки, которые дают за победу в раунде;
 let isPaused = false; // про setinterval;
 
@@ -78,10 +84,11 @@ function createAnswers() {
   // создаем список ответов
   const answersList = document.createElement('ul');
   answersList.className = 'answers-list';
-  for (let i = 0; i < 6; i += 1) {
+  for (let i = 0; i < categories.length; i += 1) {
     const answer = document.createElement('li');
     answer.className = 'answers-list__item';
     answer.innerHTML = currentAnswers[i].name;
+    // eslint-disable-next-line no-loop-func
     answer.addEventListener('click', () => {
       if (!isAnswered) {
         if (currentAnswers[i] === currentQuestion) {
@@ -140,7 +147,7 @@ function createBoard() {
   // создаем блок с категориями вопросов
   const categoriesContainer = document.createElement('div');
   categoriesContainer.className = 'categories';
-  for (let i = 0; i < 6; i += 1) {
+  for (let i = 0; i < categories.length; i += 1) {
     const category = document.createElement('div');
     category.className = 'categories__item';
     if (i === categoryIndex) category.classList.add('categories__item--active');
@@ -169,18 +176,19 @@ function createHeader() {
   const nav = document.createElement('nav');
   const list = document.createElement('ul');
   list.className = 'navigation';
-  const elements = ['home', 'quiz', 'results'];
-  for (let i = 0; i < 3; i += 1) {
+  const elements = ['home', 'quiz'];
+  for (let i = 0; i < elements.length; i += 1) {
     const item = document.createElement('li');
     item.innerHTML = elements[i];
     item.className = 'navigation__item';
     // при загрузке активной является страница home
     if (elements[i] === 'home') item.classList.add('navigation__item--active');
+    // eslint-disable-next-line no-loop-func
     item.addEventListener('click', (event) => {
       list.childNodes.forEach((elem) => elem.classList.remove('navigation__item--active'));
       event.target.classList.add('navigation__item--active');
       currentPage = event.target.innerHTML;
-      if (event.target.innerHTML === 'quiz') {
+      if (currentPage === 'quiz') {
         document.querySelector('.main').innerHTML = '';
         const score = document.createElement('div');
         score.className = 'score';
@@ -198,16 +206,16 @@ function createHeader() {
         button.addEventListener('click', () => {
           isAnswered = false;
           isPaused = false;
-          categoryIndex += 1;
+          if (categoryIndex !== categories.length - 1) categoryIndex += 1;
           currentCategory = categories[categoryIndex];
           currentAnswers = createCurrentAnswers();
           randomIndex = randomizeIndex(currentAnswers);
           currentQuestion = createCurrentQuestion(currentAnswers, randomIndex);
           document.querySelector('.board').replaceWith(createBoard());
-        })
+        });
         document.querySelector('.main').append(button);
-      };
-      if (event.target.innerHTML === 'home') {
+      }
+      if (currentPage === 'home') {
         isAnswered = false;
         isPaused = false;
         categoryIndex = 0;
@@ -216,7 +224,7 @@ function createHeader() {
         randomIndex = randomizeIndex(currentAnswers);
         currentQuestion = createCurrentQuestion(currentAnswers, randomIndex);
         document.querySelector('.main').innerHTML = 'THE GAME WILL SOON BEGIN';
-      } 
+      }
     });
     list.append(item);
   }
@@ -284,10 +292,52 @@ window.addEventListener('load', () => {
           scoreNum.innerHTML = parseInt(scoreNum.innerHTML, 10) + scoresPerRound;
           scoresPerRound = 5;
           isPaused = true;
-          button.disabled = false;
+          if (currentCategory !== 'platformer') button.disabled = false;
+          // если это последняя категория, то всплывает попап с результатами
+          if (currentCategory === 'platformer') {
+            // создаем прослойку между боди и попапом
+            const interlayer = document.createElement('div');
+            interlayer.className = 'interlayer';
+            document.body.prepend(interlayer);
+            // создаем попап
+            const popup = document.createElement('div');
+            popup.className = 'popup';
+            const heading = document.createElement('h3');
+            heading.className = 'popup__heading';
+            const message = document.createElement('p');
+            message.className = 'popup__message';
+            const buttons = document.createElement('div');
+            buttons.className = 'endgame-buttons';
+            const yesBtn = document.createElement('button');
+            yesBtn.innerHTML = 'Yes';
+            yesBtn.className = 'endgame-buttons__confirm';
+            // TODO: навести функцию, которая будет перезапускать игру
+            const noBtn = document.createElement('button');
+            noBtn.innerHTML = 'No';
+            noBtn.className = 'endgame-buttons__decline';
+            /* TODO: навесить функцию, которая будет "уводить" кнопку, чтобы по ней нельзя было 
+            нажать */
+            buttons.appendChild(yesBtn);
+            buttons.appendChild(noBtn);
+            popup.append(heading);
+            popup.append(message);
+            if (parseInt(scoreNum.innerHTML, 10) === maxScores) {
+              heading.innerHTML = 'Contgratulations!';
+              // eslint-disable-next-line no-multi-str
+              message.innerHTML = 'You have scored maximum of 30 points.\n\
+              GAME OVER.';
+            } else {
+              heading.innerHTML = 'Oops...You have lost :(';
+              message.innerHTML = `You have scored ${scoreNum.innerHTML} scores.\n\
+              To win the game, you need to get 30 scores. Want to try again?`;
+              popup.append(buttons);
+            }
+            interlayer.after(popup);
+
+            document.body.classList.add('body--unscrollable');
+          }
         } else button.disabled = true;
       }
-      console.log('я работаю');
     } catch { //
     }
   }, 1000);
