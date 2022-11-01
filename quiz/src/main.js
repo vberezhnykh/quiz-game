@@ -166,6 +166,49 @@ function createBoard() {
   return board;
 }
 
+function resetState() {
+  isAnswered = false;
+  isPaused = false;
+  currentCategory = categories[categoryIndex];
+  currentAnswers = createCurrentAnswers();
+  randomIndex = randomizeIndex(currentAnswers);
+  currentQuestion = createCurrentQuestion(currentAnswers, randomIndex);
+}
+
+function replaceBoard() {
+  resetState();
+  document.querySelector('.board').replaceWith(createBoard());
+}
+
+function backToHomePage() {
+  categoryIndex = 0;
+  resetState();
+  document.querySelector('.main').innerHTML = 'THE GAME WILL SOON BEGIN';
+}
+
+function backToQuizPage() {
+  const main = document.querySelector('.main');
+  main.innerHTML = '';
+  const score = document.createElement('div');
+  score.className = 'score';
+  score.innerHTML = 'Score: ';
+  const scoreNum = document.createElement('span');
+  scoreNum.innerHTML = '24'; // вернуть 0
+  scoreNum.className = 'scoreNum';
+  score.append(scoreNum);
+  main.append(score);
+  main.append(createBoard());
+  const button = document.createElement('button');
+  button.innerHTML = 'Next Level';
+  button.className = 'main__button';
+  button.disabled = true;
+  button.addEventListener('click', () => {
+    if (categoryIndex !== categories.length - 1) categoryIndex += 1;
+    replaceBoard();
+  });
+  document.querySelector('.main').append(button);
+}
+
 function createHeader() {
   const header = document.createElement('header');
   header.className = 'header';
@@ -189,43 +232,8 @@ function createHeader() {
       list.childNodes.forEach((elem) => elem.classList.remove('navigation__item--active'));
       event.target.classList.add('navigation__item--active');
       currentPage = event.target.innerHTML;
-      if (currentPage === 'quiz') {
-        document.querySelector('.main').innerHTML = '';
-        const score = document.createElement('div');
-        score.className = 'score';
-        score.innerHTML = 'Score: ';
-        const scoreNum = document.createElement('span');
-        scoreNum.innerHTML = '0';
-        scoreNum.className = 'scoreNum';
-        score.append(scoreNum);
-        document.querySelector('.main').append(score);
-        document.querySelector('.main').append(createBoard());
-        const button = document.createElement('button');
-        button.innerHTML = 'Next Level';
-        button.className = 'main__button';
-        button.disabled = true;
-        button.addEventListener('click', () => {
-          isAnswered = false;
-          isPaused = false;
-          if (categoryIndex !== categories.length - 1) categoryIndex += 1;
-          currentCategory = categories[categoryIndex];
-          currentAnswers = createCurrentAnswers();
-          randomIndex = randomizeIndex(currentAnswers);
-          currentQuestion = createCurrentQuestion(currentAnswers, randomIndex);
-          document.querySelector('.board').replaceWith(createBoard());
-        });
-        document.querySelector('.main').append(button);
-      }
-      if (currentPage === 'home') {
-        isAnswered = false;
-        isPaused = false;
-        categoryIndex = 0;
-        currentCategory = categories[categoryIndex];
-        currentAnswers = createCurrentAnswers();
-        randomIndex = randomizeIndex(currentAnswers);
-        currentQuestion = createCurrentQuestion(currentAnswers, randomIndex);
-        document.querySelector('.main').innerHTML = 'THE GAME WILL SOON BEGIN';
-      }
+      if (currentPage === 'quiz') backToQuizPage();
+      if (currentPage === 'home') backToHomePage();
     });
     list.append(item);
   }
@@ -295,7 +303,7 @@ window.addEventListener('load', () => {
           isPaused = true;
           if (currentCategory !== 'platformer') button.disabled = false;
           // если это последняя категория, то всплывает попап с результатами
-          if (currentCategory === 'platformer') {
+          if (currentCategory === 'platformer' || currentCategory === 'warm-up') { // убрать ворм-ап
             // создаем прослойку между боди и попапом
             const interlayer = document.createElement('div');
             interlayer.className = 'interlayer';
@@ -312,12 +320,21 @@ window.addEventListener('load', () => {
             const yesBtn = document.createElement('button');
             yesBtn.innerHTML = 'Yes';
             yesBtn.className = 'endgame-buttons__confirm';
-            // TODO: навести функцию, которая будет перезапускать игру
+            yesBtn.addEventListener('click', () => {
+              scoreNum.innerHTML = 0;
+              categoryIndex = 0;
+              replaceBoard();
+              document.body.classList.remove('body--unscrollable');
+              interlayer.remove();
+              popup.remove();
+            });
             const noBtn = document.createElement('button');
             noBtn.innerHTML = 'No';
             noBtn.className = 'endgame-buttons__decline';
             /* TODO: навесить функцию, которая будет "уводить" кнопку, чтобы по ней нельзя было
             нажать */
+            noBtn
+
             buttons.appendChild(yesBtn);
             buttons.appendChild(noBtn);
             popup.append(heading);
@@ -343,3 +360,4 @@ window.addEventListener('load', () => {
     }
   }, 1000);
 });
+
