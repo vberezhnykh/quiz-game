@@ -92,6 +92,7 @@ function createAnswers() {
     answer.addEventListener('click', () => {
       if (!isAnswered) {
         if (currentAnswers[i] === currentQuestion) {
+          document.querySelectorAll('audio').forEach((element) => element.pause());
           answer.className = 'answers-list__item--correct';
           const correct = new Audio();
           correct.src = correctSound;
@@ -315,7 +316,7 @@ window.addEventListener('load', () => {
             const noBtn = document.createElement('button');
             noBtn.innerHTML = 'No';
             noBtn.className = 'endgame-buttons__decline';
-            /* TODO: навесить функцию, которая будет "уводить" кнопку, чтобы по ней нельзя было 
+            /* TODO: навесить функцию, которая будет "уводить" кнопку, чтобы по ней нельзя было
             нажать */
             buttons.appendChild(yesBtn);
             buttons.appendChild(noBtn);
