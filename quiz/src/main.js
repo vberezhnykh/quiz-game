@@ -331,10 +331,16 @@ window.addEventListener('load', () => {
             const noBtn = document.createElement('button');
             noBtn.innerHTML = 'No';
             noBtn.className = 'endgame-buttons__decline';
-            /* TODO: навесить функцию, которая будет "уводить" кнопку, чтобы по ней нельзя было
-            нажать */
-            noBtn
-
+            noBtn.onclick = () => {
+              backToHomePage();
+              const list = document.querySelector('.navigation');
+              list.childNodes.forEach((elem) => elem.classList.remove('navigation__item--active'));
+              document.querySelectorAll('.navigation__item')[0].classList.add('navigation__item--active');
+              currentPage = 'home';
+              document.body.classList.remove('body--unscrollable');
+              interlayer.remove();
+              popup.remove();
+            };
             buttons.appendChild(yesBtn);
             buttons.appendChild(noBtn);
             popup.append(heading);
