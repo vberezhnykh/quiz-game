@@ -65,6 +65,7 @@ function createQuestion() {
   heading.textContent = '****';
   question.append(heading);
   const audio = new Audio();
+  audio.className = 'question__audio';
   audio.src = currentQuestion.audio;
   audio.controls = true;
   question.append(audio);
@@ -112,26 +113,30 @@ function createAnswers() {
       }
       // добавляем описание игры
       description.innerHTML = '';
+      const container = document.createElement('div');
+      container.className = 'description-container';
       const cover = new Image();
       cover.className = 'description__cover';
       cover.src = currentAnswers[i].cover;
-      description.append(cover);
-      const container = document.createElement('div');
+      container.append(cover);
+
+      const textContainer = document.createElement('div');
       const heading = document.createElement('h4');
       heading.className = 'description__heading';
       heading.innerHTML = currentAnswers[i].name;
-      container.append(heading);
+      textContainer.append(heading);
 
       const text = document.createElement('p');
       text.innerHTML = currentAnswers[i].description;
-      container.append(text);
+      textContainer.append(text);
+      container.append(textContainer);
+      description.append(container);
 
       const audio = new Audio();
       audio.src = currentAnswers[i].audio;
       audio.controls = true;
-      container.append(audio);
-
-      description.append(container);
+      audio.className = 'description__audio';
+      description.append(audio);
     });
     answersList.append(answer);
   }
