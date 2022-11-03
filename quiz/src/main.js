@@ -50,6 +50,125 @@ let isAnswered = false;
 const maxScores = 30;
 let scoresPerRound = 5; // очки, которые дают за победу в раунде;
 let isPaused = false; // про setinterval;
+let isHome = true;
+
+function createPlayer(question) {
+  const player = document.createElement('div');
+  player.className = 'player';
+  const audio = new Audio();
+  audio.src = question.audio;
+  const timeline = document.createElement('div');
+  timeline.className = 'timeline';
+  const progress = document.createElement('div');
+  progress.className = 'progress';
+  timeline.append(progress);
+  player.append(timeline);
+  const controls = document.createElement('div');
+  controls.className = 'controls';
+  const playContainer = document.createElement('div');
+  playContainer.className = 'play-container';
+  const togglePlay = document.createElement('div');
+  togglePlay.classList.add('toggle-play', 'play');
+  playContainer.append(togglePlay);
+  controls.append(playContainer);
+  const time = document.createElement('div');
+  time.className = 'time';
+  const current = document.createElement('div');
+  current.className = 'current';
+  time.append(current);
+  const divider = document.createElement('div');
+  divider.className = 'divider';
+  time.append(divider);
+  const length = document.createElement('div');
+  length.className = 'length';
+  time.append(length);
+  controls.append(time);
+  const volumeContainer = document.createElement('div');
+  volumeContainer.className = 'volume-container';
+  const volumeBtn = document.createElement('div');
+  volumeBtn.className = 'volume-button';
+  const volumeIcon = document.createElement('div');
+  volumeIcon.classList.add('volume', 'icono-volumeMedium');
+  volumeBtn.append(volumeIcon);
+  volumeContainer.append(volumeBtn);
+  const volumeSlider = document.createElement('div');
+  volumeSlider.className = 'volume-slider';
+  const volumePercentage = document.createElement('div');
+  volumePercentage.className = 'volume-percentage';
+  volumeSlider.append(volumePercentage);
+  volumeContainer.append(volumeSlider);
+  controls.append(volumeContainer);
+  player.append(controls);
+
+  function getTimeCodeFromNum(num) {
+    let seconds = parseInt(num, 10);
+    let minutes = parseInt(seconds / 60, 10);
+    seconds -= minutes * 60;
+    const hours = parseInt(minutes / 60, 10);
+    minutes -= hours * 60;
+
+    if (hours === 0) return `${minutes}:${String(seconds % 60).padStart(2, 0)}`;
+    return `${String(hours).padStart(2, 0)}:${minutes}:${String(seconds % 60).padStart(2, 0)}`;
+  }
+
+  audio.addEventListener('loadeddata', () => {
+    length.textContent = getTimeCodeFromNum(
+      audio.duration,
+    );
+    audio.volume = 0.75;
+  }, false);
+
+  // toggle between playing and pausing on button click
+  togglePlay.addEventListener('click', () => {
+    if (audio.paused) {
+      togglePlay.classList.remove('play');
+      togglePlay.classList.add('pause');
+      audio.play();
+    } else {
+      togglePlay.classList.remove('pause');
+      togglePlay.classList.add('play');
+      audio.pause();
+    }
+  }, false);
+
+  // click on timeline to skip around
+  timeline.addEventListener('click', (event) => {
+    const timelineWidth = window.getComputedStyle(timeline).width;
+    const timeToSeek = event.offsetX / parseInt(timelineWidth, 10) * audio.duration;
+    audio.currentTime = timeToSeek;
+  }, false);
+
+  // click volume slider to change volume;
+  volumeSlider.addEventListener('click', (e) => {
+    const sliderWidth = window.getComputedStyle(volumeSlider).width;
+    const newVolume = e.offsetX / parseInt(sliderWidth, 10);
+    audio.volume = newVolume;
+    volumePercentage.style.width = `${newVolume * 100}%`;
+  }, false);
+
+  // check audio percentage and update time accordingly
+  const timerId = setInterval(() => {
+    progress.style.width = `${audio.currentTime / audio.duration * 100}%`;
+    current.textContent = getTimeCodeFromNum(
+      audio.currentTime,
+    );
+    if (audio.duration === audio.currentTime) {
+      togglePlay.classList.remove('pause');
+      togglePlay.classList.add('play');
+    }
+    if (isHome) {
+      player.remove();
+      audio.pause();
+      audio.src = '';
+      audio.remove();
+      clearTimeout(timerId);
+    };
+  }, 500);
+
+  // TODO: pause audio on click to next question
+
+  return player;
+}
 
 function createQuestion() {
   const questionSection = document.createElement('section');
@@ -64,11 +183,8 @@ function createQuestion() {
   heading.className = 'question__heading';
   heading.textContent = '****';
   question.append(heading);
-  const audio = new Audio();
-  audio.className = 'question__audio';
-  audio.src = currentQuestion.audio;
-  audio.controls = true;
-  question.append(audio);
+  const player = createPlayer(currentQuestion);
+  question.append(player);
   questionSection.append(question);
 
   return questionSection;
@@ -186,6 +302,7 @@ function replaceBoard() {
 }
 
 function goToQuizPage() {
+  isHome = false;
   const main = document.querySelector('.main');
   main.innerHTML = '';
   const score = document.createElement('div');
@@ -218,6 +335,7 @@ function createStartButton() {
 }
 
 function goToHomePage() {
+  isHome = true;
   categoryIndex = 0;
   resetState();
   document.querySelector('.main').innerHTML = '';
