@@ -3,6 +3,7 @@ import './styles/styles.scss';
 
 import backgroundImage from './assets/images/background.webp';
 import logoImage from './assets/images/logo.png';
+import homeBtnImage from './assets/images/home.svg';
 import githubImage from './assets/images/github.png';
 import rsschoolImage from './assets/images/rs-school.svg';
 import defaultImage from './assets/images/default-img.webp';
@@ -10,7 +11,6 @@ import gameData from './gamesData';
 import wrongSound from './assets/audio/wrong.mp3';
 import correctSound from './assets/audio/correct.mp3';
 
-let currentPage = 'home';
 const categories = ['warm-up', 'racing', 'shooter', 'cyberpunk', 'rpg', 'platformer'];
 let categoryIndex = 0;
 let currentCategory = categories[categoryIndex];
@@ -180,24 +180,19 @@ function replaceBoard() {
   document.querySelector('.board').replaceWith(createBoard());
 }
 
-function backToHomePage() {
-  categoryIndex = 0;
-  resetState();
-  document.querySelector('.main').innerHTML = 'THE GAME WILL SOON BEGIN';
-}
-
-function backToQuizPage() {
+function goToQuizPage() {
   const main = document.querySelector('.main');
   main.innerHTML = '';
   const score = document.createElement('div');
   score.className = 'score';
   score.innerHTML = 'Score: ';
   const scoreNum = document.createElement('span');
-  scoreNum.innerHTML = '24'; // вернуть 0
+  scoreNum.innerHTML = '0'; // вернуть 24
   scoreNum.className = 'scoreNum';
   score.append(scoreNum);
   main.append(score);
   main.append(createBoard());
+  main.classList.add('main--active');
   const button = document.createElement('button');
   button.innerHTML = 'Next Level';
   button.className = 'main__button';
@@ -209,36 +204,35 @@ function backToQuizPage() {
   document.querySelector('.main').append(button);
 }
 
+function createStartButton() {
+  const startButton = document.createElement('button');
+  startButton.className = 'main__start-button';
+  startButton.innerHTML = 'START';
+  startButton.onclick = goToQuizPage;
+  return startButton;
+}
+
+function goToHomePage() {
+  categoryIndex = 0;
+  resetState();
+  document.querySelector('.main').innerHTML = '';
+  document.querySelector('.main').append(createStartButton());
+  document.querySelector('.main').classList.remove('main--active');
+}
+
 function createHeader() {
   const header = document.createElement('header');
   header.className = 'header';
-
   const logo = new Image();
   logo.src = logoImage;
   header.append(logo);
-  // создаем ссылки на страницы приложения
-  const nav = document.createElement('nav');
-  const list = document.createElement('ul');
-  list.className = 'navigation';
-  const elements = ['home', 'quiz'];
-  for (let i = 0; i < elements.length; i += 1) {
-    const item = document.createElement('li');
-    item.innerHTML = elements[i];
-    item.className = 'navigation__item';
-    // при загрузке активной является страница home
-    if (elements[i] === 'home') item.classList.add('navigation__item--active');
-    // eslint-disable-next-line no-loop-func
-    item.addEventListener('click', (event) => {
-      list.childNodes.forEach((elem) => elem.classList.remove('navigation__item--active'));
-      event.target.classList.add('navigation__item--active');
-      currentPage = event.target.innerHTML;
-      if (currentPage === 'quiz') backToQuizPage();
-      if (currentPage === 'home') backToHomePage();
-    });
-    list.append(item);
-  }
-  nav.append(list);
-  header.append(nav);
+  const homeBtn = document.createElement('button');
+  homeBtn.className = 'header__home-btn';
+  const homeBtnImg = new Image();
+  homeBtnImg.src = homeBtnImage;
+  homeBtn.append(homeBtnImg);
+  homeBtn.onclick = goToHomePage;
+  header.append(homeBtn);
 
   return header;
 }
@@ -246,7 +240,8 @@ function createHeader() {
 function createMain() {
   const main = document.createElement('main');
   main.className = 'main';
-  main.innerHTML = 'THE GAME WILL SOON BEGIN';
+  const startButton = createStartButton();
+  main.append(startButton);
   return main;
 }
 
@@ -259,6 +254,7 @@ function createFooter() {
   rsLink.target = '_blank';
   const rsschool = new Image();
   rsschool.src = rsschoolImage;
+  rsschool.className = 'footer__rs-school';
   rsLink.append(rsschool);
   footer.append(rsLink);
 
@@ -270,6 +266,7 @@ function createFooter() {
   githubLink.href = 'https://github.com/vberezhnykh';
   githubLink.target = '_blank';
   const github = new Image();
+  github.className = 'footer__github';
   github.src = githubImage;
   githubLink.append(github);
   footer.append(githubLink);
@@ -303,7 +300,7 @@ window.addEventListener('load', () => {
           isPaused = true;
           if (currentCategory !== 'platformer') button.disabled = false;
           // если это последняя категория, то всплывает попап с результатами
-          if (currentCategory === 'platformer' || currentCategory === 'warm-up') { // убрать ворм-ап
+          if (currentCategory === 'platformer' /* || currentCategory === 'warm-up' */) { // убрать ворм-ап
             // создаем прослойку между боди и попапом
             const interlayer = document.createElement('div');
             interlayer.className = 'interlayer';
@@ -332,11 +329,7 @@ window.addEventListener('load', () => {
             noBtn.innerHTML = 'No';
             noBtn.className = 'endgame-buttons__decline';
             noBtn.onclick = () => {
-              backToHomePage();
-              const list = document.querySelector('.navigation');
-              list.childNodes.forEach((elem) => elem.classList.remove('navigation__item--active'));
-              document.querySelectorAll('.navigation__item')[0].classList.add('navigation__item--active');
-              currentPage = 'home';
+              goToHomePage();
               document.body.classList.remove('body--unscrollable');
               interlayer.remove();
               popup.remove();
@@ -346,7 +339,7 @@ window.addEventListener('load', () => {
             popup.append(heading);
             popup.append(message);
             if (parseInt(scoreNum.innerHTML, 10) === maxScores) {
-              heading.innerHTML = 'Contgratulations!';
+              heading.innerHTML = 'Congratulations!';
               // eslint-disable-next-line no-multi-str
               message.innerHTML = 'You have scored maximum of 30 points.\n\
               GAME OVER.';
@@ -366,4 +359,3 @@ window.addEventListener('load', () => {
     }
   }, 1000);
 });
-

@@ -1,4 +1,5 @@
 @import './normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto+Slab:wght@400;700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -9,6 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-family: 'Roboto Slab', serif;
   /* overflow-y: hidden; */
 }
 
@@ -41,9 +43,6 @@ body {
 .header {
   display: flex;
   justify-content: space-around;
-  border: 2px solid black;
-  /* border-top: none; */
-  border-radius: 0 0 10px 10px;
   align-items: center;
   max-width: 1440px;
   width: 100%;
@@ -52,38 +51,20 @@ body {
   background-color: rgba(255, 255, 255, .94);
   
   img {
-    max-height: 80px;
+    width: 70px;
+    height: 70px;
   }
 
-}
-
-nav {
-  height: 80px;
-}
-
-.navigation {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  font-size: 20px;
-  text-transform: uppercase;
-  height: 100%;
-  gap: 30px;
-  padding: 0;
-  margin: 0;
-  
-  .navigation__item {
+  .header__home-btn {
+    padding: 0;
     cursor: pointer;
+    margin: 0;
 
-    &:hover {
-      transform: scale(1.1);
+    img {
+      width: 50px;
+      height: 50px;
     }
 
-  }
-
-  .navigation__item--active {
-    font-weight: bold;
-    color: red;
   }
 
 }
@@ -91,10 +72,7 @@ nav {
 .main {
   max-width: 1440px;
   width: 100vw;
-  border: 2px solid black;
-  border-radius: 10px;
-  margin: 20px auto;
-  background-color: rgba(255, 255, 255, .94);
+  margin: 10px auto;
   font-size: 20px;
   padding: 1%;
 
@@ -105,6 +83,19 @@ nav {
     font-size: 30px;
   }
 
+  .main__start-button {
+    font-family: 'Righteous', cursive;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    font-size: 80px;
+  }
+
+}
+
+.main--active {
+  background-color: rgba(255, 255, 255, .98);
 }
 
 .score {
@@ -138,8 +129,10 @@ nav {
   gap: 5%;
 
   .question__img {
-    width: 45%;
+    width: 300px;
+    height: 170px;
     border: 1px solid black;
+    border-radius: 10px;
     object-fit: cover;
   }
 
@@ -226,14 +219,18 @@ nav {
 }
 
 .description {
+  font-size: 16px;
   width: 55%;
   display: flex;
   gap: 2%;
 
   .description__cover {
-    /* max-width: 150px; */
-    width: 40%;
-    object-fit: contain;
+    
+    /* width: 40%; */
+    height: 220px;
+    width: auto;
+    max-width: 160px;
+    object-fit: cover;
     cursor: pointer;
 
     /* &:hover {
@@ -248,24 +245,24 @@ nav {
 }
 
 .footer {
-  /* position: absolute;
-  bottom: 0; */
-  border: 2px solid black;
-  /* border-bottom: none; */
-  border-radius: 10px 10px 0 0;
   background-color: rgba(255, 255, 255, .94);
   max-width: 1440px;
   width: 100%;
   max-height: 80px;
   left: 50%;
- /*  margin-left: -500px; */
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 
-  img {
-    height: 80px;
-  }  
+  .footer__rs-school  {
+    width: 150px;
+    height: 50px;
+  }
+  
+  .footer__github {
+    width: 70px;
+    height: 70px;
+  }
 
 }
