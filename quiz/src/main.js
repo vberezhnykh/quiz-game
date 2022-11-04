@@ -49,14 +49,17 @@ let currentQuestion = createCurrentQuestion(currentAnswers, randomIndex);
 let isAnswered = false;
 const maxScores = 30;
 let scoresPerRound = 5; // очки, которые дают за победу в раунде;
-let isPaused = false; // про setinterval;
-let isHome = true;
+let isPaused = false; // про setinterval в конце
+let isHomePage = true;
+let timerId; // таймер внутри плеера;
+let isSwitched = false;
 
-function createPlayer(question) {
+function createPlayer(game, isQuestion) {
+  isSwitched = false;
   const player = document.createElement('div');
   player.className = 'player';
   const audio = new Audio();
-  audio.src = question.audio;
+  audio.src = game.audio;
   const timeline = document.createElement('div');
   timeline.className = 'timeline';
   const progress = document.createElement('div');
@@ -147,7 +150,7 @@ function createPlayer(question) {
   }, false);
 
   // check audio percentage and update time accordingly
-  const timerId = setInterval(() => {
+  timerId = setInterval(() => {
     progress.style.width = `${audio.currentTime / audio.duration * 100}%`;
     current.textContent = getTimeCodeFromNum(
       audio.currentTime,
@@ -156,16 +159,11 @@ function createPlayer(question) {
       togglePlay.classList.remove('pause');
       togglePlay.classList.add('play');
     }
-    if (isHome) {
-      player.remove();
-      audio.pause();
-      audio.src = '';
-      audio.remove();
-      clearTimeout(timerId);
+    if (isHomePage || isAnswered) { // TODO: добавить переключение на другой вопрос
+      audio.pause(); // TODO: зафиксить баг с тем, что трек всегда встает на паузу
+      clearInterval(timerId);
     };
-  }, 500);
-
-  // TODO: pause audio on click to next question
+  }, 1000);
 
   return player;
 }
@@ -248,10 +246,12 @@ function createAnswers() {
       container.append(textContainer);
       description.append(container);
 
-      const audio = new Audio();
-      audio.src = currentAnswers[i].audio;
-      audio.controls = true;
-      audio.className = 'description__audio';
+      isSwitched = true;
+      /* const audio = new Audio(); */
+      const audio = createPlayer(currentAnswers[i]);
+/*       audio.src = currentAnswers[i].audio; */
+      /* audio.controls = true; */
+      audio.classList.add('description__audio');
       description.append(audio);
     });
     answersList.append(answer);
@@ -302,7 +302,7 @@ function replaceBoard() {
 }
 
 function goToQuizPage() {
-  isHome = false;
+  isHomePage = false;
   const main = document.querySelector('.main');
   main.innerHTML = '';
   const score = document.createElement('div');
@@ -310,7 +310,7 @@ function goToQuizPage() {
   score.innerHTML = 'Score: ';
   const scoreNum = document.createElement('span');
   scoreNum.innerHTML = '0'; // вернуть 24
-  scoreNum.className = 'scoreNum';
+  scoreNum.className = 'score__num';
   score.append(scoreNum);
   main.append(score);
   main.append(createBoard());
@@ -335,7 +335,7 @@ function createStartButton() {
 }
 
 function goToHomePage() {
-  isHome = true;
+  isHomePage = true;
   categoryIndex = 0;
   resetState();
   document.querySelector('.main').innerHTML = '';
@@ -417,7 +417,9 @@ window.addEventListener('load', () => {
       const button = document.querySelector('.main__button');
       if (!isPaused) {
         if (isAnswered) {
-          const scoreNum = document.querySelector('.scoreNum');
+          /* console.log('я здесь') */
+          /* clearTimeout(timerId) */
+          const scoreNum = document.querySelector('.score__num');
           scoreNum.innerHTML = parseInt(scoreNum.innerHTML, 10) + scoresPerRound;
           scoresPerRound = 5;
           isPaused = true;

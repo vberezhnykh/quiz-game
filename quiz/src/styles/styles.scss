@@ -1,6 +1,12 @@
 @import './normalize.css';
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto+Slab:wght@400;700&display=swap');
 
+$french-violet: #6f2dbdff;
+$amethyst: #a663ccff;
+$wisteria: #b298dcff;
+$light-steel-blue: #b8d0ebff;
+$celeste: #b9faf8ff;
+
 * {
   box-sizing: border-box;
 }
@@ -12,7 +18,7 @@ body {
   justify-content: space-between;
   font-family: 'Roboto Slab', serif;
   background-size: cover;
-  /* overflow-y: hidden; */
+  color: #f5f5f5;
 }
 
 .body--unscrollable {
@@ -45,11 +51,10 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  max-width: 1440px;
   width: 100%;
   max-height: 80px;
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, .94);
+  background-color: $amethyst;
   
   img {
     width: 70px;
@@ -60,6 +65,12 @@ body {
     padding: 0;
     cursor: pointer;
     margin: 0;
+    background-color: $wisteria;
+    border-radius: 10px;
+    
+    &:hover {
+      transform: scale(1.1);
+    }
 
     img {
       width: 50px;
@@ -71,12 +82,10 @@ body {
 }
 
 .main {
-  max-width: 1440px;
-  width: 100vw;
+  width: 100%;
   margin: auto;
   font-size: 20px;
   padding: 1%;
-  /* flex-grow: 1; */
   
   .main__button {
     border-radius: 5px;
@@ -87,7 +96,9 @@ body {
 
   .main__start-button {
     font-family: 'Righteous', cursive;
-    border: none;
+    border-radius: 10px;
+    background-color: $wisteria;
+    color: whitesmoke;
     cursor: pointer;
     display: block;
     margin: 0 auto;
@@ -97,11 +108,17 @@ body {
 }
 
 .main--active {
-  background-color: rgba(255, 255, 255, .98);
+  background-color: $french-violet;
 }
 
 .score {
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
+  text-decoration: underline;
+
+  .score__num {
+    color: $light-steel-blue;
+  }
+
 }
 
 .categories {
@@ -110,15 +127,20 @@ body {
   align-items: center;
   gap: 3%;
   margin-top: 20px;
-  border-bottom: 1px solid black;
-
+  /* border: 1px solid black;
+ */
   .categories__item {
     text-transform: uppercase;
     text-align: center;
+    border: 1px solid black;
+    flex-basis: 300px;
+    border-radius: 10px;
+    background-color: $amethyst;
   }
 
   .categories__item--active {
-    color: red;
+    background-color: $wisteria;
+
     font-weight: bold;
   }
 
@@ -149,10 +171,11 @@ body {
     border: 1px solid black;
     border-radius: 10px;
     object-fit: cover;
+    background-color: $light-steel-blue;
   }
 
   .question__heading {
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
   }
 
 }
@@ -297,26 +320,33 @@ body {
 }
 
 .answers-list {
+  /* padding-left: 0; */
   margin: 0;
   width: 40%;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  box-sizing: border-box;
 
   .answers-list__item {
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
+    border: 1px solid black;
     cursor: pointer;
+    padding-left: 5px;
+    background-color: $amethyst;
+    border-radius: 10px;
+    margin-bottom: 5px;
 
     &::marker {
       color: grey;
       font-size: 30px;
+      /* margin-left: 40px; */
     }
 
     &:hover {
       font-weight: bold;
+      background-color: $wisteria;
     }
 
     &:last-child {
-      border-bottom: none;
+      margin-bottom: 0;
     }
 
   }
@@ -324,11 +354,16 @@ body {
   .answers-list__item--correct {
     border-bottom: 1px solid black;
     cursor: pointer;
-    color: green;
+    border: 1px solid black;
+    cursor: pointer;
+    padding-left: 5px;
+    background-color: $wisteria;
+    border-radius: 10px;
+    margin-bottom: 5px;
     font-weight: bold;
   
     &::marker {
-      color: green;
+      color: #32CD32;
       font-size: 30px;
     }
   
@@ -337,18 +372,22 @@ body {
     }
   
     &:last-child {
-      border-bottom: none;
+      margin: 0;
     }
     
   }
   
   .answers-list__item--wrong {
-    border-bottom: 1px solid black;
     cursor: pointer;
-    color: red;
+    border: 1px solid black;
+    padding-left: 5px;
+    background-color: $french-violet;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    
   
     &::marker {
-      color: red;
+      color: #DC143C;
       font-size: 30px;
     }
   
@@ -357,7 +396,7 @@ body {
     }
   
     &:last-child {
-      border-bottom: none;
+      margin-bottom: 0;
     }
   
   }
@@ -434,8 +473,7 @@ body {
 }
 
 .footer {
-  background-color: rgba(255, 255, 255, .94);
-  max-width: 1440px;
+  background-color: $amethyst;
   width: 100%;
   max-height: 80px;
   left: 50%;
