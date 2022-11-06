@@ -1,19 +1,33 @@
 import { goToQuizPage, resetState } from './_quizpage';
 import 'animate.css';
 import mainMenuThemeSrc from '../assets/audio/main-menu.mp3';
+import { changeVolumeBtnIcon } from './_header';
 
 const mainMenuTheme = new Audio();
 mainMenuTheme.src = mainMenuThemeSrc;
 mainMenuTheme.loop = true;
 mainMenuTheme.volume = 0.5;
+mainMenuTheme.muted = true;
 
 function createStartButton() {
   const startButton = document.createElement('button');
-  startButton.classList.add('main__start-button', 'animate__animated', 'animate__pulse', 'animate__infinite', 'animate__slow');
+  startButton.classList.add(
+    'main__start-button',
+    'animate__animated',
+    'animate__pulse',
+    'animate__infinite',
+    'animate__slow',
+  );
   startButton.innerHTML = 'START';
   startButton.addEventListener('click', () => {
     goToQuizPage();
     mainMenuTheme.pause();
+    const volumeBtn = document.querySelector('.header-buttons__volume-btn');
+    const volumeBtnImg = document.querySelector('.header-buttons__volume-btn-img');
+    volumeBtn.classList.remove('header-buttons__volume-btn--mute');
+    volumeBtn.classList.add('header-buttons__volume-btn--on');
+    changeVolumeBtnIcon(volumeBtn, volumeBtnImg);
+    volumeBtn.classList.add('header-buttons__volume-btn--invisible');
   });
   return startButton;
 }
@@ -21,6 +35,11 @@ function createStartButton() {
 function goToHomePage() {
   mainMenuTheme.currentTime = 0;
   mainMenuTheme.play();
+  const volumeBtn = document.querySelector('.header-buttons__volume-btn');
+  const volumeBtnImg = document.querySelector('.header-buttons__volume-btn-img');
+  changeVolumeBtnIcon(volumeBtn, volumeBtnImg);
+  mainMenuTheme.muted = false;
+  volumeBtn.classList.remove('header-buttons__volume-btn--invisible');
   resetState(true);
   document.querySelector('.main').innerHTML = '';
   document.querySelector('.main').append(createStartButton());
@@ -28,7 +47,6 @@ function goToHomePage() {
 }
 
 function createMain() {
-  mainMenuTheme.play();
   const main = document.createElement('main');
   main.className = 'main';
   const startButton = createStartButton();
@@ -36,4 +54,6 @@ function createMain() {
   return main;
 }
 
-export { goToHomePage, createStartButton, createMain };
+export {
+  goToHomePage, createStartButton, createMain, mainMenuTheme,
+};

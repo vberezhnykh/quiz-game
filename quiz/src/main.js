@@ -1,7 +1,7 @@
 import './index.html';
 import './styles/styles.scss';
 import backgroundImage from './assets/images/background.webp';
-import createHeader from './modules/_header';
+import { createHeader } from './modules/_header';
 import { createMain } from './modules/_homepage';
 import createFooter from './modules/_footer';
 import { checkState } from './modules/_quizpage';
