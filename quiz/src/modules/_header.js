@@ -10,6 +10,7 @@ function createHeader() {
   header.append(logo);
   const homeBtn = document.createElement('button');
   homeBtn.className = 'header__home-btn';
+  homeBtn.classList.add('hvr-grow-shadow');
   const homeBtnImg = new Image();
   homeBtnImg.src = homeBtnImage;
   homeBtn.append(homeBtnImg);

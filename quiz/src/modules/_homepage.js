@@ -1,8 +1,9 @@
 import { goToQuizPage, resetState } from './_quizpage';
+import 'animate.css';
 
 function createStartButton() {
   const startButton = document.createElement('button');
-  startButton.className = 'main__start-button';
+  startButton.classList.add('main__start-button', 'animate__animated', 'animate__pulse', 'animate__infinite', 'animate__slow');
   startButton.innerHTML = 'START';
   startButton.onclick = goToQuizPage;
   return startButton;

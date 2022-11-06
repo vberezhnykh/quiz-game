@@ -1,10 +1,17 @@
 /* eslint-disable prefer-const */
 import defaultImage from '../assets/images/default-img.webp';
-import createPlayer from './_player';
+import { createPlayer, updateSongStatus } from './_player';
 import gameData from '../gamesData';
 import wrongSound from '../assets/audio/wrong.mp3';
 import correctSound from '../assets/audio/correct.mp3';
 import createPopup from './_popup';
+
+const correctAnswer = new Audio();
+correctAnswer.src = correctSound;
+const wrongAnswer = new Audio();
+wrongAnswer.src = wrongSound;
+const questionSong = new Audio();
+const answerSong = new Audio();
 
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i -= 1) {
@@ -40,9 +47,9 @@ function randomizeIndex(array) {
 let randomIndex = randomizeIndex(currentAnswers);
 let currentQuestion = createCurrentQuestion(currentAnswers, randomIndex);
 
-let isPaused = false; // про setinterval в конце
 let isAnswered = false;
-let scoresPerRound = 5; // очки, которые дают за победу в раунде;
+let scoresPerRound = 5;
+let isPointsScored = true;
 
 function createQuestion() {
   const questionSection = document.createElement('section');
@@ -56,7 +63,7 @@ function createQuestion() {
   heading.className = 'question__heading';
   heading.textContent = '****';
   question.append(heading);
-  const player = createPlayer(currentQuestion);
+  const player = createPlayer(currentQuestion, questionSong);
   question.append(player);
   questionSection.append(question);
 
@@ -82,21 +89,20 @@ function createAnswers() {
     answer.addEventListener('click', () => {
       if (!isAnswered) {
         if (currentAnswers[i] === currentQuestion) {
-          /* document.querySelectorAll('audio').forEach((element) => element.pause()); */
+          isPointsScored = false;
           answer.className = 'answers-list__item--correct';
-          const correct = new Audio();
-          correct.src = correctSound;
-          correct.play();
+          correctAnswer.play();
           isAnswered = true;
           const questionImg = document.querySelector('.question__img');
           questionImg.src = currentQuestion.image;
           const questionHeading = document.querySelector('.question__heading');
           questionHeading.innerHTML = currentQuestion.name;
+          questionSong.pause();
+          document.querySelector('.toggle-play').classList.add('play');
+          document.querySelector('.toggle-play').classList.remove('pause');
         } else {
           answer.className = 'answers-list__item--wrong';
-          const wrong = new Audio();
-          wrong.src = wrongSound;
-          wrong.play();
+          wrongAnswer.play();
           scoresPerRound -= 1;
         }
       }
@@ -121,9 +127,11 @@ function createAnswers() {
       container.append(textContainer);
       description.append(container);
 
-      const audio = createPlayer(currentAnswers[i]);
-      audio.classList.add('description__audio');
-      description.append(audio);
+      if (currentAnswers[i] !== currentQuestion) {
+        const audio = createPlayer(currentAnswers[i], answerSong);
+        audio.classList.add('description__audio');
+        description.append(audio);
+      }
     });
     answersList.append(answer);
   }
@@ -154,14 +162,20 @@ function createBoard() {
   // создаем варианты ответов
   const answers = createAnswers();
   board.append(answers);
+  /* createPopup(); */
+  answerSong.pause();
 
   return board;
 }
 
 function resetState(isHardReset) {
-  if (isHardReset) categoryIndex = 0;
+  if (isHardReset) {
+    categoryIndex = 0;
+    questionSong.src = '';
+    answerSong.src = '';
+  }
   isAnswered = false;
-  isPaused = false;
+  isPointsScored = true;
   currentCategory = categories[categoryIndex];
   currentAnswers = createCurrentAnswers();
   randomIndex = randomizeIndex(currentAnswers);
@@ -175,7 +189,6 @@ function replaceBoard(isRestart) {
 }
 
 function goToQuizPage() {
-  /* isHomePage = false; */
   const main = document.querySelector('.main');
   main.innerHTML = '';
   const score = document.createElement('div');
@@ -189,13 +202,15 @@ function goToQuizPage() {
   main.append(createBoard());
   main.classList.add('main--active');
   const button = document.createElement('button');
-  button.innerHTML = 'Next Level';
+  button.innerHTML = 'Next round';
   button.className = 'main__button';
   button.disabled = true;
   button.addEventListener('click', () => {
     if (categoryIndex !== categories.length - 1) categoryIndex += 1;
     replaceBoard();
     button.disabled = true;
+    button.classList.remove('main__button--active');
+    button.classList.remove('hvr-sweep-to-right');
   });
   document.querySelector('.main').append(button);
 }
@@ -203,20 +218,27 @@ function goToQuizPage() {
 function checkState() {
   setInterval(() => {
     try {
-      const button = document.querySelector('.main__button');
-      if (!isPaused) {
-        if (isAnswered) {
-          const scoreNum = document.querySelector('.score__num');
-          scoreNum.innerHTML = parseInt(scoreNum.innerHTML, 10) + scoresPerRound;
-          scoresPerRound = 5;
-          isPaused = true;
-          // если это последняя категория, то всплывает попап с результатами
-          if (categoryIndex === categories.length - 1) createPopup();
-          button.disabled = false;
+      if (isAnswered && !isPointsScored) {
+        isPointsScored = true;
+        const scoreNum = document.querySelector('.score__num');
+        scoreNum.innerHTML = parseInt(scoreNum.innerHTML, 10) + scoresPerRound;
+        scoresPerRound = 5;
+        const button = document.querySelector('.main__button');
+        button.classList.add('main__button--active');
+        button.classList.add('hvr-sweep-to-right');
+        button.disabled = false;
+        // если это последняя категория, то всплывает попап с результатами
+        if (categoryIndex === categories.length - 1) {
+          createPopup();
+          button.disabled = true;
+          button.classList.remove('main__button--active');
+          button.classList.remove('hvr-sweep-to-right');
         }
       }
+      updateSongStatus(questionSong);
+      updateSongStatus(answerSong, true);
     } catch (error) {
-      throw new Error(error);
+      /* throw new Error(error); */
     }
   }, 1000);
 }

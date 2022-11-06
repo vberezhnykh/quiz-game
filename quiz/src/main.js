@@ -8,6 +8,7 @@ import { checkState } from './modules/_quizpage';
 
 function createStartingPage() {
   document.body.style.backgroundImage = `url(${backgroundImage})`;
+  document.body.className = 'body';
 
   const header = createHeader();
   document.body.append(header);

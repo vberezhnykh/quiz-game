@@ -1,6 +1,12 @@
 import { replaceBoard } from './_quizpage';
 import { goToHomePage } from './_homepage';
+import winSound from '../assets/audio/win.mp3';
+import lossSound from '../assets/audio/loss.mp3';
 
+const winMusic = new Audio();
+winMusic.src = winSound;
+const lossMusic = new Audio();
+lossMusic.src = lossSound;
 const maxScores = 30;
 
 function createPopup() {
@@ -21,6 +27,7 @@ function createPopup() {
   const yesBtn = document.createElement('button');
   yesBtn.innerHTML = 'Yes';
   yesBtn.className = 'endgame-buttons__confirm';
+  yesBtn.classList.add('hvr-wobble-vertical');
   yesBtn.addEventListener('click', () => {
     scoreNum.innerHTML = 0;
     replaceBoard(true);
@@ -31,6 +38,7 @@ function createPopup() {
   const noBtn = document.createElement('button');
   noBtn.innerHTML = 'No';
   noBtn.className = 'endgame-buttons__decline';
+  noBtn.classList.add('hvr-wobble-horizontal');
   noBtn.onclick = () => {
     goToHomePage();
     document.body.classList.remove('body--unscrollable');
@@ -42,15 +50,19 @@ function createPopup() {
   popup.append(heading);
   popup.append(message);
   if (parseInt(scoreNum.innerHTML, 10) === maxScores) {
+    popup.classList.add('animate__animated', 'animate__tada');
     heading.innerHTML = 'Congratulations!';
     // eslint-disable-next-line no-multi-str
     message.innerHTML = 'You have scored maximum of 30 points.\n\
     GAME OVER.';
+    winMusic.play();
   } else {
+    popup.classList.add('animate__animated', 'animate__bounceIn');
     heading.innerHTML = 'Oops...You have lost :(';
-    message.innerHTML = `You have scored ${scoreNum.innerHTML} scores.\n\
-    To win the game, you need to get 30 scores. Want to try again?`;
+    message.innerHTML = `You have scored ${scoreNum.innerHTML} points.\n\
+    To win the game, you need to get 30 points. Want to try again?`;
     popup.append(buttons);
+    lossMusic.play();
   }
   interlayer.after(popup);
 

@@ -1,11 +1,21 @@
-/* eslint-disable no-unused-vars */
+/* eslint-disable no-param-reassign */
 /* eslint-disable no-mixed-operators */
-let timerId; // таймер внутри плеера;
+/* const questionSong = new Audio(); */
 
-function createPlayer(game) {
+function getTimeCodeFromNum(num) {
+  let seconds = parseInt(num, 10);
+  let minutes = parseInt(seconds / 60, 10);
+  seconds -= minutes * 60;
+  const hours = parseInt(minutes / 60, 10);
+  minutes -= hours * 60;
+
+  if (hours === 0) return `${minutes}:${String(seconds % 60).padStart(2, 0)}`;
+  return `${String(hours).padStart(2, 0)}:${minutes}:${String(seconds % 60).padStart(2, 0)}`;
+}
+
+function createPlayer(game, audio) {
   const player = document.createElement('div');
   player.className = 'player';
-  const audio = new Audio();
   audio.src = game.audio;
   // таймлайн
   const timeline = document.createElement('div');
@@ -55,17 +65,6 @@ function createPlayer(game) {
   controls.append(volumeContainer);
   player.append(controls);
 
-  function getTimeCodeFromNum(num) {
-    let seconds = parseInt(num, 10);
-    let minutes = parseInt(seconds / 60, 10);
-    seconds -= minutes * 60;
-    const hours = parseInt(minutes / 60, 10);
-    minutes -= hours * 60;
-
-    if (hours === 0) return `${minutes}:${String(seconds % 60).padStart(2, 0)}`;
-    return `${String(hours).padStart(2, 0)}:${minutes}:${String(seconds % 60).padStart(2, 0)}`;
-  }
-
   audio.addEventListener('loadeddata', () => {
     length.textContent = getTimeCodeFromNum(
       audio.duration,
@@ -86,14 +85,14 @@ function createPlayer(game) {
     }
   }, false);
 
-  // click on timeline to skip around
+  // клик по таймлайну перематывает трек
   timeline.addEventListener('click', (event) => {
     const timelineWidth = window.getComputedStyle(timeline).width;
     const timeToSeek = event.offsetX / parseInt(timelineWidth, 10) * audio.duration;
     audio.currentTime = timeToSeek;
   }, false);
 
-  // click volume slider to change volume;
+  // клик по слайдеру звука
   volumeSlider.addEventListener('click', (e) => {
     const sliderWidth = window.getComputedStyle(volumeSlider).width;
     const newVolume = e.offsetX / parseInt(sliderWidth, 10);
@@ -101,23 +100,31 @@ function createPlayer(game) {
     volumePercentage.style.width = `${newVolume * 100}%`;
   }, false);
 
-  // check audio percentage and update time accordingly
-  timerId = setInterval(() => {
-    progress.style.width = `${audio.currentTime / audio.duration * 100}%`;
-    current.textContent = getTimeCodeFromNum(
-      audio.currentTime,
-    );
-    if (audio.duration === audio.currentTime) {
-      togglePlay.classList.remove('pause');
-      togglePlay.classList.add('play');
-    }
-    /* if (isHomePage || isAnswered) { // TODO: добавить переключение на другой вопрос
-      audio.pause(); // TODO: зафиксить баг с тем, что трек всегда встает на паузу
-      clearInterval(timerId);
-    } */
-  }, 1000);
-
   return player;
 }
 
-export default createPlayer;
+function updateSongStatus(audio, isAnswerSong) {
+  let progress;
+  let current;
+  let togglePlay;
+  if (!isAnswerSong) {
+    progress = document.querySelectorAll('.progress')[0];
+    current = document.querySelectorAll('.current')[0];
+    togglePlay = document.querySelectorAll('.toggle-play')[0];
+  } else {
+    progress = document.querySelectorAll('.progress')[1];
+    current = document.querySelectorAll('.current')[1];
+    togglePlay = document.querySelectorAll('.toggle-play')[1];
+  }
+  progress.style.width = `${audio.currentTime / audio.duration * 100}%`;
+  current.textContent = getTimeCodeFromNum(
+    audio.currentTime,
+  );
+  if (audio.duration === audio.currentTime) {
+    togglePlay.classList.remove('pause');
+    togglePlay.classList.add('play');
+    progress.style.width = '0';
+  }
+}
+
+export { createPlayer, updateSongStatus };
