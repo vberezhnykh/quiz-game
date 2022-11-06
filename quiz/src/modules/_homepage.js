@@ -28,6 +28,9 @@ function createStartButton() {
     volumeBtn.classList.add('header-buttons__volume-btn--on');
     changeVolumeBtnIcon(volumeBtn, volumeBtnImg);
     volumeBtn.classList.add('header-buttons__volume-btn--invisible');
+    const homeBtn = document.querySelector('.header-buttons__home-btn');
+    homeBtn.classList.remove('header-buttons__home-btn--inactive');
+    homeBtn.disabled = false;
   });
   return startButton;
 }

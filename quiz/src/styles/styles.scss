@@ -21,11 +21,11 @@ $white-smoke: #f5f5f5;
 
 @mixin header-buttons {
   padding: 0;
-  cursor: pointer;
   margin: 0;
   background-color: $wisteria;
   border-radius: 10px;
-
+  cursor: pointer;
+  
   img {
     width: 50px;
     height: 50px;
@@ -279,7 +279,7 @@ $white-smoke: #f5f5f5;
   gap: 20px;
 
   .header-buttons__volume-btn {
-    @include header-buttons();
+    @include header-buttons();    
   }
 
   .header-buttons__home-btn {
@@ -289,6 +289,10 @@ $white-smoke: #f5f5f5;
   .header-buttons__volume-btn--invisible {
     opacity: 0;
     transition: 0.3s;
+  }
+
+  .header-buttons__home-btn--inactive {
+    cursor: not-allowed;
   }
 
 }

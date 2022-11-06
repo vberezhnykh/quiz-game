@@ -34,11 +34,12 @@ function createHeaderButtonsContainer() {
   });
   buttonsContainer.append(volumeBtn);
   const homeBtn = document.createElement('button');
-  homeBtn.classList.add('header-buttons__home-btn', 'hvr-grow-shadow');
+  homeBtn.classList.add('header-buttons__home-btn', 'header-buttons__home-btn--inactive');
   const homeBtnImg = new Image();
   homeBtnImg.src = homeBtnImage;
   homeBtn.append(homeBtnImg);
   homeBtn.onclick = goToHomePage;
+  homeBtn.disabled = true;
   buttonsContainer.append(homeBtn);
 
   return buttonsContainer;
