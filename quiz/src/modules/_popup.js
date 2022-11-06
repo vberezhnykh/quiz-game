@@ -1,3 +1,4 @@
+import Fireworks from 'fireworks-js';
 import { replaceBoard } from './_quizpage';
 import { goToHomePage } from './_homepage';
 import winSound from '../assets/audio/win.mp3';
@@ -56,6 +57,8 @@ function createPopup() {
     message.innerHTML = 'You have scored maximum of 30 points.\n\
     GAME OVER.';
     winMusic.play();
+    const fireworks = new Fireworks(interlayer, { /* options */ });
+    fireworks.start();
   } else {
     popup.classList.add('animate__animated', 'animate__bounceIn');
     heading.innerHTML = 'Oops...You have lost :(';
