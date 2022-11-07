@@ -38,7 +38,12 @@ function createHeaderButtonsContainer() {
   const homeBtnImg = new Image();
   homeBtnImg.src = homeBtnImage;
   homeBtn.append(homeBtnImg);
-  homeBtn.onclick = goToHomePage;
+  homeBtn.addEventListener('click', () => {
+    goToHomePage();
+    homeBtn.classList.add('header-buttons__home-btn--inactive');
+    homeBtn.classList.remove('hvr-grow-shadow');
+    homeBtn.disabled = true;
+  });
   homeBtn.disabled = true;
   buttonsContainer.append(homeBtn);
 

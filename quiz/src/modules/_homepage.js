@@ -30,6 +30,7 @@ function createStartButton() {
     volumeBtn.classList.add('header-buttons__volume-btn--invisible');
     const homeBtn = document.querySelector('.header-buttons__home-btn');
     homeBtn.classList.remove('header-buttons__home-btn--inactive');
+    homeBtn.classList.add('hvr-grow-shadow');
     homeBtn.disabled = false;
   });
   return startButton;
