@@ -1,0 +1,44 @@
+@import './colors';
+
+.main {
+  width: 100%;
+  margin: auto;
+  font-size: 20px;
+  padding: 1%;
+  flex-grow: 1;
+  position: relative;
+  
+  .main__button {
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto 10px;
+    font-size: 30px;
+    width: 200px;
+    height: 50px;
+  }
+
+  .main__button--active {
+  background-color: $secondary-color;
+  color: $white-smoke;
+  cursor: pointer;
+  }
+
+  .main__start-button {
+    font-family: 'Righteous', cursive;
+    border-radius: 10px;
+    background-color: $secondary-color;
+    color: $white-smoke;
+    cursor: pointer;
+    font-size: 80px;
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    top: calc(50% - 50px);
+    left: calc(50% - 150px);
+  }
+
+}
+
+.main--active {
+  background-color: $background-color;
+}

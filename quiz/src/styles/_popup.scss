@@ -1,0 +1,68 @@
+@import './colors';
+
+@mixin endgame-buttons {
+  font-size: 30px;
+  width: 100px;
+  height: 50px;
+  border: 0.5px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.interlayer {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+}
+
+.popup {
+  z-index: 2;
+  background-color: $main-color;
+  border: 0.5px solid black;
+  border-radius: 10px;
+  position: fixed;
+  top: calc(50% - 150px);
+  left: calc(50% - 300px);
+  width: 600px;
+  height: 300px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .popup__heading {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .popup__message {
+    font-size: 20px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .popup {
+    width: 320px;
+    height: 300px;
+    left: calc(50% - 160px);
+  }
+}
+
+.endgame-buttons {
+  display: flex;
+  gap: 50px;
+
+  .endgame-buttons__confirm {
+    @include endgame-buttons();
+    background-color: $lime-green;
+  }
+
+  .endgame-buttons__decline {
+    @include endgame-buttons();
+    background-color: $crimson;
+  }
+
+}
