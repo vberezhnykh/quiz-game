@@ -122,7 +122,7 @@ function createAnswers() {
       textContainer.append(heading);
 
       const text = document.createElement('p');
-      text.innerHTML = currentAnswers[i].description;
+      text.innerText = currentAnswers[i].description;
       textContainer.append(text);
       container.append(textContainer);
       description.append(container);

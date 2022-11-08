@@ -92,9 +92,9 @@ import dragonAgeAudio from './assets/audio/dragon-age.mp3';
 import marioCover from './assets/images/mario-cover.webp';
 import marioImg from './assets/images/mario-landscape.webp';
 import marioAudio from './assets/audio/mario.mp3';
-import pacManCover from './assets/images/pac-man-cover.webp';
-import pacManImg from './assets/images/pac-man-landscape.webp';
-import pacManAudio from './assets/audio/pac-man.mp3';
+import donkeyKongCover from './assets/images/donkey-kong-cover.webp';
+import donkeyKongImg from './assets/images/donkey-kong-img.webp';
+import donkeyKongAudio from './assets/audio/donkey-kong.mp3';
 import sonicCover from './assets/images/sonic-cover.webp';
 import sonicImg from './assets/images/sonic-landscape.webp';
 import sonicAudio from './assets/audio/sonic.mp3';
@@ -115,8 +115,8 @@ const gameData = [
     cover: gta2Cover,
     image: gta2Img,
     audio: gta2Audio,
-    description: 'Developed by DMA Design in October 1999. Set within a retrofuturistic metropolis known as "Anywhere City", the game focuses on players taking the role \
-    of a criminal as they roam an open world, conducting jobs for various crime syndicates and having free rein to do whatever they wish to achieve their goal.',
+    description: 'Developer(s): DMA Design\nPublisher(s): Rockstar Games\nRelease: October, 1999\nPlatforms(s): Microsoft Windows, PlayStation, Dreamcast, Game Boy Color',
+    link: 'https://en.wikipedia.org/wiki/Grand_Theft_Auto_2',
   },
   {
     name: 'Grand Theft Auto: London',
@@ -124,8 +124,8 @@ const gameData = [
     cover: gtaLondonCover,
     image: gtaLondonImg,
     audio: gtaLondonAudio,
-    description: 'An expansion pack for the 1997 game Grand Theft Auto. The expansion takes place in a fictionalised version of London during the 1960s. Players assume the \
-    role of a criminal who works for several London-based criminal syndicates, and complete levels by achieving a set score, within an open-world environment.',
+    description: 'Developer(s): Rockstar Canada\nPublisher(s): Rockstar Games\nRelease: April, 1999\nPlatforms(s): Microsoft Windows, PlayStation, MS-DOS',
+    link: 'https://en.wikipedia.org/wiki/Grand_Theft_Auto:_London_1969',
   },
   {
     name: 'Grand Theft Auto III',
@@ -133,8 +133,8 @@ const gameData = [
     cover: gta3Cover,
     image: gta3Img,
     audio: gta3Audio,
-    description: 'Is a 2001 action-adventure game set within the fictional Liberty City (loosely based on New York City), the story follows Claude, a silent protagonist who, \
-    after being betrayed and left for dead by his girlfriend during a robbery, embarks on a quest for revenge that leads him to become entangled in a world of crime, drugs, gang warfare, and corruption.',
+    description: 'Developer(s): DMA Design\nPublisher(s): Rockstar Games\nRelease: October, 2001\nPlatforms(s): PlayStation 2, Windows, Xbox, MAC OS X, Android, iOS, Fire OS',
+    link: 'https://en.wikipedia.org/wiki/Grand_Theft_Auto_III',
   },
   {
     name: 'Grand Theft Auto: Vice City',
@@ -142,8 +142,8 @@ const gameData = [
     cover: gtaVCCover,
     image: gtaVCImg,
     audio: gtaVCAudio,
-    description: 'Is a 2002 action-adventure game set in 1986 within the fictional Vice City (based on Miami and Miami Beach), the story follows mobster Tommy Vercetti\'s rise \
-    to power after being released from prison and becoming caught up in an ambushed drug deal. He slowly builds a criminal empire by seizing power from other criminal organisations in the city.',
+    description: 'Developer(s): Rockstar North\nPublisher(s): Rockstar Games\nRelease: October, 2002\nPlatforms(s): PlayStation 2, Windows, Xbox, MAC OS X, Android, iOS, Fire OS',
+    link: 'https://en.wikipedia.org/wiki/Grand_Theft_Auto:_Vice_City',
   },
   {
     name: 'Grand Theft Auto: San Andreas',
@@ -151,8 +151,9 @@ const gameData = [
     cover: gtaSACover,
     image: gtaSAImg,
     audio: gtaSAAudio,
-    description: 'Is a 2004 action-adventure game. The story follows former gangster Carl "CJ" Johnson, who returns home following his mother\'s murder and is drawn back into his \
-    former gang and a life of crime while clashing with corrupt authorities and powerful criminals. Carl\'s journey takes him across the fictional U.S. state of San Andreas, which is heavily based on California and Nevada and encompasses three major cities: Los Santos (inspired by Los Angeles), San Fierro (San Francisco) and Las Venturas (Las Vegas).',
+    description: 'Developer(s): Rockstar North\nPublisher(s): Rockstar Games\nRelease: October, 2004\nPlatforms(s): PlayStation 2, Windows, Xbox, MAC OS X, Android, iOS, Fire OS, Windows Phone\
+    Xbox 360, PlayStation 3, Oculus Quest 2',
+    link: 'https://en.wikipedia.org/wiki/Grand_Theft_Auto:_San_Andreas',
   },
   {
     name: 'Grand Theft Auto IV',
@@ -160,8 +161,8 @@ const gameData = [
     cover: gta4Cover,
     image: gta4Img,
     audio: gta4Audio,
-    description: 'Is a 2008 action-adventure game set within the fictional Liberty City, based on New York City, the story follows Eastern European war veteran Niko Bellic and his \
-    attempts to escape his past while under pressure from high-profile criminals. The open world design lets players freely roam Liberty City, consisting of three main islands, and the neighbouring state of Alderney, which is based on New Jersey.',
+    description: 'Developer(s): Rockstar North\nPublisher(s): Rockstar Games\nRelease: April, 2008\nPlatforms(s): PlayStation 3, Xbox 360, Windows',
+    link: 'https://en.wikipedia.org/wiki/Grand_Theft_Auto_IV',
   },
   {
     name: 'Need for Speed: Underground',
@@ -169,8 +170,9 @@ const gameData = [
     cover: nfs1Cover,
     image: nfs1Img,
     audio: nfs1Audio,
-    description: 'Is a 2003 racing video game. It was the first game in the series to offer a career mode featuring a storyline, and a garage mode that allowed players to fully \
-    customize their cars with a large variety of brand-name performance and visual upgrades. All races take place in the fictional Olympic City.',
+    description: 'Developer(s): EA Black Box, Pocketeers (GBA), Global VR (Arcade)\nPublisher(s): EA Games, Konami (Arcade)\nRelease: November, 2003\nPlatforms(s): PlayStation 2, GameCube, Xbox,\
+    Windows, Game Boy Advance, Arcade',
+    link: 'https://en.wikipedia.org/wiki/Need_for_Speed:_Underground',
   },
   {
     name: 'Need for Speed: Underground 2',
@@ -178,8 +180,9 @@ const gameData = [
     cover: nfs2Cover,
     image: nfs2Img,
     audio: nfs2Audio,
-    description: 'Is a 2004 racing video game. The game entails tuning cars for street races, resuming the Need for Speed: Underground storyline. Need for Speed: Underground 2 \
-    provides several new features, such as broader customization, new methods of selecting races, set in a city known as Bayview. Brooke Burke is the voice of Rachel Teller, the person who guides the player throughout the game.',
+    description: 'Developer(s): EA Black Box, Pocketeers (GBA, DS), Team Fusion (PSP)\nPublisher(s): Electronic Arts\nRelease: November, 2004\nPlatforms(s): Windows, Game Boy Advance,\
+    GameCube, PlayStation 2, Xbox, PlayStation Portable, Nintendo DS',
+    link: 'https://en.wikipedia.org/wiki/Need_for_Speed:_Underground_2',
   },
   {
     name: 'Forza Horizon 5',
@@ -187,8 +190,8 @@ const gameData = [
     cover: forzaCover,
     image: forzaImg,
     audio: forzaAudio,
-    description: 'Is a 2021 racing video game developed by Playground Games and published by Xbox Game Studios. It is the fifth Forza Horizon title and twelfth main instalment in \
-    the Forza series. The game is set in a fictionalised representation of Mexico. The game received critical acclaim and became a commercial success upon release.',
+    description: 'Developer(s): Playground Games\nPublisher(s): Xbox Game Studios\nRelease: November, 2021\nPlatforms(s): Windows, Xbox One, Xbox Series X/S',
+    link: 'https://en.wikipedia.org/wiki/Forza_Horizon_5',
   },
   {
     name: 'Burnout Paradise',
@@ -196,8 +199,8 @@ const gameData = [
     cover: burnoutCover,
     image: burnoutImg,
     audio: burnoutAudio,
-    description: 'Is a 2008 racing video game set in the fictional "Paradise City", an open world in which players can compete in several types of races. Players can also compete \
-    online, which includes additional game modes, such as "Cops and Robbers". Several free game updates introduce new features such as a time-of-day cycle and motorcycles.',
+    description: 'Developer(s): Criterion Games\nPublisher(s): Electronic Arts\nRelease: January, 2008\nPlatforms(s): Windows, PlayStation 3, Xbox 360, PlayStation 4, Xbox One, Nintendo Switch',
+    link: 'https://en.wikipedia.org/wiki/Burnout_Paradise',
   },
   {
     name: 'Crash Team Racing',
@@ -205,8 +208,8 @@ const gameData = [
     cover: crashTeamRacingCover,
     image: crashTeamRacingImg,
     audio: crashTeamRacingAudio,
-    description: 'Is a 1999 kart racing video game. The game\'s story focuses on the efforts of Crash Bandicoot, Doctor Neo Cortex, and other ragtag team of characters in the \
-    Crash Bandicoot series, who must race against the egomaniacal Nitros Oxide to save the Earth from destruction.',
+    description: 'Developer(s): Naughty Dog\nPublisher(s): Sony Computer Entertainment\nRelease: September, 1999\nPlatforms(s): PlayStation',
+    link: 'https://en.wikipedia.org/wiki/Crash_Team_Racing',
   },
   {
     name: 'Project Cars',
@@ -214,8 +217,8 @@ const gameData = [
     cover: projectCarsCover,
     image: projectCarsImg,
     audio: projectCarsAudio,
-    description: 'Is a motorsport racing simulator released in 2015. There are 74 drivable cars, over 30 unique locations with at least 110 different courses, of which 23 are \
-    real, with the remainder being fictional. For licensing reasons, some tracks are codenamed using their geographic location.',
+    description: 'Developer(s): Slighty Mad Studios\nPublisher(s): Bandai Namco Entertainment\nRelease: May, 2015\nPlatforms(s): Windows, PlayStation 4, Xbox One',
+    link: 'https://en.wikipedia.org/wiki/Project_CARS_(video_game)',
   },
   {
     name: 'Battlefield 3',
@@ -223,8 +226,8 @@ const gameData = [
     cover: battlefield3Cover,
     image: battlefield3Img,
     audio: battlefield3Audio,
-    description: 'Is a 2011 first-person shooter video game. In Battlefield 3\'s campaign, players take on the personas of several military roles: a U.S. Marine, an F/A-18F Super \
-    Hornet weapon systems officer, an M1A2 Abrams tank operator, and a Spetsnaz GRU operative. The campaign takes place in various locations and follows the stories of two characters, Henry Blackburn and Dimitri Mayakovsky.',
+    description: 'Developer(s): DICE\nPublisher(s): Electronic Arts\nRelease: October, 2011\nPlatforms(s): Windows, PlayStation 3, Xbox 360',
+    link: 'https://en.wikipedia.org/wiki/Battlefield_3',
   },
   {
     name: 'Call of Duty 4: Modern Warfare',
@@ -232,9 +235,8 @@ const gameData = [
     cover: codCover,
     image: codImg,
     audio: codAudio,
-    description: 'Is a 2007 first-person shooter video game. The story takes place in the year of 2011, where a radical leader has executed the president of an unnamed country in the Middle East, and an ultranationalist \
-    movement ignites a civil war in Russia. The conflicts are seen from the perspectives of a U.S. Marine Force Recon sergeant and a British SAS commando and are set in various locales, such as the United Kingdom, the \
-    Middle East, Azerbaijan, Russia, and Ukraine.',
+    description: 'Developer(s): Infinity Ward\nPublisher(s): Activision\nRelease: November, 2007\nPlatforms(s): Windows, PlayStation 3, Xbox 360, Mac OS X, Wii',
+    link: 'https://en.wikipedia.org/wiki/Call_of_Duty_4:_Modern_Warfare',
   },
   {
     name: 'Doom',
@@ -242,8 +244,8 @@ const gameData = [
     cover: doomCover,
     image: doomImg,
     audio: doomAudio,
-    description: 'Is a 1993 first-person shooter. Players assume the role of a space marine, popularly known as Doomguy, fighting their way through hordes of invading demons from hell. Doom is one of the most significant \
-    games in video game history, frequently cited as one of the greatest games ever made. Along with Wolfenstein 3D, Doom helped define the FPS genre and inspired numerous similar games, often called Doom clones.',
+    description: 'Developer(s): id Software\nPublisher(s): id Software\nRelease: December, 1993\nPlatforms(s): MS-DOS, fridge, pregnancy test, any other device with a screen',
+    link: 'https://en.wikipedia.org/wiki/Doom_(1993_video_game)',
   },
   {
     name: 'Bulletstorm',
@@ -251,9 +253,9 @@ const gameData = [
     cover: bulletstormCover,
     image: bulletstormImg,
     audio: bulletstormAudio,
-    description: 'Is a 2011 first-person shooter video game. The game is distinguished by its system of rewarding players with "skillpoints" for performing increasingly creative kills. Set in the 26th century, \
-    the game\'s story follows Grayson Hunt, a space pirate and former black ops soldier who gets shot down on a war-torn planet while trying to exact revenge on General Sarrano, his former commander who tricked \
-    him and his men into committing war crimes and assassinating innocents.',
+    description: 'Developer(s): People Can Fly, Epic Games\nPublisher(s): Electronic Arts, Gearbox Publishing\nRelease: February, 2011\nPlatforms(s): Windows, PlayStation 3, Xbox 360, PlayStation 4,\
+    Xbox One, Nintendo Switch',
+    link: 'https://en.wikipedia.org/wiki/Bulletstorm',
   },
   {
     name: 'S.T.A.L.K.E.R.: Shadow of Chernobyl',
@@ -261,8 +263,8 @@ const gameData = [
     cover: stalkerCover,
     image: stalkerImg,
     audio: stalkerAudio,
-    description: 'Is a 2007 first-person shooter survival horror video game set in an alternative reality, where a second disaster of mysterious origin occurred at the Chernobyl Exclusion Zone, causing strange \
-    changes in the area around it.',
+    description: 'Developer(s): GSC Game World\nPublisher(s): THQ, GSC World Publishing\nRelease: March, 2007\nPlatforms(s): Windows',
+    link: 'https://en.wikipedia.org/wiki/S.T.A.L.K.E.R.:_Shadow_of_Chernobyl',
   },
   {
     name: 'Metro 2033',
@@ -270,8 +272,8 @@ const gameData = [
     cover: metroCover,
     image: metroImg,
     audio: metroAudio,
-    description: 'Is a 2010 first-person shooter video game. The story is based on Dmitry Glukhovsky\'s novel of the same name, where survivors of a nuclear war have taken refuge in the Metro tunnels of Moscow.\
-     Players control Artyom, a man who must save his home station from the dangers lurking within the Metro.',
+    description: 'Developer(s): 4A Games\nPublisher(s): THQ, Deep Silver\nRelease: March, 2010\nPlatforms(s): Windows, Xbox 360, PlayStation 4, Xbox One, Nintendo Switch, Linux, OS X, Stadia',
+    link: 'https://en.wikipedia.org/wiki/Metro_2033_(video_game)',
   },
   {
     name: 'Syndicate',
@@ -279,8 +281,8 @@ const gameData = [
     cover: syndicateCover,
     image: syndicateImg,
     audio: syndicateAudio,
-    description: 'Is a 2012 cyberpunk first-person shooter video game set in the year 2069, the narrative revolves around Miles Kilo, a EuroCorp agent who must eliminate important personnel from rival corporations; \
-    in the process, he discovers the evil, secret practice used by EuroCorp to recruit agents.',
+    description: 'Developer(s): Starbreeze Studios\nPublisher(s): Electronic Arts\nRelease: February, 2012\nPlatforms(s): Windows, Xbox 360, PlayStation 3',
+    link: 'https://en.wikipedia.org/wiki/Syndicate_(2012_video_game)',
   },
   {
     name: 'Deus Ex',
@@ -288,8 +290,8 @@ const gameData = [
     cover: deusExCover,
     image: deusExImg,
     audio: deusExAudio,
-    description: 'Is a 2000 action role-playing game set in a cyberpunk-themed dystopian world in the year 2052, the game follows JC Denton, an agent of the fictional agency United Nations Anti-Terrorist Coalition \
-    (UNATCO), who is given superhuman abilities by nanotechnology, as he sets out to combat hostile forces in a world ravaged by inequality and a deadly plague.',
+    description: 'Developer(s): Ion Storm\nPublisher(s): Eidos Interactive\nRelease: June, 2000\nPlatforms(s): Windows, Mac OS, PlayStation 2',
+    link: 'https://en.wikipedia.org/wiki/Deus_Ex_(video_game)',
   },
   {
     name: 'Deus Ex: Human Revolution',
@@ -297,9 +299,8 @@ const gameData = [
     cover: deusExHRCover,
     image: deusExHRImg,
     audio: deusExHRAudio,
-    description: 'Is an action role-playing game set in the year 2027, players control Adam Jensen, a security officer for Sarif Industries, a company which develops controversial artificial organs dubbed \
-    "augmentations". After an attack on Sarif, Jensen undergoes extensive augmentation and investigates the shadowy organization behind the attack. The story explores themes of transhumanism and the growing \
-    power of megacorporations and their impact on social class.',
+    description: 'Developer(s): Eidos-Montréal\nPublisher(s): Square Enix Europe\nRelease: August, 2011\nPlatforms(s): Windows, Mac OS X, PlayStation 3, Xbox 360, Wii U',
+    link: 'https://en.wikipedia.org/wiki/Deus_Ex:_Human_Revolution',
   },
   {
     name: 'Deus Ex: Mankind Divided',
@@ -307,9 +308,8 @@ const gameData = [
     cover: deusExMDCover,
     image: deusExMDImg,
     audio: deusExMDAudio,
-    description: 'Is an action role-playing video game set in 2029, two years after Human Revolution, the world is divided between normal humans and those with advanced, controversial artificial organs \
-    dubbed "augmentations". After a violent event known as the Aug Incident, augmented people have been segregated; this prompts heated debate and an era of "mechanical apartheid". Main protagonist Adam \
-    Jensen, equipped with advanced new augmentations after Human Revolution, is a double agent for the hacker group Juggernaut Collective to expose the Illuminati, which is orchestrating events behind the scenes.',
+    description: 'Developer(s): Eidos-Montréal\nPublisher(s): Square Enix Europe\nRelease: August, 2016\nPlatforms(s): Windows, PlayStation 4, Xbox One, Linux, macOS',
+    link: 'https://en.wikipedia.org/wiki/Deus_Ex:_Mankind_Divided',
   },
   {
     name: 'Cyberpunk 2077',
@@ -317,9 +317,8 @@ const gameData = [
     cover: cyberpunkCover,
     image: cyberpunkImg,
     audio: cyberpunkAudio,
-    description: 'Is an action role-playing video game. The story takes place in Night City, an open world set in the Cyberpunk universe. Players assume the first-person perspective of a customisable mercenary \
-    known as V, who can acquire skills in hacking and machinery with options for melee and ranged combat. The story follows V\'s struggle as he deals with a mysterious cybernetic implant that threatens to \
-    overwrite his body with the personality and memories of a deceased celebrity only perceived by V.',
+    description: 'Developer(s): CD Projekt Red\nPublisher(s): CD Projekt Red\nRelease: Soon...\nPlatforms(s): Windows, PlayStation 4, Xbox One, PlayStation 5, Xbox Series X/S, Stadia',
+    link: 'https://en.wikipedia.org/wiki/Cyberpunk_2077',
   },
   {
     name: 'System Shock',
@@ -327,8 +326,8 @@ const gameData = [
     cover: systemShockCover,
     image: systemShockImg,
     audio: systemShockAudio,
-    description: 'Is a 1994 first-person action-adventure video game set aboard a space station in a cyberpunk vision of the year 2072. Assuming the role of a nameless security hacker, the player attempts \
-    to hinder the plans of a malevolent artificial intelligence called SHODAN.',
+    description: 'Developer(s): LookingGlass Technologies\nPublisher(s): Origin Systems\nRelease: September, 1994\nPlatforms(s): MS-DOS, Mac OS, PC-98, Windows',
+    link: 'https://en.wikipedia.org/wiki/System_Shock',
   },
   {
     name: 'The Witcher 3: Wild Hunt',
@@ -336,8 +335,8 @@ const gameData = [
     cover: witcherCover,
     image: witcherImg,
     audio: withcerAudio,
-    description: 'Is a 2015 action role-playing game based on The Witcher series of fantasy novels written by Andrzej Sapkowski. The game takes place in a fictional fantasy world based on Slavic mythology. \
-    Players control Geralt of Rivia, a monster slayer for hire known as a Witcher, and search for his adopted daughter, who is on the run from the otherworldly Wild Hunt.',
+    description: 'Developer(s): CD Projekt Red\nPublisher(s): CD Projekt\nRelease: May, 2015\nPlatforms(s): Windows, PlayStation 4, Xbox One, Nintendo Switch, PlayStation 5, Xbox Series X/S',
+    link: 'https://en.wikipedia.org/wiki/The_Witcher_3:_Wild_Hunt',
   },
   {
     name: 'The Elder Scrolls V: Skyrim',
@@ -345,8 +344,9 @@ const gameData = [
     cover: skyrimCover,
     image: skyrimImg,
     audio: skyrimAudio,
-    description: 'Is an action role-playing video game set 200 years after the events of Oblivion, and takes place in Skyrim, the northernmost province of Tamriel. Its main story focuses on the player\'s \
-    character, the Dragonborn, on their quest to defeat Alduin the World-Eater, a dragon who is prophesied to destroy the world.',
+    description: 'Developer(s): Bethesda Game Studios\nPublisher(s): Bethesda Softworks\nRelease: November, 2011\nPlatforms(s): Windows, PlayStation 3, Xbox 360, PlayStation 4, Xbox One, Nintendo \
+    Switch, PlayStation 5, Xbox Series X/S',
+    link: 'https://en.wikipedia.org/wiki/The_Elder_Scrolls_V:_Skyrim',
   },
   {
     name: 'Mass Effect',
@@ -354,8 +354,8 @@ const gameData = [
     cover: massEffectCover,
     image: massEfectImg,
     audio: massEfectAudio,
-    description: 'Is the first game in the Mass Effect series, and takes place within the Milky Way galaxy in the year 2183, where civilization is threatened by a highly advanced machine race known as the \
-    Reapers. The player assumes the role of Commander Shepard, an elite human soldier who must stop a rogue agent from carrying out the Reapers\' galactic invasion.',
+    description: 'Developer(s): BioWare\nPublisher(s): Microsoft Game Studios, Electronic Arts\nRelease: November, 2007\nPlatforms(s): Windows, PlayStation 3, Xbox 360',
+    link: 'https://en.wikipedia.org/wiki/Mass_Effect_(video_game)',
   },
   {
     name: 'Fable',
@@ -363,8 +363,9 @@ const gameData = [
     cover: fableCover,
     image: fableImg,
     audio: fableAudio,
-    description: 'Is a role-playing video game takes place in Albion. On his sister\'s birthday, a young boy\'s village of Oakvale is raided by bandits; killing the boy\'s father and abducting his mother and sister. \
-    An old Hero, Maze, rescues the boy and recruits him to be trained as a Hero at an academy called the Heroes\' Guild.',
+    description: 'Developer(s): Big Blue Box Studios, Lionhead Studios\nPublisher(s): Microsoft Game Studios, Feral Interactive\nRelease: September, 2004\nPlatforms(s): Windows, Xbox, Xbox 360, \
+    Max OS X',
+    link: 'https://en.wikipedia.org/wiki/Fable_(2004_video_game)',
   },
   {
     name: 'Fallout 4',
@@ -372,8 +373,8 @@ const gameData = [
     cover: falloutCover,
     image: falloutImg,
     audio: falloutAudio,
-    description: 'Is a 2015 action role-playing game set within an open world post-apocalyptic environment that encompasses the city of Boston and the surrounding Massachusetts region known as "The Commonwealth". \
-    The main story takes place in the year 2287, ten years after the events of Fallout 3 and 210 years after "The Great War", which caused catastrophic nuclear devastation across the United States. ',
+    description: 'Developer(s): Bethesda Game Studios\nPublisher(s): Bethesda Softworks\nRelease: November, 2015\nPlatforms(s): Windows, PlayStation 4, Xbox One, PlayStation 5, Xbox Series X/S',
+    link: 'https://en.wikipedia.org/wiki/Fallout_4',
   },
   {
     name: 'Dragon Age: Origins',
@@ -381,9 +382,8 @@ const gameData = [
     cover: dragonAgeCover,
     image: dragonAgeImg,
     audio: dragonAgeAudio,
-    description: 'It is the first game in the Dragon Age franchise. Set in the fictional kingdom of Ferelden during a period of civil strife, the game puts the player in the role of a warrior, mage, or rogue \
-    coming from an elven, human, or dwarven background. The player character is recruited into the Grey Wardens, an ancient order that stands against monstrous forces known as "Darkspawn", and is tasked with \
-    defeating the Archdemon that commands them and ending their invasion.',
+    description: 'Developer(s): BioWare\nPublisher(s): Electronic Arts\nRelease: November, 2009\nPlatforms(s): Windows, PlayStation 3, Xbox 360, Mac OS X',
+    link: 'https://en.wikipedia.org/wiki/Dragon_Age:_Origins',
   },
   {
     name: 'Super Mario Bros.',
@@ -391,17 +391,17 @@ const gameData = [
     cover: marioCover,
     image: marioImg,
     audio: marioAudio,
-    description: 'The successor to the 1983 arcade game Mario Bros. and the first game in the Super Mario series, it was first released in 1985. Players control Mario, or his brother Luigi in the multiplayer mode, \
-    as they traverse the Mushroom Kingdom to rescue Princess Toadstool from King Koopa (later named Bowser).',
+    description: 'Developer(s): Nintendo R&D4\nPublisher(s): Nintendo\nRelease: September, 1985\nPlatforms(s): NES, Arcade',
+    link: 'https://en.wikipedia.org/wiki/Super_Mario_Bros.',
   },
   {
-    name: 'Pac-Man',
+    name: 'Donkey Kong Country',
     category: 'platformer',
-    cover: pacManCover,
-    image: pacManImg,
-    audio: pacManAudio,
-    description: 'Pac-Man is an action maze chase video game; the player controls the eponymous character through an enclosed maze. The objective of the game is to eat all of the dots placed in the maze while \
-    avoiding four colored ghosts.',
+    cover: donkeyKongCover,
+    image: donkeyKongImg,
+    audio: donkeyKongAudio,
+    description: 'Developer(s): Rare\nPublisher(s): Nintendo\nRelease: November, 1994\nPlatforms(s): SNES, Game Boy Color, Game Boy Advance',
+    link: 'https://en.wikipedia.org/wiki/Donkey_Kong_Country',
   },
   {
     name: 'Sonic the Hedgehog',
@@ -409,8 +409,8 @@ const gameData = [
     cover: sonicCover,
     image: sonicImg,
     audio: sonicAudio,
-    description: 'Sonic the Hedgehog is a platform game developed by Sonic Team and published by Sega for the Sega Genesis. The first game in the Sonic the Hedgehog franchise, it was released in 1991. \
-    Players control Sonic the Hedgehog, who can run at supersonic speeds; Sonic sets out on a quest to defeat Dr. Robotnik, a scientist who has imprisoned animals in robots and seeks the powerful Chaos Emeralds.',
+    description: 'Developer(s): Sonic Team\nPublisher(s): Sega\nRelease: June, 1991\nPlatforms(s): Sega Genesis',
+    link: 'https://en.wikipedia.org/wiki/Sonic_the_Hedgehog_(1991_video_game)',
   },
   {
     name: 'Crash Bandicoot',
@@ -418,9 +418,8 @@ const gameData = [
     cover: crashBandicootCover,
     image: crashBandicootImg,
     audio: crashBandicootAudio,
-    description: 'Crash Bandicoot is a 1996 platform video game developed by Naughty Dog and published by Sony Computer Entertainment for the PlayStation. The game\'s premise chronicles the creation of the titular \
-    Crash, a bandicoot who has been uplifted by the mad scientist Doctor Neo Cortex. The story follows Crash as he aims to prevent Cortex\'s plans for world domination and rescue his girlfriend Tawna, a female bandicoot \
-    also created by Cortex.',
+    description: 'Developer(s): Naughty Dog\nPublisher(s): Sony Computer Entertainment\nRelease: September, 1996\nPlatforms(s): PlayStation',
+    link: 'https://en.wikipedia.org/wiki/Crash_Bandicoot_(video_game)',
   },
   {
     name: 'Prince of Persia',
@@ -428,8 +427,8 @@ const gameData = [
     cover: princeOfPersiaCover,
     image: princeOfPersiaImg,
     audio: princeOfPersiaAudio,
-    description: 'Prince of Persia is a cinematic platform video game developed and published by Broderbund in 1989. Taking place in medieval Persia, players control an unnamed protagonist who must venture \
-    through a series of dungeons to defeat the evil Grand Vizier Jaffar and save an imprisoned princess.',
+    description: 'Developer(s): Broderbund\nPublisher(s): Broderbund\nRelease: October, 1989\nPlatforms(s): Apple II',
+    link: 'https://en.wikipedia.org/wiki/Prince_of_Persia_(1989_video_game)',
   },
   {
     name: 'Spyro the Dragon',
@@ -437,8 +436,7 @@ const gameData = [
     cover: spyroCover,
     image: spyroImg,
     audio: spyroAudio,
-    description: 'Spyro the Dragon is a platform game developed by Insomniac Games in 1998. The first game in the Spyro series, it stars the title character, a young purple dragon named Spyro, and his dragonfly \
-    friend, Sparx, who must journey across the Dragon Kingdom to defeat Gnasty Gnorc, who has overtaken the 5 dragon Homeworlds by trapping the other dragons in crystal and turning their hoard of gems into an army of minions.',
+    description: 'Developer(s): Insomniac Games\nPublisher(s): Sony Computer Entertainment\nRelease: September, 1998\nPlatforms(s): PlayStation',
   },
 ];
 
