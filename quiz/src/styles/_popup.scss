@@ -18,7 +18,7 @@
 
 .popup {
   z-index: 3;
-  background-color: $main-color;
+  background-color: var(--main-color);
   border: 0.5px solid black;
   border-radius: 10px;
   position: fixed;
@@ -57,12 +57,12 @@
 
   .endgame-buttons__confirm {
     @include endgame-buttons();
-    background-color: $lime-green;
+    background-color: var(--lime-green);
   }
 
   .endgame-buttons__decline {
     @include endgame-buttons();
-    background-color: $crimson;
+    background-color: var(--crimson);
   }
 
 }

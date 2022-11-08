@@ -18,16 +18,16 @@
   }
 
   .main__button--active {
-  background-color: $secondary-color;
-  color: $white-smoke;
+  background-color: var(--secondary-color);
+  color: var(--white-smoke);
   cursor: pointer;
   }
 
   .main__start-button {
     font-family: 'Righteous', cursive;
     border-radius: 10px;
-    background-color: $secondary-color;
-    color: $white-smoke;
+    background-color: var(--secondary-color);
+    color: var(--white-smoke);
     cursor: pointer;
     font-size: 80px;
     position: absolute;
@@ -40,5 +40,5 @@
 }
 
 .main--active {
-  background-color: $background-color;
+  background-color: var(--background-color);
 }

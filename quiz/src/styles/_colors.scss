@@ -1,6 +1,8 @@
-$background-color: #6f2dbdff;
-$main-color: #a663ccff;
-$secondary-color: #b298dcff;
-$lime-green: #32cd32;
-$crimson: #dc143c;
-$white-smoke: #f5f5f5;
+:root {
+  --background-color: hsl(268, 62%, 46%);
+  --main-color: hsl(278, 51%, 59%);
+  --secondary-color: hsl(263, 49%, 73%);
+  --lime-green: hsl(120, 61%, 50%);
+  --crimson: hsl(348, 83%, 47%);
+  --white-smoke: hsl(0, 0%, 96%);
+}
