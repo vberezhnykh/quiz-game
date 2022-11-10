@@ -81,7 +81,7 @@ function createAnswers() {
   // создаем список ответов
   const answersList = document.createElement('ul');
   answersList.className = 'answers-list';
-  for (let i = 0; i < categories.length; i += 1) {
+  for (let i = 0; i < 6/* categories.length */; i += 1) {
     const answer = document.createElement('li');
     answer.className = 'answers-list__item';
     answer.innerHTML = currentAnswers[i].name;
@@ -124,6 +124,15 @@ function createAnswers() {
       const text = document.createElement('p');
       text.innerText = currentAnswers[i].description;
       textContainer.append(text);
+
+      const link = document.createElement('a');
+      link.className = 'description__link';
+      link.href = currentAnswers[i].link;
+      link.target = '_blank';
+      const moreInfoText = document.createElement('p');
+      moreInfoText.textContent = 'Read more...';
+      link.append(moreInfoText);
+      textContainer.append(link);
       container.append(textContainer);
       description.append(container);
 
@@ -162,7 +171,6 @@ function createBoard() {
   // создаем варианты ответов
   const answers = createAnswers();
   board.append(answers);
-  /* createPopup(); */
   answerSong.pause();
 
   return board;

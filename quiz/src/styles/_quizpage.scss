@@ -183,6 +183,17 @@
     margin: 0;
   }
 
+  .description__link {
+    display: block;
+    text-decoration: none;
+    color: var(--white-smoke);
+    width: fit-content;
+
+    &:hover {
+      background-color: var(--lime-green);
+    }
+  }
+
 }
 
 .description-container {
