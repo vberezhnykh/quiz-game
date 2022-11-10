@@ -1,6 +1,7 @@
 /* eslint-disable no-param-reassign */
 /* eslint-disable no-mixed-operators */
 /* const questionSong = new Audio(); */
+import volumeBtnImgSrc from '../assets/images/volume-on.svg';
 
 function getTimeCodeFromNum(num) {
   let seconds = parseInt(num, 10);
@@ -42,27 +43,27 @@ function createPlayer(game, audio) {
   time.append(current);
   const divider = document.createElement('div');
   divider.className = 'divider';
+  divider.innerText = '/';
   time.append(divider);
   const length = document.createElement('div');
   length.className = 'length';
   time.append(length);
   controls.append(time);
   // управление громкостью
-  const volumeContainer = document.createElement('div');
-  volumeContainer.className = 'volume-container';
-  const volumeBtn = document.createElement('div');
+  const volumeBtn = document.createElement('button');
   volumeBtn.className = 'volume-button';
-  const volumeIcon = document.createElement('div');
-  volumeIcon.classList.add('volume', 'icono-volumeMedium');
-  volumeBtn.append(volumeIcon);
-  volumeContainer.append(volumeBtn);
+  volumeBtn.style.backgroundImage = `url(${volumeBtnImgSrc})`;
+  controls.append(volumeBtn);
   const volumeSlider = document.createElement('div');
-  volumeSlider.className = 'volume-slider';
+  volumeSlider.classList.add('volume-slider', 'volume-slider--invisible');
   const volumePercentage = document.createElement('div');
   volumePercentage.className = 'volume-percentage';
   volumeSlider.append(volumePercentage);
-  volumeContainer.append(volumeSlider);
-  controls.append(volumeContainer);
+  volumeBtn.before(volumeSlider);
+  volumeBtn.addEventListener('click', () => {
+    if (volumeSlider.classList.contains('volume-slider--invisible')) volumeSlider.classList.remove('volume-slider--invisible');
+    else volumeSlider.classList.add('volume-slider--invisible');
+  });
   player.append(controls);
 
   audio.addEventListener('loadeddata', () => {
