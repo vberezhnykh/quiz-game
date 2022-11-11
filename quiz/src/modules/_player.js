@@ -1,7 +1,8 @@
 /* eslint-disable no-param-reassign */
 /* eslint-disable no-mixed-operators */
-/* const questionSong = new Audio(); */
 import volumeBtnImgSrc from '../assets/images/volume-on.svg';
+import { mainMenuTheme } from './_homepage';
+import { answerSong, questionSong } from './_quizpage';
 
 function getTimeCodeFromNum(num) {
   let seconds = parseInt(num, 10);
@@ -15,6 +16,7 @@ function getTimeCodeFromNum(num) {
 }
 
 function createPlayer(game, audio) {
+  if (!mainMenuTheme.paused) mainMenuTheme.pause();
   const player = document.createElement('div');
   player.className = 'player';
   audio.src = game.audio;
@@ -79,6 +81,21 @@ function createPlayer(game, audio) {
       togglePlay.classList.remove('play');
       togglePlay.classList.add('pause');
       audio.play();
+      if (audio === answerSong) {
+        questionSong.pause();
+        const questionTogglePlay = document.querySelectorAll('.toggle-play')[0];
+        questionTogglePlay.classList.remove('pause');
+        questionTogglePlay.classList.add('play');
+      } else if (audio === questionSong) {
+        answerSong.pause();
+        const answerTogglePlay = document.querySelectorAll('.toggle-play')[1];
+        try {
+          answerTogglePlay.classList.remove('pause');
+          answerTogglePlay.classList.add('play');
+        } catch (err) {
+          //
+        }
+      }
     } else {
       togglePlay.classList.remove('pause');
       togglePlay.classList.add('play');
@@ -121,11 +138,11 @@ function updateSongStatus(audio, isAnswerSong) {
   current.textContent = getTimeCodeFromNum(
     audio.currentTime,
   );
-  if (audio.duration === audio.currentTime) {
+  audio.onended = () => {
     togglePlay.classList.remove('pause');
     togglePlay.classList.add('play');
     progress.style.width = '0';
-  }
+  };
 }
 
-export { createPlayer, updateSongStatus };
+export { createPlayer, updateSongStatus, getTimeCodeFromNum };

@@ -94,7 +94,7 @@
   height: 15px;
   background: var(--white-smoke);
   box-shadow: 0 0 20px #000a;
-  transition: .25s;
+  transition: 0.25s;
   left: 50%;
   transform: translateX(-75px);
   cursor: pointer;
@@ -110,4 +110,5 @@
   width: 75%;
   position: absolute;
   left: 0;
+  transition: 0.25s;
 }

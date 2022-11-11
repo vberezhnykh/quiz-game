@@ -5,6 +5,7 @@ import gameData from '../gamesData';
 import wrongSound from '../assets/audio/wrong.mp3';
 import correctSound from '../assets/audio/correct.mp3';
 import createPopup from './_popup';
+import { descriptionSong } from './_gallery';
 
 const correctAnswer = new Audio();
 correctAnswer.src = correctSound;
@@ -243,8 +244,9 @@ function checkState() {
           button.classList.remove('hvr-sweep-to-right');
         }
       }
-      updateSongStatus(questionSong);
-      updateSongStatus(answerSong, true);
+      if (!descriptionSong.paused) updateSongStatus(descriptionSong, false);
+      if (!questionSong.paused) updateSongStatus(questionSong);
+      if (!answerSong.paused) updateSongStatus(answerSong, true);
     } catch (error) {
       /* throw new Error(error); */
     }
@@ -252,5 +254,5 @@ function checkState() {
 }
 
 export {
-  goToQuizPage, checkState, resetState, replaceBoard,
+  goToQuizPage, checkState, resetState, replaceBoard, answerSong, questionSong,
 };

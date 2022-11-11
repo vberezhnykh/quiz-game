@@ -39,9 +39,22 @@
   /* .header-buttons__theme-btn {
     @include header-buttons();
   } */
+  .header-buttons__gallery-btn {
+    @include header-buttons();
+  }
+
+  .header-buttons__gallery-btn--invisible {
+    opacity: 0;
+    transition: 0.3s;
+  }
 
   .header-buttons__volume-btn {
     @include header-buttons();    
+  }
+
+  .header-buttons__volume-btn--invisible {
+    opacity: 0;
+    transition: 0.3s;
   }
 
   .header-buttons__home-btn {
@@ -50,11 +63,6 @@
 
   .header-buttons__home-btn--inactive {
     cursor: not-allowed;
-  }
-
-  .header-buttons__volume-btn--invisible {
-    opacity: 0;
-    transition: 0.3s;
   }
   
 }

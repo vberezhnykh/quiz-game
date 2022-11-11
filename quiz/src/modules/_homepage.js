@@ -22,6 +22,8 @@ function createStartButton() {
   startButton.addEventListener('click', () => {
     goToQuizPage();
     mainMenuTheme.pause();
+    const galleryBtn = document.querySelector('.header-buttons__gallery-btn');
+    galleryBtn.classList.add('header-buttons__gallery-btn--invisible');
     const volumeBtn = document.querySelector('.header-buttons__volume-btn');
     const volumeBtnImg = document.querySelector('.header-buttons__volume-btn-img');
     volumeBtn.classList.remove('header-buttons__volume-btn--mute');
@@ -37,6 +39,8 @@ function createStartButton() {
 }
 
 function goToHomePage() {
+  const galleryBtn = document.querySelector('.header-buttons__gallery-btn');
+  galleryBtn.classList.remove('header-buttons__gallery-btn--invisible');
   mainMenuTheme.currentTime = 0;
   mainMenuTheme.play();
   const volumeBtn = document.querySelector('.header-buttons__volume-btn');

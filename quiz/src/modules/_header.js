@@ -5,6 +5,8 @@ import { goToHomePage, mainMenuTheme } from './_homepage';
 import muteBtnImgSrc from '../assets/images/volume-off.svg';
 import volumeOnBtnImgSrc from '../assets/images/volume-on.svg';
 import themeBtnImgSrc from '../assets/images/theme.svg';
+import galleryBtnImgSrc from '../assets/images/gallery.svg';
+import { showGallery } from './_gallery';
 
 /* const root = document.documentElement;
 const MAIN_COLOR = ' hsl(278, 51%, 59%)';
@@ -55,6 +57,13 @@ function createHeaderButtonsContainer() {
     changeThemeColor();
   });
   buttonsContainer.append(themeBtn); */
+  const galleryBtn = document.createElement('button');
+  galleryBtn.classList.add('header-buttons__gallery-btn', 'hvr-grow-shadow');
+  const galleryBtnImg = new Image();
+  galleryBtnImg.src = galleryBtnImgSrc;
+  galleryBtn.append(galleryBtnImg);
+  galleryBtn.onclick = showGallery;
+  buttonsContainer.append(galleryBtn);
   const volumeBtn = document.createElement('button');
   volumeBtn.classList.add('header-buttons__volume-btn', 'hvr-grow-shadow', 'header-buttons__volume-btn--mute');
   const volumeBtnImg = new Image();
