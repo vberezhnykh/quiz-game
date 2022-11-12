@@ -1,4 +1,4 @@
-import { createGalleryBtn, createHomeBtn, createVolumeBtn } from "./_header";
+import { createGalleryBtn, createHomeBtn, createVolumeBtn } from './_header';
 
 function createBurgerMenu() {
   const menu = document.createElement('div');

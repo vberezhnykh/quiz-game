@@ -1,5 +1,3 @@
-@import '_colors';
-
 .gallery {
   width: 100vw;
   height: 100vh;
@@ -14,22 +12,6 @@
   position: absolute;
   z-index: 3;
   background-color: rgba(0, 0, 0, 0.8);
-}
-
-.gallery__close-btn {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  width: 40px;
-  height: 40px;
-  background-size: contain;
-  background-color: var(--secondary-color);
-  cursor: pointer;
-
-  &:hover {
-    transform: scale(1.1);
-  }
-
 }
 
 .gallery__heading {
@@ -55,9 +37,11 @@
 
 .categories-section {
   width: 25%;
+
   @media (max-width: 769px) {
     width: 100%;
   }
+
 }
 
 .categories-list {
@@ -142,9 +126,11 @@
     height: calc(100% - 20px);
     object-fit: cover;
     cursor: pointer;
+
     &:hover {
       opacity: 0.7;
     }
+    
   }
 
   @media (max-width: 896px) {

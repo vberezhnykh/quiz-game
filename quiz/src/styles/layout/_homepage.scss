@@ -1,0 +1,12 @@
+.main {
+  width: 100%;
+  margin: auto;
+  font-size: 20px;
+  padding: 1%;
+  flex-grow: 1;
+  position: relative;
+}
+
+.main--active {
+  background-color: var(--background-color);
+}

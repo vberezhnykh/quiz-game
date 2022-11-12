@@ -1,0 +1,22 @@
+@mixin endgame-buttons {
+  font-size: 30px;
+  width: 100px;
+  height: 50px;
+  border: 0.5px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@mixin header-buttons {
+  padding: 0;
+  margin: 0;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  cursor: pointer;
+  
+  img {
+    width: 50px;
+    height: 50px;
+  }
+
+}

@@ -1,0 +1,33 @@
+.categories {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 3%;
+  margin-top: 20px;
+
+  @media (max-width: 769px) {
+    row-gap: 10px;
+    flex-wrap: wrap;
+  }
+
+}
+
+.categories__item {
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid black;
+  flex-basis: 300px;
+  border-radius: 10px;
+  background-color: var(--main-color);
+
+  @media (max-width: 769px) {
+    flex-basis: calc(769px / 3);
+  }
+
+}
+
+.categories__item--active {
+  background-color: var(--secondary-color);
+
+  font-weight: bold;
+}

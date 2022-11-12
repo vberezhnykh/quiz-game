@@ -1,5 +1,5 @@
 import './index.html';
-import './styles/styles.scss';
+import './styles/main.scss';
 import backgroundImage from './assets/images/background.webp';
 import { createHeader } from './modules/_header';
 import { createMain } from './modules/_homepage';
