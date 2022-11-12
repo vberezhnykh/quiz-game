@@ -4,30 +4,23 @@ import homeBtnImage from '../assets/images/home.svg';
 import { goToHomePage, mainMenuTheme } from './_homepage';
 import muteBtnImgSrc from '../assets/images/volume-off.svg';
 import volumeOnBtnImgSrc from '../assets/images/volume-on.svg';
-import themeBtnImgSrc from '../assets/images/theme.svg';
+/* import themeBtnImgSrc from '../assets/images/theme.svg'; */
 import galleryBtnImgSrc from '../assets/images/gallery.svg';
 import { showGallery } from './_gallery';
+import burgerBtnImgSrc from '../assets/images/menu.svg';
+import burgerBtnOpenSrc from '../assets/images/menu-open.svg';
+import createBurgerMenu from './_burger-menu';
 
-/* const root = document.documentElement;
-const MAIN_COLOR = ' hsl(278, 51%, 59%)';
-const BACKGROUND_COLOR = ' hsl(268, 62%, 46%)';
-const SECONDARY_COLOR = ' hsl(263, 49%, 73%)';
-const WHITE_COLOR = ' hsl(0, 0%, 96%)';
-const ALT_MAIN_COLOR = ' #292929';
-const ALT_BACKGROUND_COLOR = ' #1b1b1b';
-const ALT_SECONDARY_COLOR = ' #ffa31a';
-const ALT_WHITE_COLOR = ' #ffffff';
-
-function changeThemeColor() {
-  getComputedStyle(root).getPropertyValue('--main-color') === MAIN_COLOR 
-  ? root.style.setProperty('--main-color', ALT_MAIN_COLOR) : root.style.setProperty('--main-color', MAIN_COLOR);
-getComputedStyle(root).getPropertyValue('--background-color') === BACKGROUND_COLOR
-  ? root.style.setProperty('--background-color', ALT_BACKGROUND_COLOR) : root.style.setProperty('--background-color', BACKGROUND_COLOR);
-getComputedStyle(root).getPropertyValue('--secondary-color') === SECONDARY_COLOR
-  ? root.style.setProperty('--secondary-color', ALT_SECONDARY_COLOR) : root.style.setProperty('--secondary-color', SECONDARY_COLOR);
-getComputedStyle(root).getPropertyValue('--white-smoke') === WHITE_COLOR
-  ? root.style.setProperty('--white-smoke', ALT_WHITE_COLOR) : root.style.setProperty('--white-smoke', WHITE_COLOR);
-} */
+function createGalleryBtn(isHeader) {
+  const galleryBtn = document.createElement('button');
+  if (isHeader) galleryBtn.classList.add('header-buttons__gallery-btn', 'hvr-grow-shadow');
+  else galleryBtn.classList.add('burger-buttons__gallery-btn');
+  const galleryBtnImg = new Image();
+  galleryBtnImg.src = galleryBtnImgSrc;
+  galleryBtn.append(galleryBtnImg);
+  galleryBtn.onclick = showGallery;
+  return galleryBtn;
+}
 
 function changeVolumeBtnIcon(volumeBtn, volumeBtnImg) {
   if (volumeBtn.classList.contains('header-buttons__volume-btn--mute')) {
@@ -36,57 +29,89 @@ function changeVolumeBtnIcon(volumeBtn, volumeBtnImg) {
     volumeBtn.classList.add('header-buttons__volume-btn--on');
     mainMenuTheme.muted = false;
     if (mainMenuTheme.paused) mainMenuTheme.play();
-  } else {
+  } else if (volumeBtn.classList.contains('header-buttons__volume-btn--on')) {
     volumeBtnImg.src = muteBtnImgSrc;
     volumeBtn.classList.add('header-buttons__volume-btn--mute');
     volumeBtn.classList.remove('header-buttons__volume-btn--on');
     mainMenuTheme.muted = true;
+  } else if (volumeBtn.classList.contains('burger-buttons__volume-btn--mute')) {
+    volumeBtnImg.src = volumeOnBtnImgSrc;
+    volumeBtn.classList.remove('burger-buttons__volume-btn--mute');
+    volumeBtn.classList.add('burger-buttons__volume-btn--on');
+    mainMenuTheme.muted = false;
+    if (mainMenuTheme.paused) mainMenuTheme.play();
+  } else {
+    volumeBtnImg.src = muteBtnImgSrc;
+    volumeBtn.classList.add('burger-buttons__volume-btn--mute');
+    volumeBtn.classList.remove('burger-buttons__volume-btn--on');
+    mainMenuTheme.muted = true;
   }
 }
 
-function createHeaderButtonsContainer() {
-  const buttonsContainer = document.createElement('div');
-  buttonsContainer.className = 'header-buttons';
-  /* const themeBtn = document.createElement('button');
-  themeBtn.classList.add('header-buttons__theme-btn', 'hvr-grow-shadow');
-  const themeBtnImg = new Image();
-  themeBtnImg.classList.add('header-buttons-theme-btn-img');
-  themeBtnImg.src = themeBtnImgSrc;
-  themeBtn.append(themeBtnImg);
-  themeBtn.addEventListener('click', () => {
-    changeThemeColor();
-  });
-  buttonsContainer.append(themeBtn); */
-  const galleryBtn = document.createElement('button');
-  galleryBtn.classList.add('header-buttons__gallery-btn', 'hvr-grow-shadow');
-  const galleryBtnImg = new Image();
-  galleryBtnImg.src = galleryBtnImgSrc;
-  galleryBtn.append(galleryBtnImg);
-  galleryBtn.onclick = showGallery;
-  buttonsContainer.append(galleryBtn);
+function createVolumeBtn(isHeader) {
   const volumeBtn = document.createElement('button');
-  volumeBtn.classList.add('header-buttons__volume-btn', 'hvr-grow-shadow', 'header-buttons__volume-btn--mute');
+  if (isHeader) volumeBtn.classList.add('header-buttons__volume-btn', 'hvr-grow-shadow', 'header-buttons__volume-btn--mute');
+  else volumeBtn.classList.add('burger-buttons__volume-btn', 'burger-buttons__volume-btn--mute');
   const volumeBtnImg = new Image();
-  volumeBtnImg.classList.add('header-buttons__volume-btn-img');
+  if (isHeader) volumeBtnImg.classList.add('header-buttons__volume-btn-img');
+  else volumeBtnImg.classList.add('burger-buttons__volume-btn-img');
   volumeBtnImg.src = muteBtnImgSrc;
   volumeBtn.append(volumeBtnImg);
   volumeBtn.addEventListener('click', () => {
     changeVolumeBtnIcon(volumeBtn, volumeBtnImg);
   });
-  buttonsContainer.append(volumeBtn);
+  return volumeBtn;
+}
+
+function createHomeBtn(isHeader) {
   const homeBtn = document.createElement('button');
-  homeBtn.classList.add('header-buttons__home-btn', 'header-buttons__home-btn--inactive');
+  if (isHeader) homeBtn.classList.add('header-buttons__home-btn', 'header-buttons__home-btn--inactive');
+  else homeBtn.classList.add('burger-buttons__home-btn', 'burger-buttons__home-btn--inactive');
   const homeBtnImg = new Image();
   homeBtnImg.src = homeBtnImage;
   homeBtn.append(homeBtnImg);
   homeBtn.addEventListener('click', () => {
     goToHomePage();
-    homeBtn.classList.add('header-buttons__home-btn--inactive');
+    if (isHeader) homeBtn.classList.add('header-buttons__home-btn--inactive');
+    else homeBtn.classList.add('burger-buttons__home-btn--inactive');
     homeBtn.classList.remove('hvr-grow-shadow');
     homeBtn.disabled = true;
   });
   homeBtn.disabled = true;
+  return homeBtn;
+}
+
+function createBurgerBtn() {
+  const menu = createBurgerMenu();
+  document.body.prepend(menu);
+  const burgerBtn = document.createElement('button');
+  burgerBtn.classList.add('header-buttons__burger-btn');
+  const burgerBtnImg = new Image();
+  burgerBtnImg.src = burgerBtnImgSrc;
+  burgerBtn.append(burgerBtnImg);
+  burgerBtn.addEventListener('click', () => {
+    if (burgerBtnImg.src === burgerBtnImgSrc) {
+      burgerBtnImg.src = burgerBtnOpenSrc;
+      menu.classList.remove('burger-menu--invisible');
+    } else {
+      burgerBtnImg.src = burgerBtnImgSrc;
+      menu.classList.add('burger-menu--invisible');
+    }
+  });
+  return burgerBtn;
+}
+
+function createHeaderButtonsContainer() {
+  const buttonsContainer = document.createElement('div');
+  buttonsContainer.className = 'header-buttons';
+  const galleryBtn = createGalleryBtn(true);
+  buttonsContainer.append(galleryBtn);
+  const volumeBtn = createVolumeBtn(true);
+  buttonsContainer.append(volumeBtn);
+  const homeBtn = createHomeBtn(true);
   buttonsContainer.append(homeBtn);
+  const burgerBtn = createBurgerBtn();
+  buttonsContainer.append(burgerBtn);
 
   return buttonsContainer;
 }
@@ -102,4 +127,6 @@ function createHeader() {
   return header;
 }
 
-export { createHeader, changeVolumeBtnIcon };
+export {
+  createHeader, changeVolumeBtnIcon, createGalleryBtn, createHomeBtn, createVolumeBtn,
+};

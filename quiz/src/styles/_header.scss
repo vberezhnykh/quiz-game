@@ -35,34 +35,39 @@
 .header-buttons {
   display: flex;
   gap: 20px;
+}
 
-  /* .header-buttons__theme-btn {
-    @include header-buttons();
-  } */
-  .header-buttons__gallery-btn {
-    @include header-buttons();
-  }
+.header-buttons__gallery-btn,
+.header-buttons__volume-btn,
+.header-buttons__home-btn {
+  @include header-buttons();
+}
 
-  .header-buttons__gallery-btn--invisible {
-    opacity: 0;
-    transition: 0.3s;
-  }
+.header-buttons__gallery-btn--invisible,
+.header-buttons__volume-btn--invisible {
+  opacity: 0;
+  transition: 0.3s;
+}
 
-  .header-buttons__volume-btn {
-    @include header-buttons();    
-  }
+.header-buttons__home-btn--inactive {
+  cursor: not-allowed;
+}
 
-  .header-buttons__volume-btn--invisible {
-    opacity: 0;
-    transition: 0.3s;
-  }
+.header-buttons__burger-btn {
+  @include header-buttons();
+  display: none;
+}
 
-  .header-buttons__home-btn {
-    @include header-buttons();
-  }
-
-  .header-buttons__home-btn--inactive {
-    cursor: not-allowed;
-  }
+@media (max-width: 769px) {
   
+  .header-buttons__burger-btn {
+    display: block /* !important */;
+  }
+
+  .header-buttons__gallery-btn,
+  .header-buttons__home-btn,
+  .header-buttons__volume-btn {
+    display: none !important;
+  }
+
 }
