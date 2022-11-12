@@ -3,17 +3,21 @@
   gap: 20px;
 }
 
+.header-buttons__language-btn,
 .header-buttons__gallery-btn,
 .header-buttons__volume-btn,
 .header-buttons__home-btn,
+.burger-buttons__language-btn,
 .burger-buttons__gallery-btn,
 .burger-buttons__volume-btn,
 .burger-buttons__home-btn {
   @include header-buttons();
 }
 
+.header-buttons__language-btn--invisible,
 .header-buttons__gallery-btn--invisible,
 .header-buttons__volume-btn--invisible,
+.burger-buttons__language-btn--invisible,
 .burger-buttons__gallery-btn--invisible,
 .burger-buttons__volume-btn--invisible {
   opacity: 0;
@@ -36,6 +40,7 @@
     display: block /* !important */;
   }
 
+  .header-buttons__language-btn,
   .header-buttons__gallery-btn,
   .header-buttons__home-btn,
   .header-buttons__volume-btn {

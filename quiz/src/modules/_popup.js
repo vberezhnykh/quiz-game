@@ -10,7 +10,7 @@ const lossMusic = new Audio();
 lossMusic.src = lossSound;
 const maxScores = 30;
 
-function createPopup() {
+function createPopup(language) {
   const scoreNum = document.querySelector('.score__num');
   // создаем прослойку между боди и попапом
   const interlayer = document.createElement('div');
@@ -26,7 +26,8 @@ function createPopup() {
   const buttons = document.createElement('div');
   buttons.className = 'endgame-buttons';
   const yesBtn = document.createElement('button');
-  yesBtn.innerHTML = 'Yes';
+  if (language === 'en') yesBtn.textContent = 'Yes';
+  else yesBtn.textContent = 'Да';
   yesBtn.className = 'endgame-buttons__confirm';
   yesBtn.classList.add('hvr-wobble-vertical');
   yesBtn.addEventListener('click', () => {
@@ -37,7 +38,8 @@ function createPopup() {
     popup.remove();
   });
   const noBtn = document.createElement('button');
-  noBtn.innerHTML = 'No';
+  if (language === 'en') noBtn.textContent = 'No';
+  else noBtn.textContent = 'Нет';
   noBtn.className = 'endgame-buttons__decline';
   noBtn.classList.add('hvr-wobble-horizontal');
   noBtn.onclick = () => {
@@ -52,18 +54,24 @@ function createPopup() {
   popup.append(message);
   if (parseInt(scoreNum.innerHTML, 10) === maxScores) {
     popup.classList.add('animate__animated', 'animate__tada');
-    heading.innerHTML = 'Congratulations!';
-    // eslint-disable-next-line no-multi-str
-    message.innerHTML = 'You have scored maximum of 30 points.\n\
-    GAME OVER.';
+    if (language === 'en') heading.textContent = 'Congratulations!';
+    else heading.textContent = 'Поздравляю!';
+    if (language === 'en') message.textContent = 'You have scored maximum of 30 points.\nGAME OVER.';
+    else message.textContent = 'Вы набрали максимум из 30 очков.\nИГРА ЗАКОНЧЕНА';
     winMusic.play();
     const fireworks = new Fireworks(interlayer, { /* options */ });
     fireworks.start();
   } else {
     popup.classList.add('animate__animated', 'animate__bounceIn');
-    heading.innerHTML = 'Oops...You have lost :(';
-    message.innerHTML = `You have scored ${scoreNum.innerHTML} points.\n\
-    To win the game, you need to get 30 points. Want to try again?`;
+    if (language === 'en') heading.textContent = 'Oops...You have lost 😭';
+    else heading.textContent = 'Упс...Вы проиграли 😭';
+    if (language === 'en') {
+      message.textContent = `You have scored ${scoreNum.innerHTML} points.\n\
+      To win the game, you need to get 30 points. Want to try again?`;
+    } else {
+      message.textContent = `Вы набрали ${scoreNum.innerHTML} очков. \n\
+      Чтобы выиграть, необходимо набрать 30 очков. Попробовать еще раз?`;
+    }
     popup.append(buttons);
     lossMusic.play();
   }

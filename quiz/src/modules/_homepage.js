@@ -9,6 +9,10 @@ mainMenuTheme.loop = true;
 mainMenuTheme.volume = 0.5;
 mainMenuTheme.muted = true;
 
+let language;
+if (localStorage.language === undefined) language = 'en';
+else language = localStorage.language;
+
 function createStartButton() {
   const startButton = document.createElement('button');
   startButton.classList.add(
@@ -18,12 +22,16 @@ function createStartButton() {
     'animate__infinite',
     'animate__slow',
   );
-  startButton.innerHTML = 'START';
+  if (language === 'en') startButton.textContent = 'START';
+  else startButton.textContent = 'ПУСК';
   startButton.addEventListener('click', () => {
     goToQuizPage();
+    document.querySelector('.main').scrollIntoView();
     mainMenuTheme.pause();
     // прячем кнопки в хэдере и выпадающем меню
     // хэдер
+    const headerLanguageBtn = document.querySelector('.header-buttons__language-btn');
+    headerLanguageBtn.classList.add('header-buttons__language-btn--invisible');
     const headerGalleryBtn = document.querySelector('.header-buttons__gallery-btn');
     headerGalleryBtn.classList.add('header-buttons__gallery-btn--invisible');
     const headerVolumeBtn = document.querySelector('.header-buttons__volume-btn');
@@ -37,6 +45,8 @@ function createStartButton() {
     headerHomeBtn.classList.add('hvr-grow-shadow');
     headerHomeBtn.disabled = false;
     // бургер меню
+    const burgerLanguageBtn = document.querySelector('.burger-buttons__language-btn');
+    burgerLanguageBtn.classList.add('burger-buttons__language-btn--invisible');
     const burgerGalleryBtn = document.querySelector('.burger-buttons__gallery-btn');
     burgerGalleryBtn.classList.add('burger-buttons__gallery-btn--invisible');
     const burgerVolumeBtn = document.querySelector('.burger-buttons__volume-btn');
@@ -57,6 +67,14 @@ function createStartButton() {
 }
 
 function goToHomePage(isHeader) {
+  let languageBtn;
+  if (isHeader) {
+    languageBtn = document.querySelector('.header-buttons__language-btn');
+    languageBtn.classList.remove('header-buttons__language-btn--invisible');
+  } else {
+    languageBtn = document.querySelector('.burger-buttons__language-btn');
+    languageBtn.classList.remove('burger-buttons__language-btn--invisible');
+  }
   let galleryBtn;
   if (isHeader) {
     galleryBtn = document.querySelector('.header-buttons__gallery-btn');

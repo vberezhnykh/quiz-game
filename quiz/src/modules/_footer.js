@@ -1,6 +1,10 @@
 import githubImage from '../assets/images/github.png';
 import rsschoolImage from '../assets/images/rs-school.svg';
 
+let language;
+if (localStorage.language === undefined) language = 'en';
+else language = localStorage.language;
+
 function createFooter() {
   const footer = document.createElement('footer');
   footer.className = 'footer';
@@ -15,7 +19,8 @@ function createFooter() {
   footer.append(rsLink);
 
   const span = document.createElement('span');
-  span.innerHTML = 'Valentin Berezhnykh, 2022';
+  if (language === 'en') span.textContent = 'Valentin Berezhnykh, 2022';
+  else span.textContent = 'Валентин Бережных, 2022';
   footer.append(span);
 
   const githubLink = document.createElement('a');

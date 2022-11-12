@@ -4,12 +4,34 @@ import homeBtnImage from '../assets/images/home.svg';
 import { goToHomePage, mainMenuTheme } from './_homepage';
 import muteBtnImgSrc from '../assets/images/volume-off.svg';
 import volumeOnBtnImgSrc from '../assets/images/volume-on.svg';
-/* import themeBtnImgSrc from '../assets/images/theme.svg'; */
 import galleryBtnImgSrc from '../assets/images/gallery.svg';
 import { showGallery } from './_gallery';
 import burgerBtnImgSrc from '../assets/images/menu.svg';
 import burgerBtnOpenSrc from '../assets/images/menu-open.svg';
 import createBurgerMenu from './_burger-menu';
+import greatBritainImg from '../assets/images/great-britain.png';
+import russiaImg from '../assets/images/russia.png';
+import changeLanguage from './_change-language';
+
+let language;
+if (localStorage.language === undefined) language = 'en';
+else language = localStorage.language;
+
+function createLanguageBtn(isHeader) {
+  const languageBtn = document.createElement('button');
+  if (isHeader) languageBtn.classList.add('header-buttons__language-btn', 'hvr-grow-shadow', 'en');
+  else languageBtn.classList.add('burger-buttons__language-btn', 'en');
+  const languageBtnImg = new Image();
+  if (language === 'en') languageBtnImg.src = greatBritainImg;
+  else languageBtnImg.src = russiaImg;
+  languageBtn.append(languageBtnImg);
+  languageBtn.addEventListener('click', () => {
+    language = changeLanguage(language);
+    localStorage.setItem('language', language);
+    window.location.reload();
+  });
+  return languageBtn;
+}
 
 function createGalleryBtn(isHeader) {
   const galleryBtn = document.createElement('button');
@@ -70,8 +92,9 @@ function createHomeBtn(isHeader) {
   const homeBtnImg = new Image();
   homeBtnImg.src = homeBtnImage;
   homeBtn.append(homeBtnImg);
-  homeBtn.addEventListener('click', () => {
-    goToHomePage();
+  homeBtn.addEventListener('click', (event) => {
+    if (event.target.classList.contains('header-buttons__home-btn') || event.target.parentNode.classList.contains('header-buttons__home-btn')) goToHomePage(true);
+    else goToHomePage();
     if (isHeader) homeBtn.classList.add('header-buttons__home-btn--inactive');
     else homeBtn.classList.add('burger-buttons__home-btn--inactive');
     homeBtn.classList.remove('hvr-grow-shadow');
@@ -104,6 +127,8 @@ function createBurgerBtn() {
 function createHeaderButtonsContainer() {
   const buttonsContainer = document.createElement('div');
   buttonsContainer.className = 'header-buttons';
+  const languageBtn = createLanguageBtn(true);
+  buttonsContainer.append(languageBtn);
   const galleryBtn = createGalleryBtn(true);
   buttonsContainer.append(galleryBtn);
   const volumeBtn = createVolumeBtn(true);
@@ -128,5 +153,6 @@ function createHeader() {
 }
 
 export {
-  createHeader, changeVolumeBtnIcon, createGalleryBtn, createHomeBtn, createVolumeBtn,
+  createHeader, createLanguageBtn, createGalleryBtn, createHomeBtn, createVolumeBtn,
+  changeVolumeBtnIcon,
 };

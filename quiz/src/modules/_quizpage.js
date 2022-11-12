@@ -14,6 +14,10 @@ wrongAnswer.src = wrongSound;
 const questionSong = new Audio();
 const answerSong = new Audio();
 
+let language;
+if (localStorage.language === undefined) language = 'en';
+else language = localStorage.language;
+
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i -= 1) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -24,14 +28,16 @@ function shuffleArray(array) {
     array[j] = temp;
   }
 }
-const categories = ['warm-up', 'racing', 'shooter', 'cyberpunk', 'rpg', 'platformer'];
+let categories;
+if (language === 'en') categories = ['warm-up', 'racing', 'shooter', 'cyberpunk', 'rpg', 'platformer'];
+else categories = ['разминка', 'гонки', 'шутер', 'киберпанк', 'ролевая', 'платформер'];
 let categoryIndex = 0;
 let currentCategory = categories[categoryIndex];
 
 function createCurrentAnswers() {
   const array = [];
   gameData.forEach((elem) => {
-    if (elem.category === currentCategory) array.push(elem);
+    if (elem[language].category === currentCategory) array.push(elem);
   });
   shuffleArray(array);
   return array;
@@ -78,14 +84,15 @@ function createAnswers() {
   // создаем блок с описанием игры
   const description = document.createElement('article');
   description.className = 'description';
-  description.innerHTML = 'Listen to the main theme from the video game. Name it.';
+  if (language === 'en') description.textContent = 'Listen to the main theme from the video game. Name it.';
+  else description.textContent = 'Послушайте заглавную тему из видеоигры. Назовите игру.';
   // создаем список ответов
   const answersList = document.createElement('ul');
   answersList.className = 'answers-list';
   for (let i = 0; i < 6/* categories.length */; i += 1) {
     const answer = document.createElement('li');
     answer.className = 'answers-list__item';
-    answer.innerHTML = currentAnswers[i].name;
+    answer.textContent = currentAnswers[i][language].name;
     // eslint-disable-next-line no-loop-func
     answer.addEventListener('click', () => {
       if (!isAnswered) {
@@ -97,7 +104,7 @@ function createAnswers() {
           const questionImg = document.querySelector('.question__img');
           questionImg.src = currentQuestion.image;
           const questionHeading = document.querySelector('.question__heading');
-          questionHeading.innerHTML = currentQuestion.name;
+          questionHeading.textContent = currentQuestion[language].name;
           questionSong.pause();
           document.querySelector('.toggle-play').classList.add('play');
           document.querySelector('.toggle-play').classList.remove('pause');
@@ -119,19 +126,20 @@ function createAnswers() {
       const textContainer = document.createElement('div');
       const heading = document.createElement('h4');
       heading.className = 'description__heading';
-      heading.innerHTML = currentAnswers[i].name;
+      heading.textContent = currentAnswers[i][language].name;
       textContainer.append(heading);
 
       const text = document.createElement('p');
-      text.innerText = currentAnswers[i].description;
+      text.textContent = currentAnswers[i][language].description;
       textContainer.append(text);
 
       const link = document.createElement('a');
       link.className = 'description__link';
-      link.href = currentAnswers[i].link;
+      link.href = currentAnswers[i][language].link;
       link.target = '_blank';
       const moreInfoText = document.createElement('p');
-      moreInfoText.textContent = 'Read more...';
+      if (language === 'en') moreInfoText.textContent = 'Read more...';
+      else moreInfoText.textContent = 'Узнать больше...';
       link.append(moreInfoText);
       textContainer.append(link);
       container.append(textContainer);
@@ -202,7 +210,8 @@ function goToQuizPage() {
   main.innerHTML = '';
   const score = document.createElement('div');
   score.className = 'score';
-  score.innerHTML = 'Score: ';
+  if (language === 'en') score.textContent = 'Score: ';
+  else score.textContent = 'Очки: ';
   const scoreNum = document.createElement('span');
   scoreNum.innerHTML = '0';
   scoreNum.className = 'score__num';
@@ -211,7 +220,8 @@ function goToQuizPage() {
   main.append(createBoard());
   main.classList.add('main--active');
   const button = document.createElement('button');
-  button.innerHTML = 'Next round';
+  if (language === 'en') button.innerHTML = 'Next round';
+  else button.innerHTML = 'Далее';
   button.className = 'main__button';
   button.disabled = true;
   button.addEventListener('click', () => {
@@ -238,7 +248,7 @@ function checkState() {
         button.disabled = false;
         // если это последняя категория, то всплывает попап с результатами
         if (categoryIndex === categories.length - 1) {
-          createPopup();
+          createPopup(language);
           button.disabled = true;
           button.classList.remove('main__button--active');
           button.classList.remove('hvr-sweep-to-right');
