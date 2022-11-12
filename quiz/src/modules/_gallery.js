@@ -3,16 +3,20 @@ import gamesData from '../gamesData';
 import { mainMenuTheme } from './_homepage';
 import { createPlayer } from './_player';
 
+let language;
+if (localStorage.language === undefined) language = 'en';
+else language = localStorage.language;
+
 const categories = [];
 gamesData.forEach((elem) => {
-  if (!categories.includes(elem.category)) categories.push(elem.category);
+  if (!categories.includes(elem[language].category)) categories.push(elem[language].category);
 });
 const descriptionSong = new Audio();
 
 function createListOfGames(category) {
   const gamesSection = document.querySelector('.games-section');
   gamesSection.innerHTML = '';
-  const gamesArr = gamesData.filter((elem) => elem.category === category);
+  const gamesArr = gamesData.filter((elem) => elem[language].category === category);
   for (let i = 0; i < gamesArr.length; i += 1) {
     const gameCard = document.createElement('div');
     const cover = new Image();
@@ -33,17 +37,18 @@ function createListOfGames(category) {
       descriptionCard.classList.add('game-card__description');
       document.querySelector('.gallery').prepend(descriptionCard);
       const heading = document.createElement('h3');
-      heading.textContent = gameData.name;
+      heading.textContent = gameData[language].name;
       descriptionCard.append(heading);
       const text = document.createElement('p');
-      text.innerText = gameData.description;
+      text.innerText = gameData[language].description;
       descriptionCard.append(text);
       const link = document.createElement('a');
       link.className = 'game-card__link';
-      link.href = gameData.link;
+      link.href = gameData[language].link;
       link.target = '_blank';
       const moreInfoText = document.createElement('p');
-      moreInfoText.textContent = 'Read more...';
+      if (language === 'en') moreInfoText.textContent = 'Read more...';
+      else moreInfoText.textContent = 'Узнать больше...';
       link.append(moreInfoText);
       descriptionCard.append(link);
       const player = createPlayer(gameData, descriptionSong);
@@ -107,7 +112,8 @@ function showGallery() {
   // создаем заголовок
   const heading = document.createElement('h3');
   heading.className = 'gallery__heading';
-  heading.textContent = 'Gallery';
+  if (language === 'en') heading.textContent = 'Gallery';
+  else heading.textContent = 'Галерея';
   gallery.append(heading);
   // создаем рамку галлереи
   gallery.append(createGalleryFrame());
