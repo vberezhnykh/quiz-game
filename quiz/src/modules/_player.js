@@ -42,6 +42,7 @@ function createPlayer(game, audio) {
   time.className = 'time';
   const current = document.createElement('div');
   current.className = 'current';
+  current.textContent = '0:00';
   time.append(current);
   const divider = document.createElement('div');
   divider.className = 'divider';
@@ -56,11 +57,13 @@ function createPlayer(game, audio) {
   volumeBtn.className = 'volume-button';
   volumeBtn.style.backgroundImage = `url(${volumeBtnImgSrc})`;
   controls.append(volumeBtn);
-  const volumeSlider = document.createElement('div');
+  const volumeSlider = document.createElement('input');
+  volumeSlider.type = 'range';
+  volumeSlider.min = '0';
+  volumeSlider.max = '100';
+  volumeSlider.step = '10';
+  volumeSlider.value = '70';
   volumeSlider.classList.add('volume-slider', 'volume-slider--invisible');
-  const volumePercentage = document.createElement('div');
-  volumePercentage.className = 'volume-percentage';
-  volumeSlider.append(volumePercentage);
   volumeBtn.before(volumeSlider);
   volumeBtn.addEventListener('click', () => {
     if (volumeSlider.classList.contains('volume-slider--invisible')) volumeSlider.classList.remove('volume-slider--invisible');
@@ -69,10 +72,8 @@ function createPlayer(game, audio) {
   player.append(controls);
 
   audio.addEventListener('loadeddata', () => {
-    length.textContent = getTimeCodeFromNum(
-      audio.duration,
-    );
-    audio.volume = 0.75;
+    length.textContent = getTimeCodeFromNum(audio.duration);
+    audio.volume = 0.70;
   }, false);
 
   // переключение между паузой и воспроизведением
@@ -111,12 +112,15 @@ function createPlayer(game, audio) {
   }, false);
 
   // клик по слайдеру звука
-  volumeSlider.addEventListener('click', (e) => {
+  /* volumeSlider.addEventListener('click', (e) => {
     const sliderWidth = window.getComputedStyle(volumeSlider).width;
     const newVolume = e.offsetX / parseInt(sliderWidth, 10);
     audio.volume = newVolume;
     volumePercentage.style.width = `${newVolume * 100}%`;
-  }, false);
+  }, false); */
+  volumeSlider.addEventListener('click', () => {
+    audio.volume = volumeSlider.value / 100;
+  });
 
   return player;
 }

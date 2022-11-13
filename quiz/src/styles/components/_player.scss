@@ -80,28 +80,36 @@
 }
 
 .volume-slider {
+  -webkit-appearance: none;
   position: absolute;
-  left: -3px; top: 15px;
   z-index: 1;
   width: 150px;
   height: 15px;
-  background: var(--white-smoke);
   box-shadow: 0 0 20px #000a;
-  transition: 0.25s;
   left: 50%;
   transform: translateX(-75px);
   cursor: pointer;
+  border-radius: 5px;
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: var(--secondary-color);
+    width: 10px;
+    height: 25px;
+    cursor: grab;
+    margin-top: -5px;
+    transition: 0.25s;
+  }
+
+  &::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    background-color: var(--white-smoke);
+    border-radius: 5px;
+    height: 15px;
+  }
+
 }
 
 .volume-slider--invisible {
-  opacity: 0;
-}
-
-.volume-percentage {
-  background: var(--secondary-color);
-  height: 100%;
-  width: 75%;
-  position: absolute;
-  left: 0;
-  transition: 0.25s;
+  display: none;
 }
