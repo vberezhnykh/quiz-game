@@ -112,12 +112,6 @@ function createPlayer(game, audio) {
   }, false);
 
   // клик по слайдеру звука
-  /* volumeSlider.addEventListener('click', (e) => {
-    const sliderWidth = window.getComputedStyle(volumeSlider).width;
-    const newVolume = e.offsetX / parseInt(sliderWidth, 10);
-    audio.volume = newVolume;
-    volumePercentage.style.width = `${newVolume * 100}%`;
-  }, false); */
   volumeSlider.addEventListener('click', () => {
     audio.volume = volumeSlider.value / 100;
   });
