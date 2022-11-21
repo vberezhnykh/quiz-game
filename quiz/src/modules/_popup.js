@@ -59,8 +59,8 @@ function createPopup(language) {
     if (language === 'en') message.textContent = 'You have scored maximum of 30 points.\nGAME OVER.';
     else message.textContent = 'Вы набрали максимум из 30 очков.\nИГРА ЗАКОНЧЕНА';
     winMusic.play();
-    const fireworks = new Fireworks(interlayer, { /* options */ });
-    fireworks.start();
+    /* const fireworks = new Fireworks(interlayer, { options });
+    fireworks.start(); */
   } else {
     popup.classList.add('animate__animated', 'animate__bounceIn');
     if (language === 'en') heading.textContent = 'Oops...You have lost 😭';
