@@ -1,4 +1,4 @@
-import Fireworks from 'fireworks-js';
+/* import Fireworks from 'fireworks-js'; */
 import { replaceBoard } from './_quizpage';
 import { goToHomePage } from './_homepage';
 import winSound from '../assets/audio/win.mp3';
@@ -43,7 +43,8 @@ function createPopup(language) {
   noBtn.className = 'endgame-buttons__decline';
   noBtn.classList.add('hvr-wobble-horizontal');
   noBtn.onclick = () => {
-    goToHomePage();
+    if (window.innerWidth <= 768) goToHomePage();
+    else goToHomePage(true);
     document.body.classList.remove('body--unscrollable');
     interlayer.remove();
     popup.remove();
