@@ -109,9 +109,9 @@ function createAnswers() {
           document.querySelector('.toggle-play').classList.add('play');
           document.querySelector('.toggle-play').classList.remove('pause');
         } else {
+          if (!answer.classList.contains('answers-list__item--wrong')) scoresPerRound -= 1;
           answer.className = 'answers-list__item--wrong';
           wrongAnswer.play();
-          scoresPerRound -= 1;
         }
       }
       // добавляем описание игры
