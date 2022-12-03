@@ -1,0 +1,31 @@
+.footer {
+  background-color: var(--main-color);
+  width: 100%;
+  max-height: 80px;
+  left: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0 -3px 5px rgba(57, 63, 72, 0.3);
+  z-index: 1;
+
+  .footer__rs-school  {
+    width: 150px;
+    height: 50px;
+  }
+  
+  .footer__github {
+    width: 70px;
+    height: 70px;
+  }
+
+}
+
+@media (max-width: 425px) {
+
+  .footer {
+    font-size: 16px;
+  }
+
+}

@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Roboto Slab', serif;
+  background-size: cover;
+  color: var(--white-smoke);
+}
+
+.body::-webkit-scrollbar {
+  display: none;
+}
+
+.body--unscrollable {
+  overflow: hidden;
+  position: relative;
+}

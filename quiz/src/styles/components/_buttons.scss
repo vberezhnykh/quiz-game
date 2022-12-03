@@ -1,0 +1,95 @@
+.header-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.header-buttons__language-btn,
+.header-buttons__gallery-btn,
+.header-buttons__volume-btn,
+.header-buttons__home-btn,
+.burger-buttons__language-btn,
+.burger-buttons__gallery-btn,
+.burger-buttons__volume-btn,
+.burger-buttons__home-btn {
+  @include header-buttons();
+}
+
+.header-buttons__language-btn--invisible,
+.header-buttons__gallery-btn--invisible,
+.header-buttons__volume-btn--invisible,
+.burger-buttons__language-btn--invisible,
+.burger-buttons__gallery-btn--invisible,
+.burger-buttons__volume-btn--invisible {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.header-buttons__home-btn--inactive,
+.burger-buttons__home-btn--inactive {
+  cursor: not-allowed;
+}
+
+.header-buttons__burger-btn {
+  @include header-buttons();
+  display: none;
+}
+
+@media (max-width: 769px) {
+  
+  .header-buttons__burger-btn {
+    display: block /* !important */;
+  }
+
+  .header-buttons__language-btn,
+  .header-buttons__gallery-btn,
+  .header-buttons__home-btn,
+  .header-buttons__volume-btn {
+    display: none !important;
+  }
+
+}
+
+.gallery__close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-color: var(--secondary-color);
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+}
+
+.main__button {
+  border-radius: 10px;
+  display: block;
+  margin: 20px auto 10px;
+  font-size: 30px;
+  width: 200px;
+  height: 50px;
+}
+
+.main__button--active {
+  background-color: var(--secondary-color);
+  color: var(--white-smoke);
+  cursor: pointer;
+}
+
+.main__start-button {
+  font-family: 'Press Start 2P', cursive;
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  color: var(--white-smoke);
+  cursor: pointer;
+  font-size: 50px;
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  top: calc(50% - 50px);
+  left: calc(50% - 150px);
+}
